@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Vite + NextUI",
+  name: "NGO",
   description: "Make beautiful websites regardless of your design experience.",
   navItems: [
     {
@@ -9,54 +9,50 @@ export const siteConfig = {
       href: "/",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Programs",
+      href: "/programs",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
+      label: "Get Involved",
+      href: "/getInvolved",
     },
     {
       label: "About",
       href: "/about",
     },
+    {
+      label: "Contact US",
+      href: "/contact",
+    },
+    {
+      label: "FAQs",
+      href: "/faq",
+    },
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
+      label: "Home",
+      href: "/",
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "Programs",
+      href: "/programs",
     },
     {
-      label: "Projects",
-      href: "/projects",
+      label: "Get Involved",
+      href: "/getInvolved",
     },
     {
-      label: "Team",
-      href: "/team",
+      label: "About",
+      href: "/about",
     },
     {
-      label: "Calendar",
-      href: "/calendar",
+      label: "Contact US",
+      href: "/contact",
     },
     {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
+      label: "FAQs",
+      href: "/faq",
     },
   ],
   links: {

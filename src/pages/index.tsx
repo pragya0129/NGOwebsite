@@ -1,7 +1,10 @@
 import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code";
+import { Image } from "@nextui-org/react";
+import { User } from "@nextui-org/react";
 import { button as buttonStyles } from "@nextui-org/theme";
+import { Card, CardBody, Button } from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBullhorn,
@@ -32,10 +35,12 @@ export default function IndexPage() {
               </p>
             </div>
             <div className="flex-1 flex justify-center md:justify-end">
-              <img
-                src="https://via.placeholder.com/400"
-                alt="NGO"
-                className="max-w-full h-auto rounded-lg"
+              <Image
+                isBlurred
+                width={300}
+                src="https://nextui-docs-v2.vercel.app/images/album-cover.png"
+                alt="NextUI Album Cover"
+                className="m-5"
               />
             </div>
           </section>
@@ -81,12 +86,24 @@ export default function IndexPage() {
                   size="1x"
                   className="mr-2"
                 />
-                <p className="italic">
-                  "This NGO has changed my life. The support and opportunities
-                  provided are invaluable."
-                </p>
+                <Card>
+                  <CardBody>
+                    <p>
+                      Make beautiful websites regardless of your design
+                      experience.
+                    </p>
+                  </CardBody>
+                </Card>
               </div>
-              <p className="text-right">- Beneficiary</p>
+              <p className="text-right">
+                <User
+                  name="Jane Doe"
+                  description="Product Designer"
+                  avatarProps={{
+                    src: "https://i.pravatar.cc/150?u=a04258114e29026702d",
+                  }}
+                />
+              </p>
             </div>
             <div>
               <div className="flex items-center mb-2">
@@ -95,13 +112,25 @@ export default function IndexPage() {
                   size="1x"
                   className="mr-2"
                 />
-                <p className="italic">
-                  "Volunteering here has been an incredibly rewarding
-                  experience. I highly recommend it to anyone looking to make a
-                  difference."
-                </p>
+                <Card>
+                  <CardBody>
+                    <p>
+                      Volunteering here has been an incredibly rewarding
+                      experience. I highly recommend it to anyone looking to
+                      make a difference.
+                    </p>
+                  </CardBody>
+                </Card>
               </div>
-              <p className="text-right">- Volunteer</p>
+              <p className="text-right">
+                <User
+                  name="Jane Doe"
+                  description="Volunteer"
+                  avatarProps={{
+                    src: "https://i.pravatar.cc/150?u=a04258114e29026702d",
+                  }}
+                />
+              </p>
             </div>
           </section>
         </div>
