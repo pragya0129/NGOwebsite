@@ -5,11 +5,11 @@ export default function AboutPage() {
   return (
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-        <div className="bg-gray-100 py-10 px-4">
+        <div className=" py-10 px-4">
           <div className="container mx-auto">
             <section className="mb-10">
               <h1 className="text-4xl font-bold text-center mb-5">About Us</h1>
-              <p className="text-lg text-center text-gray-700">
+              <p className="text-lg text-center">
                 Our NGO is dedicated to improving lives and making the world a
                 better place through various programs and initiatives. Our team
                 works tirelessly to create positive change and provide support
@@ -19,7 +19,7 @@ export default function AboutPage() {
 
             <section className="mb-10">
               <h2 className="text-3xl font-bold mb-5">Our Mission</h2>
-              <p className="text-lg text-gray-700">
+              <p className="text-lg">
                 Our mission is to empower communities and individuals by
                 providing essential resources, education, and support. We strive
                 to make a lasting impact through our comprehensive programs and
@@ -29,7 +29,7 @@ export default function AboutPage() {
 
             <section className="mb-10">
               <h2 className="text-3xl font-bold mb-5">Our Vision</h2>
-              <p className="text-lg text-gray-700">
+              <p className="text-lg">
                 We envision a world where every individual has the opportunity
                 to reach their full potential. We aim to create sustainable
                 solutions that address the root causes of poverty and
