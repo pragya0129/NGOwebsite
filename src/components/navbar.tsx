@@ -1,4 +1,15 @@
+import React from "react";
 import { Button } from "@nextui-org/button";
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  useDisclosure,
+  RadioGroup,
+  Radio,
+} from "@nextui-org/react";
 import { Kbd } from "@nextui-org/kbd";
 import { Link } from "@nextui-org/link";
 import { Input } from "@nextui-org/input";
@@ -22,11 +33,15 @@ import {
   GithubIcon,
   DiscordIcon,
   HeartFilledIcon,
+  HeartIcon,
   SearchIcon,
 } from "@/components/icons";
 import { Logo } from "@/components/icons";
+import { faHeart, faHeartCrack } from "@fortawesome/free-solid-svg-icons";
 
 export const Navbar = () => {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const [modalPlacement, setModalPlacement] = React.useState("auto");
   const searchInput = (
     <Input
       aria-label="Search"
@@ -79,7 +94,52 @@ export const Navbar = () => {
         className="hidden sm:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        <NavbarItem className="hidden sm:flex gap-2">
+        <NavbarItem className="hidden sm:flex gap-4">
+          <Button
+            onPress={onOpen}
+            className="max-w-fit"
+            variant="shadow"
+            color="danger"
+            endContent={<HeartIcon />}
+          >
+            Support Us
+          </Button>
+          <Modal
+            isOpen={isOpen}
+            placement={"center"}
+            backdrop="blur"
+            onOpenChange={onOpenChange}
+          >
+            <ModalContent>
+              {(onClose) => (
+                <>
+                  <ModalHeader className="flex flex-col gap-1">
+                    Modal Title
+                  </ModalHeader>
+                  <ModalBody>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nullam pulvinar risus non risus hendrerit venenatis.
+                      Pellentesque sit amet hendrerit risus, sed porttitor quam.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nullam pulvinar risus non risus hendrerit venenatis.
+                      Pellentesque sit amet hendrerit risus, sed porttitor quam.
+                    </p>
+                  </ModalBody>
+                  <ModalFooter>
+                    <Button color="danger" variant="light" onPress={onClose}>
+                      Close
+                    </Button>
+                    <Button color="primary" onPress={onClose}>
+                      Action
+                    </Button>
+                  </ModalFooter>
+                </>
+              )}
+            </ModalContent>
+          </Modal>
           <ThemeSwitch />
         </NavbarItem>
       </NavbarContent>
@@ -101,6 +161,54 @@ export const Navbar = () => {
               </RouterLink>
             </NavbarItem>
           ))}
+          <NavbarItem className="sm:flex mt-10">
+            <Button
+              onPress={onOpen}
+              className="max-w-fit"
+              variant="shadow"
+              color="danger"
+            >
+              Support Us
+            </Button>
+            <Modal
+              isOpen={isOpen}
+              placement={"center"}
+              backdrop="blur"
+              onOpenChange={onOpenChange}
+            >
+              <ModalContent>
+                {(onClose) => (
+                  <>
+                    <ModalHeader className="flex flex-col gap-1">
+                      Modal Title
+                    </ModalHeader>
+                    <ModalBody>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam pulvinar risus non risus hendrerit venenatis.
+                        Pellentesque sit amet hendrerit risus, sed porttitor
+                        quam.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam pulvinar risus non risus hendrerit venenatis.
+                        Pellentesque sit amet hendrerit risus, sed porttitor
+                        quam.
+                      </p>
+                    </ModalBody>
+                    <ModalFooter>
+                      <Button color="danger" variant="light" onPress={onClose}>
+                        Close
+                      </Button>
+                      <Button color="primary" onPress={onClose}>
+                        Action
+                      </Button>
+                    </ModalFooter>
+                  </>
+                )}
+              </ModalContent>
+            </Modal>
+          </NavbarItem>
         </div>
       </NavbarMenu>
     </NextUINavbar>

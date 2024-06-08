@@ -1,8 +1,11 @@
+import React from "react";
 import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code";
 import { Image } from "@nextui-org/react";
 import { User } from "@nextui-org/react";
+import { HeartIcon } from "./HeartIcon.jsx";
+
 import { button as buttonStyles } from "@nextui-org/theme";
 import { Card, CardBody, Button } from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,6 +17,7 @@ import {
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
+
 import DefaultLayout from "@/layouts/default";
 
 export default function IndexPage() {
