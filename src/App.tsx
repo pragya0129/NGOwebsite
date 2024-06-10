@@ -6,6 +6,7 @@ import BlogPage from "@/pages/blog";
 import ProgramsPage from "./pages/programs";
 import AboutPage from "@/pages/about";
 import ContactPage from "./pages/contact";
+import GetInvolved from "./pages/getInvolved";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route element={<BlogPage />} path="/blog" />
       <Route path="/about" element={<AboutPage />} />
       <Route element={<ContactPage />} path="/contact" />
+      <Route element={<GetInvolved />} path="/getInvolved" />
     </Routes>
   );
 }

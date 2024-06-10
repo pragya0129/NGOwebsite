@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import DefaultLayout from "@/layouts/default";
 import { title } from "@/components/primitives";
 import { Input, Textarea, Button } from "@nextui-org/react";
@@ -23,16 +23,28 @@ export default function ContactPage() {
           <h1 className={title()}>Contact Us</h1>
           <form className="w-full mt-6 max-w-md mx-auto">
             <div className="mb-4">
-              <Input fullWidth clearable label="Name" />
+              <Input fullWidth clearable label="Name" id="name" />
             </div>
             <div className="mb-4">
-              <Input fullWidth clearable label="Email" type="email" />
+              <Input
+                fullWidth
+                clearable
+                label="Email"
+                id="email"
+                type="email"
+              />
             </div>
             <div className="mb-4">
-              <Input fullWidth clearable label="Phone Number" type="tel" />
+              <Input
+                fullWidth
+                clearable
+                label="Phone Number"
+                type="tel"
+                id="number"
+              />
             </div>
             <div className="mb-4">
-              <Textarea fullWidth label="Message" rows={6} />
+              <Textarea fullWidth label="Message" rows={6} id="message" />
             </div>
             <Button className="w-full bg-blue-500 text-white" type="submit">
               Submit
