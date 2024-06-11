@@ -17,6 +17,7 @@ import {
 } from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faInfoCircle,
   faBullhorn,
   faHandsHelping,
   faQuoteLeft,
@@ -56,34 +57,237 @@ export default function IndexPage() {
             </div>
           </section>
 
-          {/* Highlights Section */}
-          <section className="mb-10">
-            <h2 className="text-2xl font-bold mb-5">Highlights</h2>
-            <div className="flex flex-col items-start mb-5">
-              <div className="flex items-center mb-3">
-                <FontAwesomeIcon icon={faBullhorn} size="2x" className="mr-3" />
-                <h3 className="text-xl font-semibold">Upcoming Event</h3>
+          {/* Highlights section */}
+          <section>
+            <div className="mb-5 mt-5">
+              <div className="flex items-center mb-2">
+                <Card className="min-w-[100%]">
+                  <CardHeader className="justify-between">
+                    <div className="flex gap-5">
+                      <Avatar
+                        isBordered
+                        radius="full"
+                        size="md"
+                        src="/public/Images/arrows.gif"
+                      />
+                      <div className="flex flex-col gap-1 items-start justify-center">
+                        <h1 className="text-2xl font-bold leading-none text-default-600">
+                          About Us
+                        </h1>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardBody className="px-3 py-0 flex flex-col md:flex-row items-center">
+                    <div className="md:w-1/2 text-left text-large text-default-400 lg:ml-10">
+                      <p>
+                        At [Your Organization Name], we are dedicated to
+                        empowering individuals and communities through a diverse
+                        range of programs designed to foster growth, learning,
+                        and development. Our programs are tailored to meet the
+                        needs of various age groups and interests, ensuring that
+                        there is something for everyone. Explore our offerings
+                        below and find the perfect fit for you or your loved
+                        ones.x``
+                      </p>
+                      <Button
+                        color="primary"
+                        radius="full"
+                        size="md"
+                        variant="ghost"
+                        className="mt-5 mb-5"
+                        endContent={
+                          <FontAwesomeIcon icon={faInfoCircle} size="2x" />
+                        }
+                      >
+                        Know More
+                      </Button>
+                    </div>
+                    <div className="md:w-1/2 flex justify-center mt-4 md:mt-0">
+                      <Image
+                        alt="Programs image"
+                        src="/public/Images/about.png"
+                        className="object-cover rounded-xl mb-5"
+                        width={270}
+                        height={180}
+                      />
+                    </div>
+                  </CardBody>
+                </Card>
               </div>
-              <p className="text-lg">
-                Join us for our annual fundraiser to support our education
-                program.
-              </p>
             </div>
-            <div className="flex flex-col items-start">
-              <div className="flex items-center mb-3">
-                <FontAwesomeIcon
-                  icon={faHandsHelping}
-                  size="2x"
-                  className="mr-3"
-                />
-                <h3 className="text-xl font-semibold">
-                  Volunteer Opportunities
-                </h3>
+          </section>
+
+          {/* programs section */}
+          <section>
+            <div className="mb-5 mt-5">
+              <div className="flex items-center mb-2">
+                <Card className="min-w-[100%]">
+                  <CardHeader className="justify-between">
+                    <div className="flex gap-5">
+                      <Avatar
+                        isBordered
+                        radius="full"
+                        size="md"
+                        src="/public/Images/connection.gif"
+                      />
+                      <div className="flex flex-col gap-1 items-start justify-center">
+                        <h1 className="text-2xl font-bold leading-none text-default-600">
+                          Programs
+                        </h1>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardBody className="px-3 py-0 flex flex-col md:flex-row items-center">
+                    <div className="md:w-1/2 text-left text-large text-default-400 lg:ml-10">
+                      <p>
+                        At [Your Organization Name], we are dedicated to
+                        empowering individuals and communities through a diverse
+                        range of programs designed to foster growth, learning,
+                        and development. Our programs are tailored to meet the
+                        needs of various age groups and interests, ensuring that
+                        there is something for everyone. Explore our offerings
+                        below and find the perfect fit for you or your loved
+                        ones.
+                      </p>
+                      <Button
+                        color="primary"
+                        radius="full"
+                        size="md"
+                        variant="solid"
+                        className="mt-5"
+                      >
+                        Know More
+                      </Button>
+                    </div>
+                    <div className="md:w-1/2 flex justify-center mt-4 md:mt-0">
+                      <Image
+                        alt="Programs image"
+                        src="../../public/Images/collaboration.png"
+                        className="object-cover rounded-xl mb-5"
+                        width={270}
+                        height={180}
+                      />
+                    </div>
+                  </CardBody>
+                </Card>
               </div>
-              <p className="text-lg">
-                Become a volunteer and help us make a difference in the
-                community.
-              </p>
+            </div>
+          </section>
+
+          {/* getInvolved section */}
+          <section>
+            <div className="mb-5 mt-5">
+              <div className="flex items-center mb-2">
+                <Card className="min-w-[100%]">
+                  <CardHeader className="justify-between">
+                    <div className="flex gap-5">
+                      <Avatar
+                        isBordered
+                        radius="full"
+                        size="md"
+                        src="/public/Images/arrows.gif"
+                      />
+                      <div className="flex flex-col gap-1 items-start justify-center">
+                        <h1 className="text-2xl font-bold leading-none text-default-600">
+                          Get Involved
+                        </h1>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardBody className="px-3 py-0 flex flex-col md:flex-row items-center">
+                    <div className="md:w-1/2 flex justify-center mt-4 md:mt-0">
+                      <Image
+                        alt="Programs image"
+                        src="/public/Images/job.png"
+                        className="object-cover rounded-xl mb-5"
+                        width={270}
+                        height={180}
+                      />
+                    </div>
+                    <div className="md:w-1/2 text-left text-large text-default-400 lg:ml-10">
+                      <p>
+                        At [Your Organization Name], we are dedicated to
+                        empowering individuals and communities through a diverse
+                        range of programs designed to foster growth, learning,
+                        and development. Our programs are tailored to meet the
+                        needs of various age groups and interests, ensuring that
+                        there is something for everyone. Explore our offerings
+                        below and find the perfect fit for you or your loved
+                        ones.
+                      </p>
+                      <Button
+                        color="primary"
+                        radius="full"
+                        size="md"
+                        variant="solid"
+                        className="mt-5 mb-5"
+                      >
+                        Know More
+                      </Button>
+                    </div>
+                  </CardBody>
+                </Card>
+              </div>
+            </div>
+          </section>
+
+          {/* About section */}
+          <section>
+            <div className="mb-5 mt-5">
+              <div className="flex items-center mb-2">
+                <Card className="min-w-[100%]">
+                  <CardHeader className="justify-between">
+                    <div className="flex gap-5">
+                      <Avatar
+                        isBordered
+                        radius="full"
+                        size="md"
+                        src="/public/Images/arrows.gif"
+                      />
+                      <div className="flex flex-col gap-1 items-start justify-center">
+                        <h1 className="text-2xl font-bold leading-none text-default-600">
+                          About Us
+                        </h1>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardBody className="px-3 py-0 flex flex-col md:flex-row items-center">
+                    <div className="md:w-1/2 text-left text-large text-default-400 lg:ml-10">
+                      <p>
+                        At [Your Organization Name], we are dedicated to
+                        empowering individuals and communities through a diverse
+                        range of programs designed to foster growth, learning,
+                        and development. Our programs are tailored to meet the
+                        needs of various age groups and interests, ensuring that
+                        there is something for everyone. Explore our offerings
+                        below and find the perfect fit for you or your loved
+                        ones.x``
+                      </p>
+                      <Button
+                        color="primary"
+                        radius="full"
+                        size="md"
+                        variant="ghost"
+                        className="mt-5 mb-5"
+                        endContent={
+                          <FontAwesomeIcon icon={faInfoCircle} size="2x" />
+                        }
+                      >
+                        Know More
+                      </Button>
+                    </div>
+                    <div className="md:w-1/2 flex justify-center mt-4 md:mt-0">
+                      <Image
+                        alt="Programs image"
+                        src="/public/Images/about.png"
+                        className="object-cover rounded-xl mb-5"
+                        width={270}
+                        height={180}
+                      />
+                    </div>
+                  </CardBody>
+                </Card>
+              </div>
             </div>
           </section>
 
@@ -142,77 +346,6 @@ export default function IndexPage() {
                   }}
                 />
               </p>
-            </div>
-          </section>
-
-          {/* programs section */}
-          <section>
-            <div className="mb-5 mt-5">
-              <div className="flex items-center mb-2">
-                <Card className="min-w-[100%]">
-                  <CardHeader className="justify-between">
-                    <div className="flex gap-5">
-                      <Avatar
-                        isBordered
-                        radius="full"
-                        size="md"
-                        src="https://nextui.org/avatars/avatar-1.png"
-                      />
-                      <div className="flex flex-col gap-1 items-start justify-center">
-                        <h4 className="text-large font-semibold leading-none text-default-600">
-                          Programs
-                        </h4>
-                      </div>
-                    </div>
-                    <Button
-                      color="primary"
-                      radius="full"
-                      size="sm"
-                      variant="solid"
-                    >
-                      Know More
-                    </Button>
-                  </CardHeader>
-                  <CardBody className="px-3 py-0 flex flex-col md:flex-row items-center">
-                    <div className="md:w-1/2 text-left text-large text-default-400 lg:ml-10">
-                      <p>
-                        At [Your Organization Name], we are dedicated to
-                        empowering individuals and communities through a diverse
-                        range of programs designed to foster growth, learning,
-                        and development. Our programs are tailored to meet the
-                        needs of various age groups and interests, ensuring that
-                        there is something for everyone. Explore our offerings
-                        below and find the perfect fit for you or your loved
-                        ones.
-                      </p>
-                    </div>
-                    <div className="md:w-1/2 flex justify-center mt-4 md:mt-0">
-                      <Image
-                        alt="Programs image"
-                        src="../../public/Images/collaboration.png"
-                        className="object-cover rounded-xl"
-                        width={270}
-                        height={180}
-                      />
-                    </div>
-                  </CardBody>
-
-                  <CardFooter className="gap-3">
-                    <div className="flex gap-1">
-                      <p className="font-semibold text-default-400 text-small">
-                        4
-                      </p>
-                      <p className=" text-default-400 text-small">Following</p>
-                    </div>
-                    <div className="flex gap-1">
-                      <p className="font-semibold text-default-400 text-small">
-                        97.1K
-                      </p>
-                      <p className="text-default-400 text-small">Followers</p>
-                    </div>
-                  </CardFooter>
-                </Card>
-              </div>
             </div>
           </section>
         </div>
