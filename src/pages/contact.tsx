@@ -23,25 +23,13 @@ export default function ContactPage() {
           <h1 className={title()}>Contact Us</h1>
           <form className="w-full mt-6 max-w-md mx-auto">
             <div className="mb-4">
-              <Input fullWidth clearable label="Name" id="name" />
+              <Input fullWidth label="Name" id="name" />
             </div>
             <div className="mb-4">
-              <Input
-                fullWidth
-                clearable
-                label="Email"
-                id="email"
-                type="email"
-              />
+              <Input fullWidth label="Email" id="email" type="email" />
             </div>
             <div className="mb-4">
-              <Input
-                fullWidth
-                clearable
-                label="Phone Number"
-                type="tel"
-                id="number"
-              />
+              <Input fullWidth label="Phone Number" type="tel" id="number" />
             </div>
             <div className="mb-4">
               <Textarea fullWidth label="Message" rows={6} id="message" />
