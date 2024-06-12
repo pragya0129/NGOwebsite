@@ -27,6 +27,7 @@ import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 
 import DefaultLayout from "@/layouts/default";
+import MarqueeComponent from "@/components/ImageSlider.js";
 
 export default function IndexPage() {
   return (
@@ -55,6 +56,10 @@ export default function IndexPage() {
                 className="m-5"
               />
             </div>
+          </section>
+
+          <section>
+            <MarqueeComponent />
           </section>
 
           {/* Highlights section */}
