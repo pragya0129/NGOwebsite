@@ -29,6 +29,7 @@ import { GithubIcon } from "@/components/icons";
 import DefaultLayout from "@/layouts/default";
 import MarqueeComponent from "@/components/ImageSlider.js";
 import AnimatedSection from "./AnimatedSection"; // Import the AnimatedSection component
+import HorizontalScrollableCards from "@/components/HighlightsCards.js";
 
 export default function IndexPage() {
   const [visitedSections, setVisitedSections] = useState(new Set());
@@ -90,46 +91,12 @@ export default function IndexPage() {
                       />
                       <div className="flex flex-col gap-1 items-start justify-center">
                         <h1 className="text-2xl font-bold leading-none text-default-600">
-                          About Us
+                          Highlights
                         </h1>
                       </div>
                     </div>
                   </CardHeader>
-                  <CardBody className="px-3 py-0 flex flex-col md:flex-row items-center">
-                    <div className="md:w-1/2 text-left text-large text-default-400 lg:ml-10">
-                      <p>
-                        At [Your Organization Name], we are dedicated to
-                        empowering individuals and communities through a diverse
-                        range of programs designed to foster growth, learning,
-                        and development. Our programs are tailored to meet the
-                        needs of various age groups and interests, ensuring that
-                        there is something for everyone. Explore our offerings
-                        below and find the perfect fit for you or your loved
-                        ones.x``
-                      </p>
-                      <Button
-                        color="primary"
-                        radius="full"
-                        size="md"
-                        variant="ghost"
-                        className="mt-5 mb-5"
-                        endContent={
-                          <FontAwesomeIcon icon={faInfoCircle} size="2x" />
-                        }
-                      >
-                        Know More
-                      </Button>
-                    </div>
-                    <div className="md:w-1/2 flex justify-center mt-4 md:mt-0">
-                      <Image
-                        alt="Programs image"
-                        src="/public/Images/about.png"
-                        className="object-cover rounded-xl mb-5"
-                        width={270}
-                        height={180}
-                      />
-                    </div>
-                  </CardBody>
+                  <CardBody className="px-3 py-0 flex flex-col md:flex-row items-center"></CardBody>
                 </Card>
               </div>
             </div>
@@ -183,7 +150,7 @@ export default function IndexPage() {
                     <div className="md:w-1/2 flex justify-center mt-4 md:mt-0">
                       <Image
                         alt="Programs image"
-                        src="../../public/Images/collaboration.png"
+                        src="/public/Images/collaboration (1).png"
                         className="object-cover rounded-xl mb-5"
                         width={270}
                         height={180}
@@ -219,6 +186,15 @@ export default function IndexPage() {
                     </div>
                   </CardHeader>
                   <CardBody className="px-3 py-0 flex flex-col md:flex-row items-center">
+                    <div className="md:w-1/2 flex justify-center mt-4 md:mt-0">
+                      <Image
+                        alt="Programs image"
+                        src="/public/Images/job.png"
+                        className="object-cover rounded-xl mb-5"
+                        width={270}
+                        height={180}
+                      />
+                    </div>
                     <div className="md:w-1/2 text-left text-large text-default-400 lg:ml-10">
                       <p>
                         At [Your Organization Name], we are dedicated to
