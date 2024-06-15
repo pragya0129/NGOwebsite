@@ -132,6 +132,32 @@ export const SunFilledIcon = ({
   </svg>
 );
 
+export const LetterABox = ({
+  width = 30,
+  height = 30,
+  boxColor = "blue",
+  letterColor = "white",
+}) => {
+  return (
+    <svg width={width} height={height} radius="40px" viewBox="0 0 100 100">
+      {/* Rectangle */}
+      <rect width="100" height="100" radius="20px" fill={boxColor} />
+      {/* Letter A */}
+      <text
+        x="50%"
+        y="50%"
+        dominantBaseline="middle"
+        textAnchor="middle"
+        fontSize="60"
+        fill={letterColor}
+        fontFamily="Arial, sans-serif"
+      >
+        A
+      </text>
+    </svg>
+  );
+};
+
 export const HeartIcon = ({
   fill = "currentColor",
   filled,

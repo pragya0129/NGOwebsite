@@ -1,5 +1,7 @@
 import React from "react";
 import { Button } from "@nextui-org/button";
+import { Switch } from "@nextui-org/react";
+import { useTranslation } from "react-i18next";
 import {
   Modal,
   ModalContent,
@@ -42,6 +44,15 @@ import { faHeart, faHeartCrack } from "@fortawesome/free-solid-svg-icons";
 export const Navbar = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const [modalPlacement, setModalPlacement] = React.useState("auto");
+  const { i18n } = useTranslation();
+  const [isEnglish, setIsEnglish] = React.useState(i18n.language === "en");
+  const { t } = useTranslation();
+
+  const handleChange = () => {
+    const newLanguage = isEnglish ? "hi" : "en";
+    i18n.changeLanguage(newLanguage);
+    setIsEnglish(!isEnglish);
+  };
   const searchInput = (
     <Input
       aria-label="Search"
@@ -95,6 +106,18 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-4">
+          <Switch
+            checked={isEnglish}
+            size="md"
+            color="primary"
+            onChange={handleChange}
+          >
+            {isEnglish ? (
+              <img src="/public/Images/english.png" alt="" width="40px" />
+            ) : (
+              <img src="/public/Images/ka.png" alt="" width="35px" />
+            )}
+          </Switch>
           <Button
             onPress={onOpen}
             className="max-w-fit"

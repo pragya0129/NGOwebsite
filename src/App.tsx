@@ -7,6 +7,7 @@ import ProgramsPage from "./pages/programs";
 import AboutPage from "@/pages/about";
 import ContactPage from "./pages/contact";
 import GetInvolved from "./pages/getInvolved";
+import "./utils/i18n.js";
 
 function App() {
   return (

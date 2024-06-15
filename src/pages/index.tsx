@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Switch } from "@nextui-org/react";
+import { useTranslation } from "react-i18next";
 import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code";
@@ -33,6 +35,15 @@ import HorizontalScrollableCards from "@/components/HighlightsCards.js";
 
 export default function IndexPage() {
   const [visitedSections, setVisitedSections] = useState(new Set());
+  const { i18n } = useTranslation();
+  const [isEnglish, setIsEnglish] = React.useState(i18n.language === "en");
+  const { t } = useTranslation();
+
+  const handleChange = () => {
+    const newLanguage = isEnglish ? "hi" : "en";
+    i18n.changeLanguage(newLanguage);
+    setIsEnglish(!isEnglish);
+  };
 
   return (
     <DefaultLayout>
@@ -46,13 +57,11 @@ export default function IndexPage() {
             <div className="flex flex-col md:flex-row items-center justify-center mb-10">
               <div className="flex-1 md:mr-5 mb-5 md:mb-0 flex flex-col items-center md:items-start">
                 <h1 className="text-4xl font-bold mb-5 text-center md:text-left">
-                  Welcome to Our{" "}
-                  <h1 className={title({ color: "violet" })}>NGO&nbsp;</h1>
+                  {t("welcome")}{" "}
+                  <h1 className={title({ color: "violet" })}>{t("ngo")} </h1>
                 </h1>
                 <p className="text-lg text-center md:text-left">
-                  We are dedicated to making the world a better place through
-                  our various programs and initiatives. Join us in our mission
-                  to bring positive change.
+                  {t("description")}
                 </p>
               </div>
               <div className="flex-1 flex justify-center md:justify-end">
@@ -127,16 +136,7 @@ export default function IndexPage() {
                   </CardHeader>
                   <CardBody className="px-3 py-0 flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 text-left text-large text-default-400 lg:ml-10">
-                      <p>
-                        At [Your Organization Name], we are dedicated to
-                        empowering individuals and communities through a diverse
-                        range of programs designed to foster growth, learning,
-                        and development. Our programs are tailored to meet the
-                        needs of various age groups and interests, ensuring that
-                        there is something for everyone. Explore our offerings
-                        below and find the perfect fit for you or your loved
-                        ones.
-                      </p>
+                      <p>{t("programs.description")}</p>
                       <Button
                         color="primary"
                         radius="full"
