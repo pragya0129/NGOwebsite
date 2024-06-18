@@ -7,7 +7,6 @@ import { Code } from "@nextui-org/code";
 import { Image } from "@nextui-org/react";
 import { User } from "@nextui-org/react";
 import { HeartIcon } from "./HeartIcon.jsx";
-
 import { button as buttonStyles } from "@nextui-org/theme";
 import {
   Card,
@@ -68,7 +67,7 @@ export default function IndexPage() {
                 <Image
                   isBlurred
                   width={300}
-                  src="https://nextui-docs-v2.vercel.app/images/album-cover.png"
+                  src="https://placehold.co/300x300"
                   alt="NextUI Album Cover"
                   className="m-5"
                 />
@@ -301,18 +300,19 @@ export default function IndexPage() {
                 <Card>
                   <CardBody>
                     <p>
-                      Make beautiful websites regardless of your design
-                      experience.
+                      Volunteering here has been an incredibly rewarding
+                      experience. I highly recommend it to anyone looking to
+                      make a difference.
                     </p>
                   </CardBody>
                 </Card>
               </div>
               <p className="text-right">
                 <User
-                  name="Jane Doe"
-                  description="Product Designer"
+                  name="Name"
+                  description="Volunteer"
                   avatarProps={{
-                    src: "https://i.pravatar.cc/150?u=a04258114e29026702d",
+                    src: "/public/Images/user.gif",
                   }}
                 />
               </p>
@@ -336,10 +336,10 @@ export default function IndexPage() {
               </div>
               <p className="text-right">
                 <User
-                  name="Jane Doe"
+                  name="Name"
                   description="Volunteer"
                   avatarProps={{
-                    src: "https://i.pravatar.cc/150?u=a04258114e29026702d",
+                    src: "/public/Images/user.gif",
                   }}
                 />
               </p>
