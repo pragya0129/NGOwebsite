@@ -9,6 +9,7 @@ import ContactPage from "./pages/contact";
 import GetInvolved from "./pages/getInvolved";
 import "./utils/i18n.js";
 import FAQ from "./pages/faq.js";
+import Gallery from "./pages/gallery.js";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route element={<ContactPage />} path="/contact" />
       <Route element={<GetInvolved />} path="/getInvolved" />
       <Route element={<FAQ />} path="/faq" />
+      <Route element={<Gallery />} path="/gallery" />
     </Routes>
   );
 }
