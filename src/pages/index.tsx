@@ -196,14 +196,12 @@ export default function IndexPage() {
                     </div>
                     <div className="md:w-1/2 text-left text-large text-default-400 lg:ml-10">
                       <p>
-                        At [Your Organization Name], we are dedicated to
-                        empowering individuals and communities through a diverse
-                        range of programs designed to foster growth, learning,
-                        and development. Our programs are tailored to meet the
-                        needs of various age groups and interests, ensuring that
-                        there is something for everyone. Explore our offerings
-                        below and find the perfect fit for you or your loved
-                        ones.
+                        Join us in making a difference! Your support can help us
+                        empower communities, advocate for change, and provide
+                        essential resources to those in need. Whether through
+                        donations, volunteering, or spreading the word, every
+                        action counts. Get involved today and be a part of our
+                        mission to create a better world.
                       </p>
                       <Button
                         color="primary"
@@ -247,14 +245,12 @@ export default function IndexPage() {
                   <CardBody className="px-3 py-0 flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 text-left text-large text-default-400 lg:ml-10">
                       <p>
-                        At [Your Organization Name], we are dedicated to
-                        empowering individuals and communities through a diverse
-                        range of programs designed to foster growth, learning,
-                        and development. Our programs are tailored to meet the
-                        needs of various age groups and interests, ensuring that
-                        there is something for everyone. Explore our offerings
-                        below and find the perfect fit for you or your loved
-                        ones.x``
+                        Learn more about our mission, vision, and the impact we
+                        strive to make every day. Discover how we address
+                        pressing social issues, empower communities, and drive
+                        sustainable change. Click to explore our journey,
+                        achievements, and the dedicated team behind our efforts.
+                        Join us in making a difference.
                       </p>
                       <Button
                         color="primary"
@@ -300,16 +296,19 @@ export default function IndexPage() {
                 <Card>
                   <CardBody>
                     <p>
-                      Volunteering here has been an incredibly rewarding
-                      experience. I highly recommend it to anyone looking to
-                      make a difference.
+                      Volunteering at [NGO Name] has been an incredibly
+                      rewarding experience. Seeing the smiles on the faces of
+                      the elderly residents and knowing we are making a real
+                      difference in their lives fills my heart with joy. The
+                      medical assistance we provide ensures they live
+                      comfortably and with dignity.
                     </p>
                   </CardBody>
                 </Card>
               </div>
               <p className="text-right">
                 <User
-                  name="Name"
+                  name="Rajesh Sharma"
                   description="Volunteer"
                   avatarProps={{
                     src: "/public/Images/user.gif",
@@ -327,17 +326,19 @@ export default function IndexPage() {
                 <Card>
                   <CardBody>
                     <p>
-                      Volunteering here has been an incredibly rewarding
-                      experience. I highly recommend it to anyone looking to
-                      make a difference.
+                      Supporting [NGO Name] has been one of the best decisions
+                      I've made. Knowing that my contributions help provide
+                      essential medical care and a loving home for the elderly
+                      is truly fulfilling. The dedication and compassion of the
+                      staff are truly inspiring.
                     </p>
                   </CardBody>
                 </Card>
               </div>
               <p className="text-right">
                 <User
-                  name="Name"
-                  description="Volunteer"
+                  name="Priya Desai"
+                  description="Donor"
                   avatarProps={{
                     src: "/public/Images/user.gif",
                   }}
