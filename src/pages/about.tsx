@@ -8,7 +8,14 @@ export default function AboutPage() {
         <div className=" py-10 px-4">
           <div className="container mx-auto">
             <section className="mb-10">
-              <h1 className="text-4xl font-bold text-center mb-5">About Us</h1>
+              <div className="flex items-center justify-center mb-5">
+                <h1 className={title()}>About Us</h1>
+                <img
+                  src="/public/Images/info.gif"
+                  alt="Resources Icon"
+                  className="ml-5 w-20"
+                />
+              </div>
               <p className="text-lg text-center">
                 Our NGO is dedicated to improving lives and making the world a
                 better place through various programs and initiatives. Our team

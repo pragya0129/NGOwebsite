@@ -20,7 +20,14 @@ export default function ContactPage() {
           </h2>
         </div>
         <div className="w-full md:w-1/2 inline-block max-w-lg w-full px-4 text-center">
-          <h1 className={title()}>Contact Us</h1>
+          <div className="flex items-center justify-center">
+            <h1 className={title()}>Contact Us</h1>
+            <img
+              src="/public/Images/tech-support.gif"
+              alt="Resources Icon"
+              className="ml-5 w-20"
+            />
+          </div>
           <form className="w-full mt-6 max-w-md mx-auto">
             <div className="mb-4">
               <Input fullWidth label="Name" id="name" />

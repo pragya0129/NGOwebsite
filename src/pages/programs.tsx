@@ -25,7 +25,14 @@ export default function ProgramsPage() {
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="max-w-3xl text-center px-4 mb-10">
-          <h1 className="text-4xl font-bold mb-5">Our Programs</h1>
+          <div className="flex items-center justify-center">
+            <h1 className="text-4xl font-bold mb-5">Our Programs</h1>
+            <img
+              src="/public/Images/balloons.gif"
+              alt="Resources Icon"
+              className="ml-5 w-20"
+            />
+          </div>
           <p className="text-lg text-gray-700">
             We are committed to making a difference through our comprehensive
             programs that address various community needs.

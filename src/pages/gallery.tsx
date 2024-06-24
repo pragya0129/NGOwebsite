@@ -46,7 +46,14 @@ export default function Gallery() {
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="inline-block max-w-lg text-center justify-center mb-8">
-          <h1 className={title()}>Gallery</h1>
+          <div className="flex items-center justify-center">
+            <h1 className={title()}>Gallery</h1>
+            <img
+              src="/public/Images/photo-gallery.gif"
+              alt="Resources Icon"
+              className="ml-5 w-20"
+            />
+          </div>
         </div>
         <div className="w-full mb-8">
           <h2 className="text-2xl font-semibold mb-4">Image Slider</h2>

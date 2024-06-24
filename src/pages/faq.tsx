@@ -7,7 +7,14 @@ export default function FAQ() {
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-8 py-8 md:py-10">
         <div className="max-w-lg text-center">
-          <h1 className={title()}>Frequently Asked Questions</h1>
+          <div className="flex items-center justify-center">
+            <h1 className={title()}>Frequently Asked Questions</h1>
+            <img
+              src="/public/Images/question.gif"
+              alt="Resources Icon"
+              className="ml-5 w-20"
+            />
+          </div>
         </div>
         <div className="max-w-3xl w-full px-4">
           <div className="bg-white shadow-lg rounded-lg p-4">
