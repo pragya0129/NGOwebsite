@@ -10,6 +10,7 @@ import GetInvolved from "./pages/getInvolved";
 import "./utils/i18n.js";
 import FAQ from "./pages/faq.js";
 import Gallery from "./pages/gallery.js";
+import ResourcesPage from "./pages/resources.js";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route element={<GetInvolved />} path="/getInvolved" />
       <Route element={<FAQ />} path="/faq" />
       <Route element={<Gallery />} path="/gallery" />
+      <Route element={<ResourcesPage />} path="/resources" />
     </Routes>
   );
 }

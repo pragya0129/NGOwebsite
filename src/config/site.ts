@@ -17,6 +17,10 @@ export const siteConfig = {
       href: "/getInvolved",
     },
     {
+      label: "Resources",
+      href: "/resources",
+    },
+    {
       label: "Gallery",
       href: "/gallery",
     },
@@ -45,6 +49,10 @@ export const siteConfig = {
     {
       label: "Get Involved",
       href: "/getInvolved",
+    },
+    {
+      label: "Resources",
+      href: "/resources",
     },
     {
       label: "Gallery",

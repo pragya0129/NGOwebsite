@@ -163,12 +163,24 @@ export const Navbar = () => {
               )}
             </ModalContent>
           </Modal>
-          <ThemeSwitch />
+          {/* <ThemeSwitch /> */}
         </NavbarItem>
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <ThemeSwitch />
+        <Switch
+          checked={isEnglish}
+          size="md"
+          color="primary"
+          onChange={handleChange}
+        >
+          {isEnglish ? (
+            <img src="/public/Images/english.png" alt="" width="40px" />
+          ) : (
+            <img src="/public/Images/ka.png" alt="" width="35px" />
+          )}
+        </Switch>
+        {/* <ThemeSwitch /> */}
         <NavbarMenuToggle />
       </NavbarContent>
 
