@@ -8,12 +8,12 @@ export default function ResourcesPage() {
   const resources = [
     {
       type: "article",
-      title: "Women's Rights and Legal Protection",
+      title: "Legal Information and Resources",
       description:
         "An overview of the legal rights and protections available to women.",
       link: "/resources/womens-rights",
       icon: faFileAlt,
-      imgSrc: "/public/Images/article1.jpg",
+      imgSrc: "/public/Images/laws.gif",
     },
     {
       type: "video",
@@ -49,11 +49,20 @@ export default function ResourcesPage() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="w-full max-w-6xl">
           {resources.map((resource, index) => (
-            <Card key={index} className="overflow-hidden">
-              <Image src={resource.imgSrc} alt={resource.title} />
-              <div className="p-4">
+            <Card
+              key={index}
+              className="mb-6 p-4 flex flex-col md:flex-row items-start"
+            >
+              <div className="md:w-1/3 mb-4 md:mb-0 md:pr-6">
+                <Image
+                  src={resource.imgSrc}
+                  alt={resource.title}
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+              <div className="md:w-3/4">
                 <h3 className="text-xl font-semibold mb-2">{resource.title}</h3>
                 <p className="text-default-400 mb-4">{resource.description}</p>
                 <Button
@@ -61,7 +70,7 @@ export default function ResourcesPage() {
                   href={resource.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-2"
+                  className="flex items-center space-x-2 bg-blue-500 text-white hover:bg-blue-600"
                 >
                   <FontAwesomeIcon icon={resource.icon} />
                   <span>Learn More</span>
