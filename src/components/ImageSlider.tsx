@@ -3,12 +3,18 @@ import "./MarqueeComponent.css";
 
 const MarqueeComponent = () => {
   const images = [
-    "/public/Images/ngo (1).png",
-    "/public/Images/ngo (2).png",
-    "/public/Images/community.png",
-    "/public/Images/hands (1).gif",
-    "/public/Images/community.png",
-    "/public/Images/community.png", 
+    "/public/Images/ngo (3).png",
+  
+    "/public/Images/solidarity.png",
+    "/public/Images/people.png",
+    "/public/Images/give.png",
+    "/public/Images/charity (1).png",
+    "/public/Images/balance.png",
+    "/public/Images/feminine.png",
+    "/public/Images/kindness.png",
+    "/public/Images/pride.png",
+    "/public/Images/healthcare.png",
+
   ];
 
   return (

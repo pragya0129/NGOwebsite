@@ -13,3 +13,11 @@
 ::-webkit-scrollbar-thumb {
   background-color: rgb(72, 0, 255); /* Color of the thumb */
 }
+
+:root {
+  background: url("/public/Images/Background/wp12576635.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
