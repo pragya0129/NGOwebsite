@@ -3,6 +3,7 @@ import DefaultLayout from "@/layouts/default";
 import { Card, Image, Button } from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileAlt, faVideo, faLink } from "@fortawesome/free-solid-svg-icons";
+import ResourceTab from "@/components/ResourceTab";
 
 export default function ResourcesPage() {
   const resources = [
@@ -50,34 +51,7 @@ export default function ResourcesPage() {
           </div>
         </div>
         <div className="w-full max-w-6xl">
-          {resources.map((resource, index) => (
-            <Card
-              key={index}
-              className="mb-6 p-4 flex flex-col md:flex-row items-start img2"
-            >
-              <div className="md:w-1/3 mb-4 md:mb-0 md:pr-6">
-                <Image
-                  src={resource.imgSrc}
-                  alt={resource.title}
-                  className="w-1/3 h-auto rounded-lg"
-                />
-              </div>
-              <div className="md:w-2/3 flex flex-col justify-center">
-                <h3 className="text-xl font-semibold mb-2">{resource.title}</h3>
-                <p className="text-default-400 mb-4">{resource.description}</p>
-                <Button
-                  as="a"
-                  href={resource.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-2 bg-blue-500 text-white hover:bg-blue-600"
-                >
-                  <FontAwesomeIcon icon={resource.icon} />
-                  <span>Learn More</span>
-                </Button>
-              </div>
-            </Card>
-          ))}
+          <ResourceTab />
         </div>
       </section>
     </DefaultLayout>
