@@ -76,7 +76,7 @@ export const Navbar = () => {
   );
 
   return (
-    <NextUINavbar isBordered maxWidth="xl" position="sticky" className="abc">
+    <NextUINavbar isBordered maxWidth="xl" className="abc">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-3 max-w-fit">
           <Link
@@ -92,7 +92,7 @@ export const Navbar = () => {
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <RouterLink
-                className="data-[active=true]:text-primary data-[active=true]:font-medium"
+                className="linkrouter data-[active=true]:text-primary data-[active=true]:font-medium"
                 to={item.href}
               >
                 {item.label}
@@ -114,9 +114,9 @@ export const Navbar = () => {
             onChange={handleChange}
           >
             {isEnglish ? (
-              <img src="/public/Images/english.png" alt="" width="40px" />
+              <img src="/public/Images/figEngllish.png" alt="" width="40px" />
             ) : (
-              <img src="/public/Images/ka.png" alt="" width="35px" />
+              <img src="/public/Images/figHindi.png" alt="" width="35px" />
             )}
           </Switch>
           <Button
@@ -176,9 +176,9 @@ export const Navbar = () => {
           onChange={handleChange}
         >
           {isEnglish ? (
-            <img src="/public/Images/english.png" alt="" width="40px" />
+            <img src="/public/Images/figEngllish.png" alt="" width="40px" />
           ) : (
-            <img src="/public/Images/ka.png" alt="" width="35px" />
+            <img src="/public/Images/figHindi.png" alt="" width="35px" />
           )}
         </Switch>
         {/* <ThemeSwitch /> */}

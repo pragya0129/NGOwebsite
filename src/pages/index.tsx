@@ -57,7 +57,9 @@ export default function IndexPage() {
               <div className="flex-1 md:mr-5 mb-5 md:mb-0 flex flex-col items-center md:items-start">
                 <h1 className="text-4xl font-bold mb-5 text-center md:text-left">
                   {t("welcome")}{" "}
-                  <h1 className={title({ color: "violet" })}>{t("ngo")} </h1>
+                  <h1 className="tracking-tight inline font-semibold from-[#5EA2EF] to-[#0072F5] text-4xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-b">
+                    {t("ngo")}{" "}
+                  </h1>
                 </h1>
                 <p className="text-lg text-center md:text-left">
                   {t("description")}
@@ -92,10 +94,9 @@ export default function IndexPage() {
                   <CardHeader className="justify-between">
                     <div className="flex gap-5">
                       <Avatar
-                        isBordered
                         radius="full"
                         size="md"
-                        src="/public/Images/arrows.gif"
+                        src="/public/Images/cube-in-circle.gif"
                       />
                       <div className="flex flex-col gap-1 items-start justify-center">
                         <h1 className="text-2xl font-bold leading-none text-default-600">
@@ -121,10 +122,9 @@ export default function IndexPage() {
                   <CardHeader className="justify-between">
                     <div className="flex gap-5">
                       <Avatar
-                        isBordered
                         radius="full"
                         size="md"
-                        src="/public/Images/connection.gif"
+                        src="/public/Images/cube-in-circle.gif"
                       />
                       <div className="flex flex-col gap-1 items-start justify-center">
                         <h1 className="text-2xl font-bold leading-none text-default-600">
@@ -172,10 +172,9 @@ export default function IndexPage() {
                   <CardHeader className="justify-between">
                     <div className="flex gap-5">
                       <Avatar
-                        isBordered
                         radius="full"
                         size="md"
-                        src="/public/Images/arrows.gif"
+                        src="/public/Images/cube-in-circle.gif"
                       />
                       <div className="flex flex-col gap-1 items-start justify-center">
                         <h1 className="text-2xl font-bold leading-none text-default-600">
@@ -219,6 +218,62 @@ export default function IndexPage() {
             </div>
           </AnimatedSection>
 
+          {/* Resources section */}
+          <AnimatedSection
+            id="resources"
+            setVisitedSections={setVisitedSections}
+          >
+            <div className="mb-5 mt-5">
+              <div className="flex items-center mb-2">
+                <Card className="min-w-[100%]">
+                  <CardHeader className="justify-between">
+                    <div className="flex gap-5">
+                      <Avatar
+                        radius="full"
+                        size="md"
+                        src="/public/Images/cube-in-circle.gif"
+                      />
+                      <div className="flex flex-col gap-1 items-start justify-center">
+                        <h1 className="text-2xl font-bold leading-none text-default-600">
+                          Resources
+                        </h1>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardBody className="px-3 py-0 flex flex-col md:flex-row items-center">
+                    <div className="md:w-1/2 text-left text-large text-default-400 lg:ml-10">
+                      <p>
+                        Explore our Resources section for valuable information
+                        and tools to support our cause. Find research reports,
+                        educational materials, and guides on how you can help
+                        make a difference. Stay informed and get the resources
+                        you need to join our mission effectively.
+                      </p>
+                      <Button
+                        color="primary"
+                        radius="full"
+                        size="md"
+                        variant="solid"
+                        className="mt-5 mb-5"
+                      >
+                        Know More
+                      </Button>
+                    </div>
+                    <div className="md:w-1/2 flex justify-center mt-4 md:mt-0">
+                      <Image
+                        alt="Programs image"
+                        src="/public/Images/resource.png"
+                        className="object-cover rounded-xl mb-5"
+                        width={270}
+                        height={180}
+                      />
+                    </div>
+                  </CardBody>
+                </Card>
+              </div>
+            </div>
+          </AnimatedSection>
+
           {/* About section */}
           <AnimatedSection
             id="about-us"
@@ -230,10 +285,9 @@ export default function IndexPage() {
                   <CardHeader className="justify-between">
                     <div className="flex gap-5">
                       <Avatar
-                        isBordered
                         radius="full"
                         size="md"
-                        src="/public/Images/arrows.gif"
+                        src="/public/Images/cube-in-circle.gif"
                       />
                       <div className="flex flex-col gap-1 items-start justify-center">
                         <h1 className="text-2xl font-bold leading-none text-default-600">
@@ -243,6 +297,15 @@ export default function IndexPage() {
                     </div>
                   </CardHeader>
                   <CardBody className="px-3 py-0 flex flex-col md:flex-row items-center">
+                    <div className="md:w-1/2 flex justify-center mt-4 md:mt-0">
+                      <Image
+                        alt="Programs image"
+                        src="/public/Images/about.png"
+                        className="object-cover rounded-xl mb-5"
+                        width={270}
+                        height={180}
+                      />
+                    </div>
                     <div className="md:w-1/2 text-left text-large text-default-400 lg:ml-10">
                       <p>
                         Learn more about our mission, vision, and the impact we
@@ -264,15 +327,6 @@ export default function IndexPage() {
                       >
                         Know More
                       </Button>
-                    </div>
-                    <div className="md:w-1/2 flex justify-center mt-4 md:mt-0">
-                      <Image
-                        alt="Programs image"
-                        src="/public/Images/about.png"
-                        className="object-cover rounded-xl mb-5"
-                        width={270}
-                        height={180}
-                      />
                     </div>
                   </CardBody>
                 </Card>

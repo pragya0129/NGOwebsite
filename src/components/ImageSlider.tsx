@@ -7,23 +7,21 @@ const MarqueeComponent = () => {
     "/public/Images/ngo (2).png",
     "/public/Images/community.png",
     "/public/Images/hands (1).gif",
+    "/public/Images/community.png",
+    "/public/Images/community.png", 
   ];
 
   return (
-    <>
-      <div className="marquee-container mb-20">
-        <div className="marquee">
-          {images.concat(images).map((src, index) => (
-            <img
-              key={index}
-              alt=""
-              src={src}
-              className="w-40 h-40 mx-2 border-5"
-            />
-          ))}
-        </div>
+    <div className="marquee-container mb-20">
+      <div className="marquee">
+        {images.map((src, index) => (
+          <img key={index} alt="" src={src} className="image" />
+        ))}
+        {images.map((src, index) => (
+          <img key={images.length + index} alt="" src={src} className="image" />
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 

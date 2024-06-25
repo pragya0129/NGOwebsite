@@ -2,7 +2,7 @@ import { title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
 import { Card, Image, Button } from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileAlt, faVideo, faLink } from "@fortawesome/free-solid-svg-icons"; 
+import { faFileAlt, faVideo, faLink } from "@fortawesome/free-solid-svg-icons";
 
 export default function ResourcesPage() {
   const resources = [
@@ -59,7 +59,7 @@ export default function ResourcesPage() {
                 <Image
                   src={resource.imgSrc}
                   alt={resource.title}
-                  className="w-full h-auto rounded-lg"
+                  className="w-1/3 h-auto rounded-lg"
                 />
               </div>
               <div className="md:w-2/3 flex flex-col justify-center">

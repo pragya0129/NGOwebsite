@@ -27,7 +27,7 @@ export default function DefaultLayout({
               <h2 className="text-2xl font-bold">NGO Name</h2>
               <p className="text-gray-400">
                 Dedicated to making the world a better place.
-              </p>
+           zz   </p>
             </div>
 
             {/* Navigation links */}
