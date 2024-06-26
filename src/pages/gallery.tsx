@@ -5,6 +5,8 @@ import DefaultLayout from "@/layouts/default";
 import { title } from "@/components/primitives";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./gallery.css";
+import { Code } from "@nextui-org/code";
 
 export default function Gallery() {
   const sliderSettings = {
@@ -45,7 +47,7 @@ export default function Gallery() {
   return (
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-        <div className="inline-block max-w-lg text-center justify-center mb-8">
+        <div className="inline-block max-w-lg text-center justify-center mb-2">
           <div className="flex items-center justify-center">
             <h1 className={title()}>Gallery</h1>
             <img
@@ -53,6 +55,23 @@ export default function Gallery() {
               alt="Resources Icon"
               className="ml-5 w-20"
             />
+          </div>
+        </div>
+        <div className="w-full mb-8">
+          <div className="gcontainer">
+            <Code size="md" className="mb-2 hidden lg:block">
+              Hover image to zoom
+            </Code>
+            <Code size="md" className="mb-2 sm:hidden">
+              Click image to zoom
+            </Code>
+            <div className="gallery-wrap">
+              <div className="item item-1"></div>
+              <div className="item item-2"></div>
+              <div className="item item-3"></div>
+              <div className="item item-4"></div>
+              <div className="item item-5"></div>
+            </div>
           </div>
         </div>
         <div className="w-full mb-8">
@@ -66,29 +85,6 @@ export default function Gallery() {
               </div>
             ))}
           </Slider>
-        </div>
-        <div className="w-full mb-8">
-          <h2 className="text-2xl font-semibold mb-4">Image Collage</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {images.map((src, index) => (
-              <Card key={index} className="overflow-hidden">
-                <Image src={src} alt={`Gallery Image ${index + 1}`} />
-              </Card>
-            ))}
-          </div>
-        </div>
-        <div className="w-full mb-8">
-          <h2 className="text-2xl font-semibold mb-4">Random Display</h2>
-          <div className="flex flex-wrap justify-center gap-4">
-            {images.map((src, index) => (
-              <Card
-                key={index}
-                className="overflow-hidden w-1/3 md:w-1/4 lg:w-1/6"
-              >
-                <Image src={src} alt={`Gallery Image ${index + 1}`} />
-              </Card>
-            ))}
-          </div>
         </div>
       </section>
     </DefaultLayout>
