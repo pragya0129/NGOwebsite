@@ -53,7 +53,7 @@ export default function Gallery() {
             <img
               src="/public/Images/photo-gallery.gif"
               alt="Resources Icon"
-              className="ml-5 w-20"
+              className="ml-5 w-20 rounded-3xl"
             />
           </div>
         </div>

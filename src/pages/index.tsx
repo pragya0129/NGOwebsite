@@ -57,9 +57,8 @@ export default function IndexPage() {
             <div className="flex flex-col md:flex-row items-center justify-center mb-10">
               <div className="flex-1 md:mr-5 mb-5 md:mb-0 flex flex-col items-center md:items-start">
                 <h1 className="text-4xl font-bold mb-5 text-center md:text-left">
-                  {t("welcome")}{" "}
-                  <h1 className="tracking-tight inline font-semibold from-[#5EA2EF] to-[#0072F5] text-4xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-b">
-                    {t("ngo")}{" "}
+                  <h1 className="tracking-tight inline font-bold from-[#FF1CF7] to-[#b249f8] text-[2.5rem] lg:text-5xl bg-clip-text text-transparent bg-gradient-to-b">
+                    Aftab Women Welfare Society
                   </h1>
                 </h1>
                 <p className="text-lg text-center md:text-left">

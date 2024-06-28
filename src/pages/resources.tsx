@@ -46,7 +46,7 @@ export default function ResourcesPage() {
             <img
               src="/public/Images/folder.gif"
               alt="Resources Icon"
-              className="ml-5 w-20"
+              className="ml-5 w-20 rounded-3xl"
             />
           </div>
         </div>

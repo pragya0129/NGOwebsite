@@ -34,7 +34,7 @@ export default function GetInvolved() {
             <img
               src="/public/Images/volunteering.gif"
               alt="Resources Icon"
-              className="ml-5 w-20"
+              className="ml-5 w-20 rounded-3xl"
             />
           </div>
         </div>

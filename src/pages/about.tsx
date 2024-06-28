@@ -13,7 +13,7 @@ export default function AboutPage() {
                 <img
                   src="/public/Images/info.gif"
                   alt="Resources Icon"
-                  className="ml-5 w-20"
+                  className="ml-5 w-20 rounded-3xl"
                 />
               </div>
               <p className="text-lg text-center">

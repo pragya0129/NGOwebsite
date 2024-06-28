@@ -30,7 +30,7 @@ export default function ProgramsPage() {
             <img
               src="/public/Images/balloons.gif"
               alt="Resources Icon"
-              className="ml-5 w-20"
+              className="ml-5 w-20 rounded-3xl"
             />
           </div>
           <p className="text-lg text-gray-700">

@@ -7,6 +7,8 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import { Navbar } from "@/components/navbar";
+import AnimatedFooter from "@/components/AnimatedFooter";
+import Footer from "@/components/Footer";
 
 export default function DefaultLayout({
   children,
@@ -19,25 +21,23 @@ export default function DefaultLayout({
       <main className="container mx-auto max-w-7xl px-6 flex-grow pt-16">
         {children}
       </main>
-      <footer className="bg-gray-800 text-white py-10">
+      <Footer />
+      {/* <footer className="bg-gray-800 text-white py-10">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            {/* Logo and description */}
             <div className="mb-6 md:mb-0">
               <h2 className="text-2xl font-bold">NGO Name</h2>
               <p className="text-gray-400">
-                Dedicated to making the world a better place.
-           zz   </p>
+                Dedicated to making the world a better place. zz{" "}
+              </p>
             </div>
-
-            {/* Navigation links */}
           </div>
 
           <div className="mt-6 text-center text-gray-400">
             &copy; {new Date().getFullYear()} NGO Name. All rights reserved.
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 }

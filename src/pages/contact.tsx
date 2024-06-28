@@ -25,7 +25,7 @@ export default function ContactPage() {
             <img
               src="/public/Images/tech-support.gif"
               alt="Resources Icon"
-              className="ml-5 w-20"
+              className="ml-5 w-20 rounded-3xl"
             />
           </div>
           <form className="w-full mt-6 max-w-md mx-auto">
