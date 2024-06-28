@@ -91,7 +91,7 @@ export default function IndexPage() {
           >
             <div className="mb-5 mt-5">
               <div className="flex items-center mb-2">
-                <Card className="min-w-[100%]">
+                <Card className="min-w-[100%] bg-transparent">
                   <CardHeader className="justify-between">
                     <div className="flex gap-5">
                       <Avatar
@@ -106,10 +106,11 @@ export default function IndexPage() {
                       </div>
                     </div>
                   </CardHeader>
-                  <CardBody className="px-8 py-0 flex flex-col md:flex-row items-center">
+                  <CardBody className="px-8 py-0 flex flex-col md:flex-row items-center justify-center">
+                    {/*Donation */}
                     <Card
                       isFooterBlurred
-                      className="w-[300px] h-[300px] col-span-12 sm:col-span-5 mb-5"
+                      className="w-[300px] h-[300px] col-span-12 sm:col-span-5 mb-5 mr-2"
                     >
                       <CardHeader className="absolute z-10 top-1 flex-col items-start">
                         <p className="text-sm text-white/60 uppercase font-bold">
@@ -142,6 +143,42 @@ export default function IndexPage() {
                         </Button>
                       </CardFooter>
                     </Card>
+                    {/*Volunteer*/}
+                    <Card
+                      isFooterBlurred
+                      className="w-[300px] md:w-2/3 h-[300px] col-span-12 sm:col-span-5 mb-5 mr-2"
+                    >
+                      <CardHeader className="absolute z-10 top-1 flex-col items-start">
+                        <p className="text-sm text-white/60 uppercase font-bold">
+                          &nbsp;
+                        </p>
+                        <h4 className="text-black font-medium text-2xl">
+                          Volunteer
+                        </h4>
+                      </CardHeader>
+                      <Image
+                        removeWrapper
+                        alt="Card example background"
+                        className="z-0 w-full h-full scale-125 -translate-y-6 object-fit"
+                        src="/public/Images/volunteeringposter.png"
+                      />
+                      <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+                        <div>
+                          <p className="text-black text-tiny">
+                            If you are able to, please consider donating.
+                          </p>
+                          <p className="text-black text-tiny">&#x1F603;</p>
+                        </div>
+                        <Button
+                          className="text-tiny"
+                          color="primary"
+                          radius="full"
+                          size="sm"
+                        >
+                          Notify Me
+                        </Button>
+                      </CardFooter>
+                    </Card>
                   </CardBody>
                 </Card>
               </div>
@@ -155,7 +192,7 @@ export default function IndexPage() {
           >
             <div className="mb-5 mt-5">
               <div className="flex items-center mb-2">
-                <Card className="min-w-[100%]">
+                <Card className="min-w-[100%] bg-transparent">
                   <CardHeader className="justify-between">
                     <div className="flex gap-5">
                       <Avatar
@@ -205,7 +242,7 @@ export default function IndexPage() {
           >
             <div className="mb-5 mt-5">
               <div className="flex items-center mb-2">
-                <Card className="min-w-[100%]">
+                <Card className="min-w-[100%] bg-transparent">
                   <CardHeader className="justify-between">
                     <div className="flex gap-5">
                       <Avatar
@@ -255,6 +292,18 @@ export default function IndexPage() {
             </div>
           </AnimatedSection>
 
+          {/* Image section */}
+          <AnimatedSection
+            id="get-involved"
+            setVisitedSections={setVisitedSections}
+          >
+            <div className="mb-5 mt-5">
+              <div className="flex items-center mb-2">
+                <Card className="min-w-[100%] min-h-[215px] sm:min-h-[700px] bg-[url('/public/Images/women.png')] bg-contain bg-no-repeat bg-center"></Card>
+              </div>
+            </div>
+          </AnimatedSection>
+
           {/* Resources section */}
           <AnimatedSection
             id="resources"
@@ -262,7 +311,7 @@ export default function IndexPage() {
           >
             <div className="mb-5 mt-5">
               <div className="flex items-center mb-2">
-                <Card className="min-w-[100%]">
+                <Card className="min-w-[100%] bg-transparent">
                   <CardHeader className="justify-between">
                     <div className="flex gap-5">
                       <Avatar
@@ -318,7 +367,7 @@ export default function IndexPage() {
           >
             <div className="mb-5 mt-5">
               <div className="flex items-center mb-2">
-                <Card className="min-w-[100%]">
+                <Card className="min-w-[100%] bg-transparent">
                   <CardHeader className="justify-between">
                     <div className="flex gap-5">
                       <Avatar
