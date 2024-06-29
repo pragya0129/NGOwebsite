@@ -8,19 +8,19 @@ export default function GetInvolved() {
       title: "Volunteer",
       description:
         "Join us as a volunteer and make a difference in your community.",
-      image: "https://via.placeholder.com/400x300",
+      image: "/public/Images/help each other.png",
       link: "/volunteer",
     },
     {
       title: "Donate",
       description: "Support our cause by making a donation.",
-      image: "https://via.placeholder.com/400x300",
+      image: "/public/Images/donateinvolvement.png",
       link: "/donate",
     },
     {
       title: "Partner",
       description: "Partner with us to achieve greater impact.",
-      image: "https://via.placeholder.com/400x300",
+      image: "/public/Images/partner.png",
       link: "/partner",
     },
   ];
@@ -46,12 +46,14 @@ export default function GetInvolved() {
                 <p className="text-default-500">{option.description}</p>
               </CardHeader>
               <CardBody className="overflow-visible py-2">
-                <Image
-                  alt="Program Image"
-                  className="object-cover rounded-xl"
-                  src={option.image}
-                  width={300}
-                />
+                <div className="flex justify-center items-center mb-4">
+                  <Image
+                    alt="Program Image"
+                    className="object-cover rounded-xl"
+                    src={option.image}
+                    width={300}
+                  />
+                </div>
                 <Button
                   as="a"
                   href={option.link}
