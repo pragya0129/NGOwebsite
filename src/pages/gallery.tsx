@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./gallery.css";
 import { Code } from "@nextui-org/code";
+import GalleryImageList from "@/components/GalleryImagelist";
 
 export default function Gallery() {
   const sliderSettings = {
@@ -86,6 +87,7 @@ export default function Gallery() {
             ))}
           </Slider>
         </div>
+        <GalleryImageList />
       </section>
     </DefaultLayout>
   );
