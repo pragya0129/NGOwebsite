@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Tabs, Tab } from "@nextui-org/react";
+import { Tabs, Tab, Button, Link } from "@nextui-org/react";
 import Law from "./Law";
 import Women from "./Women";
 import Voilence from "./VoilenceSupport";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import HealthIcon from "./HealthIcon";
 
 type IconComponent = React.FC<React.SVGProps<SVGSVGElement>>;
 
@@ -18,22 +19,20 @@ export default function App() {
       icon: Law,
       content: [
         {
-          image: "https://via.placeholder.com/150",
-          heading: "Photo 1",
-          description: "This is the description for photo 1.",
+          image: "/public/Images/legal.png",
+          heading: "Legal Information Institute (LII)",
+          description:
+            "Provides free access to comprehensive legal information, including federal and state statutes, case law, and regulations, to help users better understand their legal rights and responsibilities.",
           buttonLabel: "View More",
+          src: "https://www.law.cornell.edu/",
         },
         {
-          image: "https://via.placeholder.com/150",
-          heading: "Photo 2",
-          description: "This is the description for photo 2.",
+          image: "/public/Images/womens law.png",
+          heading: "Women’s Law",
+          description:
+            "Offers legal information, resources, and support specifically for women dealing with domestic violence and other legal issues, empowering them to take action and protect their rights.",
           buttonLabel: "View More",
-        },
-        {
-          image: "https://via.placeholder.com/150",
-          heading: "Photo 3",
-          description: "This is the description for photo 3.",
-          buttonLabel: "View More",
+          src: "https://www.womenslaw.org/",
         },
       ],
     },
@@ -43,22 +42,20 @@ export default function App() {
       icon: Women,
       content: [
         {
-          image: "https://via.placeholder.com/150",
-          heading: "Music 1",
-          description: "This is the description for music 1.",
-          buttonLabel: "Listen Now",
+          image: "/public/Images/womenrights.png",
+          heading: "National Organization for Women (NOW)",
+          description:
+            "Advocates for women’s rights and equality through grassroots activism, legal reform, and public education, focusing on issues such as reproductive rights, violence against women, and economic justice.",
+          buttonLabel: "View More",
+          src: "https://now.org/",
         },
         {
-          image: "https://via.placeholder.com/150",
-          heading: "Music 2",
-          description: "This is the description for music 2.",
-          buttonLabel: "Listen Now",
-        },
-        {
-          image: "https://via.placeholder.com/150",
-          heading: "Music 3",
-          description: "This is the description for music 3.",
-          buttonLabel: "Listen Now",
+          image: "/public/Images/leanin.png",
+          heading: "Lean In",
+          description:
+            "Supports women’s leadership and empowerment through a global community, offering resources, mentorship, and networking opportunities to help women achieve their professional and personal goals.",
+          buttonLabel: "View More",
+          src: "https://leanin.org/",
         },
       ],
     },
@@ -68,22 +65,43 @@ export default function App() {
       icon: Voilence,
       content: [
         {
-          image: "https://via.placeholder.com/150",
-          heading: "Video 1",
-          description: "This is the description for video 1.",
-          buttonLabel: "Watch Now",
+          image: "/public/Images/DomesticViolence.png",
+          heading: "National Domestic Violence Hotline",
+          description:
+            "Offers 24/7 confidential support and resources for individuals experiencing domestic violence, including crisis intervention, safety planning, and referrals to local services.",
+          buttonLabel: "View More",
+          src: "https://www.thehotline.org/",
         },
         {
-          image: "https://via.placeholder.com/150",
-          heading: "Video 2",
-          description: "This is the description for video 2.",
-          buttonLabel: "Watch Now",
+          image: "/public/Images/rainn.png",
+          heading: "RAINN (Rape, Abuse & Incest National Network)",
+          description:
+            "Provides support for sexual assault survivors through a national hotline, online chat, and extensive resources on prevention, recovery, and legal options.",
+          buttonLabel: "View More",
+          src: "https://www.rainn.org/",
+        },
+      ],
+    },
+    {
+      id: "health",
+      label: "Health",
+      icon: HealthIcon,
+      content: [
+        {
+          image: "/public/Images/womenhealth.png",
+          heading: "Office on Women’s Health (OWH)",
+          description:
+            "Offers health resources and information specifically for women, focusing on physical, mental, and reproductive health to promote overall well-being.",
+          buttonLabel: "View More",
+          src: "https://www.womenshealth.gov/",
         },
         {
-          image: "https://via.placeholder.com/150",
-          heading: "Video 3",
-          description: "This is the description for video 3.",
-          buttonLabel: "Watch Now",
+          image: "/public/Images/plannedparenthood.png",
+          heading: "Planned Parenthood",
+          description:
+            "Provides reproductive health care, education, and advocacy, offering services such as birth control, cancer screenings, and STD testing to support women’s health and rights.",
+          buttonLabel: "View More",
+          src: "https://www.plannedparenthood.org/",
         },
       ],
     },
@@ -132,9 +150,9 @@ export default function App() {
                     </p>
                   </div>
                   <div className="p-4 pt-0">
-                    <button className="bg-blue-500 text-white px-4 py-2 rounded-md">
-                      {cardContent.buttonLabel}
-                    </button>
+                    <Link isExternal href={cardContent.src}>
+                      <Button color="primary">{cardContent.buttonLabel}</Button>
+                    </Link>
                   </div>
                 </div>
               ))}
@@ -171,7 +189,7 @@ export default function App() {
                     <img
                       src={cardContent.image}
                       alt={cardContent.heading}
-                      className="w-full h-48 object-cover rounded-t-lg"
+                      className="w-full h-48 object-fit rounded-t-lg"
                     />
                     <div className="p-4">
                       <h3 className="text-lg font-semibold">
@@ -182,9 +200,11 @@ export default function App() {
                       </p>
                     </div>
                     <div className="p-4 pt-0">
-                      <button className="bg-blue-500 text-white px-4 py-2 rounded-md">
-                        {cardContent.buttonLabel}
-                      </button>
+                      <Link isExternal href={cardContent.src}>
+                        <Button color="primary">
+                          {cardContent.buttonLabel}
+                        </Button>
+                      </Link>
                     </div>
                   </div>
                 ))}
