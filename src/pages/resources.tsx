@@ -4,6 +4,8 @@ import { Card, Image, Button } from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileAlt, faVideo, faLink } from "@fortawesome/free-solid-svg-icons";
 import ResourceTab from "@/components/ResourceTab";
+import QuizComponent from "@/components/Quiz";
+import { QueuePlayNextOutlined } from "@mui/icons-material";
 
 export default function ResourcesPage() {
   const resources = [

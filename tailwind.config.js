@@ -10,6 +10,10 @@ module.exports = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      display: ["Pally", "Comic Sans MS", "sans-serif"],
+      body: ["Pally", "Comic Sans MS", "sans-serif"],
+    },
     extend: {},
   },
   darkMode: "class",

@@ -32,6 +32,7 @@ import MarqueeComponent from "@/components/ImageSlider.js";
 import AnimatedSection from "./AnimatedSection"; // Import the AnimatedSection component
 import HorizontalScrollableCards from "@/components/HighlightsCards.js";
 import { TailwindCard } from "@/components/TailwindCard.js";
+import FloatingButtons from "@/components/FloatingButton.js";
 
 export default function IndexPage() {
   const [visitedSections, setVisitedSections] = useState(new Set());
@@ -57,7 +58,7 @@ export default function IndexPage() {
             <div className="flex flex-col md:flex-row items-center justify-center mb-10">
               <div className="flex-1 md:mr-5 mb-5 md:mb-0 flex flex-col items-center md:items-start">
                 <h1 className="text-4xl font-bold mb-5 text-center md:text-left">
-                  <h1 className="tracking-tight inline font-bold from-[#FF1CF7] to-[#b249f8] text-[2.5rem] lg:text-5xl bg-clip-text text-transparent bg-gradient-to-b">
+                  <h1 className="tracking-tight inline font-display font-bold from-[#FF1CF7] to-[#b249f8] text-[2.5rem] lg:text-5xl bg-clip-text text-transparent bg-gradient-to-b">
                     Aftab Women Welfare Society
                   </h1>
                 </h1>

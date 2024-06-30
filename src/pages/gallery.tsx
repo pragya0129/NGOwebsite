@@ -87,7 +87,6 @@ export default function Gallery() {
             ))}
           </Slider>
         </div>
-        <GalleryImageList />
       </section>
     </DefaultLayout>
   );

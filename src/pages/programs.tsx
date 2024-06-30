@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import DefaultLayout from "@/layouts/default";
 import { Card, CardHeader, CardBody, Image, Button } from "@nextui-org/react";
 
 export default function ProgramsPage() {
+  useEffect(() => {
+    // Change the URL without reloading the page
+    window.history.pushState({}, "", "/");
+  }, []);
   const programs = [
     {
       title: "Education Program",
