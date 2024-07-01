@@ -82,7 +82,7 @@ const QuizComponent = () => {
   return (
     <Grid container justifyContent="center" spacing={2}>
       <Grid item xs={12} sm={8} md={6}>
-        <Card shadow>
+        <Card className="px-2 py-2" shadow>
           {showScore ? (
             <Grid container direction="column" alignItems="center" spacing={2}>
               <Grid item xs={12}>
