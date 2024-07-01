@@ -54,6 +54,7 @@ export default function ResourcesPage() {
         </div>
         <div className="w-full max-w-6xl">
           <ResourceTab />
+          <QuizComponent />
         </div>
       </section>
     </DefaultLayout>

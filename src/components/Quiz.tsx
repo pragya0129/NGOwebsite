@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import {
   Card,
   Button,
-  Progress,
   Spacer,
   Divider,
   Spinner,
@@ -45,10 +44,16 @@ const QuizComponent = () => {
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [loadingNextQuestion, setLoadingNextQuestion] = useState(false);
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [feedback, setFeedback] = useState("");
 
-  const handleAnswerOptionClick = (correct) => {
+  const handleAnswerOptionClick = (answer, correct) => {
+    setSelectedAnswer(answer);
     if (correct) {
       setScore(score + 1);
+      setFeedback("Correct!");
+    } else {
+      setFeedback("Incorrect!");
     }
 
     setLoadingNextQuestion(true);
@@ -57,17 +62,21 @@ const QuizComponent = () => {
       const nextQuestion = currentQuestion + 1;
       if (nextQuestion < questions.length) {
         setCurrentQuestion(nextQuestion);
+        setSelectedAnswer(null);
+        setFeedback("");
       } else {
         setShowScore(true);
       }
       setLoadingNextQuestion(false);
-    }, 1000); 
+    }, 1000);
   };
 
   const resetQuiz = () => {
     setCurrentQuestion(0);
     setScore(0);
     setShowScore(false);
+    setSelectedAnswer(null);
+    setFeedback("");
   };
 
   return (
@@ -108,10 +117,17 @@ const QuizComponent = () => {
                         <MuiButton
                           fullWidth
                           variant="contained"
-                          color="primary"
-                          onClick={() =>
-                            handleAnswerOptionClick(answer.correct)
+                          color={
+                            selectedAnswer === answer.text
+                              ? answer.correct
+                                ? "success"
+                                : "error"
+                              : "primary"
                           }
+                          onClick={() =>
+                            handleAnswerOptionClick(answer.text, answer.correct)
+                          }
+                          disabled={!!selectedAnswer}
                         >
                           {answer.text}
                         </MuiButton>
@@ -122,6 +138,7 @@ const QuizComponent = () => {
               </Grid>
               <Grid item xs={12} style={{ textAlign: "center" }}>
                 {loadingNextQuestion && <Spinner />}
+                {feedback && <Typography variant="h6">{feedback}</Typography>}
               </Grid>
             </>
           )}
