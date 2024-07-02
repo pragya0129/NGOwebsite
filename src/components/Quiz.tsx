@@ -8,6 +8,7 @@ import {
   Text,
 } from "@nextui-org/react";
 import { Grid, Typography, Button as MuiButton, Box } from "@mui/material";
+import { Result, Button as AntButton } from "antd";
 
 const questions = [
   {
@@ -84,18 +85,15 @@ const QuizComponent = () => {
       <Grid item xs={12} sm={8} md={6}>
         <Card className="px-2 py-2" shadow>
           {showScore ? (
-            <Grid container direction="column" alignItems="center" spacing={2}>
-              <Grid item xs={12}>
-                <Typography variant="h5">
-                  You scored {score} out of {questions.length}
-                </Typography>
-              </Grid>
-              <Grid item xs={12}>
-                <Button auto ghost onClick={resetQuiz}>
+            <Result
+              status="success"
+              title={`You scored ${score} out of ${questions.length}`}
+              extra={[
+                <AntButton type="primary" key="retry" onClick={resetQuiz}>
                   Retry Quiz
-                </Button>
-              </Grid>
-            </Grid>
+                </AntButton>,
+              ]}
+            />
           ) : (
             <>
               <Grid item xs={12}>
