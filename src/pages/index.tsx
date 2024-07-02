@@ -30,8 +30,6 @@ import { GithubIcon } from "@/components/icons";
 import DefaultLayout from "@/layouts/default";
 import MarqueeComponent from "@/components/ImageSlider.js";
 import AnimatedSection from "./AnimatedSection"; // Import the AnimatedSection component
-import HorizontalScrollableCards from "@/components/HighlightsCards.js";
-import { TailwindCard } from "@/components/TailwindCard.js";
 import FloatingButtons from "@/components/FloatingButton.js";
 
 export default function IndexPage() {
@@ -70,9 +68,8 @@ export default function IndexPage() {
                 <Image
                   isBlurred
                   width={300}
-                  src="https://placehold.co/300x300"
+                  src="/public/Images/ngoLogo.jpeg"
                   alt="NextUI Album Cover"
-                  className="m-5"
                 />
               </div>
             </div>

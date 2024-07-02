@@ -9,6 +9,7 @@ import {
 import { Navbar } from "@/components/navbar";
 import AnimatedFooter from "@/components/AnimatedFooter";
 import Footer from "@/components/Footer";
+import FloatingButtons from "@/components/FloatingButton";
 
 export default function DefaultLayout({
   children,
@@ -22,6 +23,7 @@ export default function DefaultLayout({
         {children}
       </main>
       <Footer />
+      <FloatingButtons />
       {/* <footer className="bg-gray-800 text-white py-10">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
