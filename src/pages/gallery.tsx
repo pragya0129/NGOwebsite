@@ -37,12 +37,12 @@ export default function Gallery() {
   };
 
   const images = [
-    "https://via.placeholder.com/300x200?text=Image+1",
-    "https://via.placeholder.com/300x200?text=Image+2",
-    "https://via.placeholder.com/300x200?text=Image+3",
-    "https://via.placeholder.com/300x200?text=Image+4",
-    "https://via.placeholder.com/300x200?text=Image+5",
-    "https://via.placeholder.com/300x200?text=Image+6",
+    "/public/Images/Gallery/photo1.jpg",
+    "/public/Images/Gallery/photo2.jpg",
+    "/public/Images/Gallery/photo4.jpg",
+    "/public/Images/Gallery/photo5.jpg",
+    "/public/Images/Gallery/photo6.jpg",
+    "/public/Images/Gallery/photo7.jpg",
   ];
 
   return (
@@ -79,8 +79,8 @@ export default function Gallery() {
           <h2 className="text-2xl font-semibold mb-4">Image Slider</h2>
           <Slider {...sliderSettings}>
             {images.map((src, index) => (
-              <div key={index} className="px-2">
-                <Card className="overflow-hidden">
+              <div key={index} className="">
+                <Card className="overflow-hidden w-[20rem] h-[20rem] justify-center">
                   <Image src={src} alt={`Gallery Image ${index + 1}`} />
                 </Card>
               </div>
