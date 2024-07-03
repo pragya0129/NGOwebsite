@@ -1,10 +1,8 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus, faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
+import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
 import { Button, Tooltip } from "@nextui-org/react";
 
 const FloatingButtons = () => {
-
   const handleButton2Click = () => {
     // Handle button 2 click action
     console.log("Button 2 clicked");

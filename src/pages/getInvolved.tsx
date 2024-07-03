@@ -29,24 +29,9 @@ export default function GetInvolved() {
       link: "/volunteer",
       form: (
         <>
-          <Input
-            clearable
-            bordered
-            fullWidth
-            color="primary"
-            size="lg"
-            placeholder="Name"
-          />
-          <Input
-            clearable
-            bordered
-            fullWidth
-            color="primary"
-            size="lg"
-            placeholder="Email"
-          />
+          <Input fullWidth color="primary" size="lg" placeholder="Name" />
+          <Input fullWidth color="primary" size="lg" placeholder="Email" />
           <Textarea
-            bordered
             fullWidth
             color="primary"
             placeholder="Why do you want to volunteer?"
@@ -61,30 +46,9 @@ export default function GetInvolved() {
       link: "/donate",
       form: (
         <>
-          <Input
-            clearable
-            bordered
-            fullWidth
-            color="primary"
-            size="lg"
-            placeholder="Name"
-          />
-          <Input
-            clearable
-            bordered
-            fullWidth
-            color="primary"
-            size="lg"
-            placeholder="Email"
-          />
-          <Input
-            clearable
-            bordered
-            fullWidth
-            color="primary"
-            size="lg"
-            placeholder="Amount"
-          />
+          <Input fullWidth color="primary" size="lg" placeholder="Name" />
+          <Input fullWidth color="primary" size="lg" placeholder="Email" />
+          <Input fullWidth color="primary" size="lg" placeholder="Amount" />
         </>
       ),
     },
@@ -95,24 +59,9 @@ export default function GetInvolved() {
       link: "/partner",
       form: (
         <>
-          <Input
-            clearable
-            bordered
-            fullWidth
-            color="primary"
-            size="lg"
-            placeholder="Name"
-          />
-          <Input
-            clearable
-            bordered
-            fullWidth
-            color="primary"
-            size="lg"
-            placeholder="Email"
-          />
+          <Input fullWidth color="primary" size="lg" placeholder="Name" />
+          <Input fullWidth color="primary" size="lg" placeholder="Email" />
           <Textarea
-            bordered
             fullWidth
             color="primary"
             placeholder="How can we collaborate?"

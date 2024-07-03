@@ -1,6 +1,3 @@
-// Footer.js
-
-import React from "react";
 import { Box, Container, Grid, Typography, IconButton } from "@mui/material";
 import { Email, Phone, LocationOn } from "@mui/icons-material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

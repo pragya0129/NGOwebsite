@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  Card,
-  Button,
-  Spacer,
-  Divider,
-  Spinner,
-  Text,
-} from "@nextui-org/react";
+import { Card, Divider, Spinner } from "@nextui-org/react";
 import { Grid, Typography, Button as MuiButton, Box } from "@mui/material";
 import { Result, Button as AntButton } from "antd";
 
@@ -83,7 +76,7 @@ const QuizComponent = () => {
   return (
     <Grid container justifyContent="center" spacing={2}>
       <Grid item xs={12} sm={8} md={6}>
-        <Card className="px-2 py-2" shadow>
+        <Card className="px-2 py-2">
           {showScore ? (
             <Result
               status="success"

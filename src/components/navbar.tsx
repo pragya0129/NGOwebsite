@@ -9,8 +9,6 @@ import {
   ModalBody,
   ModalFooter,
   useDisclosure,
-  RadioGroup,
-  Radio,
 } from "@nextui-org/react";
 import { Kbd } from "@nextui-org/kbd";
 import { Link } from "@nextui-org/link";
@@ -25,21 +23,10 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/navbar";
 import { Link as RouterLink } from "react-router-dom";
-import { link as linkStyles } from "@nextui-org/theme";
-import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
-import { ThemeSwitch } from "@/components/theme-switch";
-import {
-  TwitterIcon,
-  GithubIcon,
-  DiscordIcon,
-  HeartFilledIcon,
-  HeartIcon,
-  SearchIcon,
-} from "@/components/icons";
+import { HeartIcon, SearchIcon } from "@/components/icons";
 import { Logo } from "@/components/icons";
-import { faHeart, faHeartCrack } from "@fortawesome/free-solid-svg-icons";
 import "./navbar.css";
 
 export const Navbar = () => {
@@ -119,12 +106,21 @@ export const Navbar = () => {
               <img src="/public/Images/figHindi.png" alt="" width="35px" />
             )}
           </Switch>
+
           <Button
             onPress={onOpen}
             className="max-w-fit"
             variant="shadow"
             color="danger"
-            endContent={<HeartIcon />}
+            endContent={
+              <HeartIcon
+                filled={undefined}
+                size={undefined}
+                height={undefined}
+                width={undefined}
+                label={undefined}
+              />
+            }
           >
             Support Us
           </Button>

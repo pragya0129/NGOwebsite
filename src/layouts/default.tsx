@@ -7,7 +7,6 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import { Navbar } from "@/components/navbar";
-import AnimatedFooter from "@/components/AnimatedFooter";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButton";
 

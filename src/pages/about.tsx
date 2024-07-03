@@ -1,5 +1,3 @@
-import MissionMetrics from "@/components/MissionMatrix";
-import OurTeam from "@/components/OurTeam";
 import { title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
 import { Card, CardFooter, Image, Button } from "@nextui-org/react";

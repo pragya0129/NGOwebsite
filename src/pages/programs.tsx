@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import DefaultLayout from "@/layouts/default";
 import { Card, CardHeader, CardBody, Image, Button } from "@nextui-org/react";
 

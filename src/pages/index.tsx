@@ -1,3 +1,4 @@
+//@ts-ignore
 import React, { useState } from "react";
 import { Switch } from "@nextui-org/react";
 import { useTranslation } from "react-i18next";

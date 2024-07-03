@@ -1,5 +1,9 @@
-import * as React from "react";
-const HealthIcon = (props) => (
+import { SVGProps } from "react";
+import { JSX } from "react/jsx-runtime";
+
+const HealthIcon = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
     fill="#000000"
     width="25px"

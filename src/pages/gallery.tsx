@@ -1,4 +1,3 @@
-import React from "react";
 import Slider from "react-slick";
 import { Card, Image } from "@nextui-org/react";
 import DefaultLayout from "@/layouts/default";
