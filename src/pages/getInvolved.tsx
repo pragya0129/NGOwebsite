@@ -1,8 +1,25 @@
-import { Card, CardHeader, CardBody, Button, Image } from "@nextui-org/react";
+import React, { useState } from "react";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  Button,
+  Image,
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  Input,
+  Textarea,
+} from "@nextui-org/react";
 import { title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
 
 export default function GetInvolved() {
+  const [visible, setVisible] = useState(false);
+  const [selectedOption, setSelectedOption] = useState(null);
+
   const involvementOptions = [
     {
       title: "Volunteer",
@@ -10,20 +27,110 @@ export default function GetInvolved() {
         "Join us as a volunteer and make a difference in your community.",
       image: "/public/Images/help each other.png",
       link: "/volunteer",
+      form: (
+        <>
+          <Input
+            clearable
+            bordered
+            fullWidth
+            color="primary"
+            size="lg"
+            placeholder="Name"
+          />
+          <Input
+            clearable
+            bordered
+            fullWidth
+            color="primary"
+            size="lg"
+            placeholder="Email"
+          />
+          <Textarea
+            bordered
+            fullWidth
+            color="primary"
+            placeholder="Why do you want to volunteer?"
+          />
+        </>
+      ),
     },
     {
       title: "Donate",
       description: "Support our cause by making a donation.",
       image: "/public/Images/donateinvolvement.png",
       link: "/donate",
+      form: (
+        <>
+          <Input
+            clearable
+            bordered
+            fullWidth
+            color="primary"
+            size="lg"
+            placeholder="Name"
+          />
+          <Input
+            clearable
+            bordered
+            fullWidth
+            color="primary"
+            size="lg"
+            placeholder="Email"
+          />
+          <Input
+            clearable
+            bordered
+            fullWidth
+            color="primary"
+            size="lg"
+            placeholder="Amount"
+          />
+        </>
+      ),
     },
     {
       title: "Partner",
       description: "Partner with us to achieve greater impact.",
       image: "/public/Images/partner.png",
       link: "/partner",
+      form: (
+        <>
+          <Input
+            clearable
+            bordered
+            fullWidth
+            color="primary"
+            size="lg"
+            placeholder="Name"
+          />
+          <Input
+            clearable
+            bordered
+            fullWidth
+            color="primary"
+            size="lg"
+            placeholder="Email"
+          />
+          <Textarea
+            bordered
+            fullWidth
+            color="primary"
+            placeholder="How can we collaborate?"
+          />
+        </>
+      ),
     },
   ];
+
+  const openModal = (option) => {
+    setSelectedOption(option);
+    setVisible(true);
+  };
+
+  const closeModal = () => {
+    setVisible(false);
+    setSelectedOption(null);
+  };
 
   return (
     <DefaultLayout>
@@ -55,9 +162,8 @@ export default function GetInvolved() {
                   />
                 </div>
                 <Button
-                  as="a"
-                  href={option.link}
                   className="w-full bg-blue-500 text-white"
+                  onClick={() => openModal(option)}
                 >
                   Learn More
                 </Button>
@@ -65,6 +171,33 @@ export default function GetInvolved() {
             </Card>
           ))}
         </div>
+
+        {selectedOption && (
+          <Modal
+            isOpen={visible}
+            onOpenChange={setVisible}
+            placement="top-center"
+          >
+            <ModalContent>
+              {(onClose) => (
+                <>
+                  <ModalHeader className="flex flex-col gap-1">
+                    {selectedOption.title}
+                  </ModalHeader>
+                  <ModalBody>{selectedOption.form}</ModalBody>
+                  <ModalFooter>
+                    <Button color="danger" variant="flat" onPress={onClose}>
+                      Close
+                    </Button>
+                    <Button color="primary" onPress={onClose}>
+                      Submit
+                    </Button>
+                  </ModalFooter>
+                </>
+              )}
+            </ModalContent>
+          </Modal>
+        )}
       </section>
     </DefaultLayout>
   );
