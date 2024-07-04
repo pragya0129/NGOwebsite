@@ -36,12 +36,12 @@ export default function Gallery() {
   };
 
   const images = [
-    "/public/Images/Gallery/photo1.jpg",
-    "/public/Images/Gallery/photo2.jpg",
-    "/public/Images/Gallery/photo4.jpg",
-    "/public/Images/Gallery/photo5.jpg",
-    "/public/Images/Gallery/photo6.jpg",
-    "/public/Images/Gallery/photo7.jpg",
+    "assets/Images/Gallery/photo1.jpg",
+    "assets/Images/Gallery/photo2.jpg",
+    "assets/Images/Gallery/photo4.jpg",
+    "assets/Images/Gallery/photo5.jpg",
+    "assets/Images/Gallery/photo6.jpg",
+    "assets/Images/Gallery/photo7.jpg",
   ];
 
   return (
@@ -51,7 +51,7 @@ export default function Gallery() {
           <div className="flex items-center justify-center">
             <h1 className={title()}>Gallery</h1>
             <img
-              src="/public/Images/photo-gallery.gif"
+              src="assets/Images/photo-gallery.gif"
               alt="Resources Icon"
               className="ml-5 w-20 rounded-3xl"
             />

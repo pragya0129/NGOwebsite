@@ -69,7 +69,7 @@ export default function IndexPage() {
                 <Image
                   isBlurred
                   width={300}
-                  src="/public/Images/ngoLogo.jpeg"
+                  src="Images/ngoLogo.jpeg"
                   alt="NextUI Album Cover"
                 />
               </div>

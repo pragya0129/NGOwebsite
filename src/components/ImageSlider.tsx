@@ -3,8 +3,7 @@ import "./MarqueeComponent.css";
 
 const MarqueeComponent = () => {
   const images = [
-    "/public/Images/ngo (3).png",
-  
+    "Images/ngo (3).png",
     "/public/Images/solidarity.png",
     "/public/Images/people.png",
     "/public/Images/give.png",
@@ -14,7 +13,6 @@ const MarqueeComponent = () => {
     "/public/Images/kindness.png",
     "/public/Images/pride.png",
     "/public/Images/healthcare.png",
-
   ];
 
   return (
