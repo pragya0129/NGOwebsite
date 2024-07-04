@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 ::-webkit-scrollbar {
   width: 6px; /* You can adjust the width as needed */
 }
@@ -17,7 +15,7 @@
 }
 
 :root {
-  background: url("/public/Images/Background/wp12576635.png");
+  background: url("/assets/Images/Background/wp12576635.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

@@ -3,16 +3,16 @@ import "./MarqueeComponent.css";
 
 const MarqueeComponent = () => {
   const images = [
-    "Images/ngo (3).png",
-    "/public/Images/solidarity.png",
-    "/public/Images/people.png",
-    "/public/Images/give.png",
-    "/public/Images/charity (1).png",
-    "/public/Images/balance.png",
-    "/public/Images/feminine.png",
-    "/public/Images/kindness.png",
-    "/public/Images/pride.png",
-    "/public/Images/healthcare.png",
+    "assets/Images/ngo (3).png",
+    "assets/Images/solidarity.png",
+    "assets/Images/people.png",
+    "assets/Images/give.png",
+    "assets/Images/charity (1).png",
+    "assets/Images/balance.png",
+    "assets/Images/feminine.png",
+    "assets/Images/kindness.png",
+    "assets/Images/pride.png",
+    "assets/Images/healthcare.png",
   ];
 
   return (

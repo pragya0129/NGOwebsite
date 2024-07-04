@@ -10,7 +10,7 @@ export default function FAQ() {
           <div className="flex items-center justify-center">
             <h1 className={title()}>Frequently Asked Questions</h1>
             <img
-              src="/public/Images/question.gif"
+              src="assets/Images/question.gif"
               alt="Resources Icon"
               className="ml-5 w-20 rounded-3xl"
             />

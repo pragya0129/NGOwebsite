@@ -26,23 +26,23 @@
 }
 
 .item-1 {
-  background-image: url("/public/Images/Gallery/photo8.jpg");
+  background-image: url("/assets/Images/Gallery/photo8.jpg");
 }
 
 .item-2 {
-  background-image: url("/public/Images/Gallery/photo9.jpg");
+  background-image: url("/assets/Images/Gallery/photo9.jpg");
 }
 
 .item-3 {
-  background-image: url("/public/Images/Gallery/photo10.jpg");
+  background-image: url("/assets/Images/Gallery/photo10.jpg");
 }
 
 .item-4 {
-  background-image: url("/public/Images/Gallery/photo11.jpg");
+  background-image: url("/assets/Images/Gallery/photo11.jpg");
 }
 
 .item-5 {
-  background-image: url("/public/Images/Gallery/photo12.jpg");
+  background-image: url("/assets/Images/Gallery/photo12.jpg");
 }
 
 @media (max-width: 768px) {

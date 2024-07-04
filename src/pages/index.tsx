@@ -69,7 +69,7 @@ export default function IndexPage() {
                 <Image
                   isBlurred
                   width={300}
-                  src="Images/ngoLogo.jpeg"
+                  src="assets/Images/ngoLogo.jpeg"
                   alt="NextUI Album Cover"
                 />
               </div>
@@ -95,7 +95,7 @@ export default function IndexPage() {
                       <Avatar
                         radius="full"
                         size="md"
-                        src="/public/Images/cube-in-circle.gif"
+                        src="assets/Images/cube-in-circle.gif"
                       />
                       <div className="flex flex-col gap-1 items-start justify-center">
                         <h1 className="text-2xl font-bold leading-none text-default-600">
@@ -122,7 +122,7 @@ export default function IndexPage() {
                         removeWrapper
                         alt="Card example background"
                         className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-                        src="/public/Images/donation.jpg"
+                        src="assets/Images/donation.jpg"
                       />
                       <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                         <div>
@@ -158,7 +158,7 @@ export default function IndexPage() {
                         removeWrapper
                         alt="Card example background"
                         className="z-0 w-full h-full scale-125 -translate-y-6 object-fit"
-                        src="/public/Images/volunteeringposter.png"
+                        src="assets/Images/volunteeringposter.png"
                       />
                       <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                         <div>
@@ -196,7 +196,7 @@ export default function IndexPage() {
                       <Avatar
                         radius="full"
                         size="md"
-                        src="/public/Images/cube-in-circle.gif"
+                        src="assets/Images/cube-in-circle.gif"
                       />
                       <div className="flex flex-col gap-1 items-start justify-center">
                         <h1 className="text-2xl font-bold leading-none text-default-600">
@@ -221,7 +221,7 @@ export default function IndexPage() {
                     <div className="md:w-1/2 flex justify-center mt-4 md:mt-0">
                       <Image
                         alt="Programs image"
-                        src="/public/Images/collaboration (1).png"
+                        src="assets/Images/collaboration (1).png"
                         className="object-cover rounded-xl mb-5"
                         width={270}
                         height={180}
@@ -246,7 +246,7 @@ export default function IndexPage() {
                       <Avatar
                         radius="full"
                         size="md"
-                        src="/public/Images/cube-in-circle.gif"
+                        src="assets/Images/cube-in-circle.gif"
                       />
                       <div className="flex flex-col gap-1 items-start justify-center">
                         <h1 className="text-2xl font-bold leading-none text-default-600">
@@ -259,7 +259,7 @@ export default function IndexPage() {
                     <div className="md:w-1/2 flex justify-center mt-4 md:mt-0">
                       <Image
                         alt="Programs image"
-                        src="/public/Images/job.png"
+                        src="assets/Images/job.png"
                         className="object-cover rounded-xl mb-5"
                         width={270}
                         height={180}
@@ -297,7 +297,7 @@ export default function IndexPage() {
           >
             <div className="mb-5 mt-5">
               <div className="flex items-center mb-2">
-                <Card className="min-w-[100%] min-h-[215px] sm:min-h-[700px] bg-[url('/public/Images/women.png')] bg-contain bg-no-repeat bg-center"></Card>
+                <Card className="min-w-[100%] min-h-[215px] sm:min-h-[700px] bg-[url('/assets/Images/women.png')] bg-contain bg-no-repeat bg-center"></Card>
               </div>
             </div>
           </AnimatedSection>
@@ -315,7 +315,7 @@ export default function IndexPage() {
                       <Avatar
                         radius="full"
                         size="md"
-                        src="/public/Images/cube-in-circle.gif"
+                        src="assets/Images/cube-in-circle.gif"
                       />
                       <div className="flex flex-col gap-1 items-start justify-center">
                         <h1 className="text-2xl font-bold leading-none text-default-600">
@@ -346,7 +346,7 @@ export default function IndexPage() {
                     <div className="md:w-1/2 flex justify-center mt-4 md:mt-0">
                       <Image
                         alt="Programs image"
-                        src="/public/Images/resource.png"
+                        src="assets/Images/resource.png"
                         className="object-cover rounded-xl mb-5"
                         width={270}
                         height={180}
@@ -371,7 +371,7 @@ export default function IndexPage() {
                       <Avatar
                         radius="full"
                         size="md"
-                        src="/public/Images/cube-in-circle.gif"
+                        src="assets/Images/cube-in-circle.gif"
                       />
                       <div className="flex flex-col gap-1 items-start justify-center">
                         <h1 className="text-2xl font-bold leading-none text-default-600">
@@ -384,7 +384,7 @@ export default function IndexPage() {
                     <div className="md:w-1/2 flex justify-center mt-4 md:mt-0">
                       <Image
                         alt="Programs image"
-                        src="/public/Images/about.png"
+                        src="assets/Images/about.png"
                         className="object-cover rounded-xl mb-5"
                         width={270}
                         height={180}
@@ -449,7 +449,7 @@ export default function IndexPage() {
                   name="Rajesh Sharma"
                   description="Volunteer"
                   avatarProps={{
-                    src: "/public/Images/user.gif",
+                    src: "assets/Images/user.gif",
                   }}
                 />
               </p>
@@ -478,7 +478,7 @@ export default function IndexPage() {
                   name="Priya Desai"
                   description="Donor"
                   avatarProps={{
-                    src: "/public/Images/user.gif",
+                    src: "assets/Images/user.gif",
                   }}
                 />
               </p>

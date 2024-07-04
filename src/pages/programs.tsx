@@ -32,7 +32,7 @@ export default function ProgramsPage() {
           <div className="flex items-center justify-center">
             <h1 className="text-4xl font-bold mb-5">Our Programs</h1>
             <img
-              src="/public/Images/balloons.gif"
+              src="assets/Images/balloons.gif"
               alt="Resources Icon"
               className="ml-5 w-20 rounded-3xl"
             />

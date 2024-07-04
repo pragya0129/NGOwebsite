@@ -11,7 +11,7 @@ export default function AboutPage() {
               <div className="flex items-center justify-center mb-5">
                 <h1 className={title()}>About Us</h1>
                 <img
-                  src="/public/Images/info.gif"
+                  src="assets/Images/info.gif"
                   alt="Resources Icon"
                   className="ml-5 w-20 rounded-3xl"
                 />

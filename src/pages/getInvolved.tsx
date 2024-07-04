@@ -25,7 +25,7 @@ export default function GetInvolved() {
       title: "Volunteer",
       description:
         "Join us as a volunteer and make a difference in your community.",
-      image: "/public/Images/help each other.png",
+      image: "assets/Images/help each other.png",
       link: "/volunteer",
       form: (
         <>
@@ -42,7 +42,7 @@ export default function GetInvolved() {
     {
       title: "Donate",
       description: "Support our cause by making a donation.",
-      image: "/public/Images/donateinvolvement.png",
+      image: "assets/Images/donateinvolvement.png",
       link: "/donate",
       form: (
         <>
@@ -55,7 +55,7 @@ export default function GetInvolved() {
     {
       title: "Partner",
       description: "Partner with us to achieve greater impact.",
-      image: "/public/Images/partner.png",
+      image: "assets/Images/partner.png",
       link: "/partner",
       form: (
         <>
@@ -88,7 +88,7 @@ export default function GetInvolved() {
           <div className="flex items-center justify-center">
             <h1 className={title()}>Get Involved</h1>
             <img
-              src="/public/Images/volunteering.gif"
+              src="assets/Images/volunteering.gif"
               alt="Resources Icon"
               className="ml-5 w-20 rounded-3xl"
             />

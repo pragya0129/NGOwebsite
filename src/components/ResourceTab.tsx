@@ -19,7 +19,7 @@ export default function App() {
       icon: Law,
       content: [
         {
-          image: "/public/Images/legal.png",
+          image: "assets/Images/legal.png",
           heading: "Legal Information Institute (LII)",
           description:
             "Provides free access to comprehensive legal information, including federal and state statutes, case law, and regulations, to help users better understand their legal rights and responsibilities.",
@@ -27,7 +27,7 @@ export default function App() {
           src: "https://www.law.cornell.edu/",
         },
         {
-          image: "/public/Images/womens law.png",
+          image: "assets/Images/womens law.png",
           heading: "Women’s Law",
           description:
             "Offers legal information, resources, and support specifically for women dealing with domestic violence and other legal issues, empowering them to take action and protect their rights.",
@@ -42,7 +42,7 @@ export default function App() {
       icon: Women,
       content: [
         {
-          image: "/public/Images/womenrights.png",
+          image: "assets/Images/womenrights.png",
           heading: "National Organization for Women (NOW)",
           description:
             "Advocates for women’s rights and equality through grassroots activism, legal reform, and public education, focusing on issues such as reproductive rights, violence against women, and economic justice.",
@@ -50,7 +50,7 @@ export default function App() {
           src: "https://now.org/",
         },
         {
-          image: "/public/Images/leanin.png",
+          image: "assets/Images/leanin.png",
           heading: "Lean In",
           description:
             "Supports women’s leadership and empowerment through a global community, offering resources, mentorship, and networking opportunities to help women achieve their professional and personal goals.",
@@ -65,7 +65,7 @@ export default function App() {
       icon: Voilence,
       content: [
         {
-          image: "/public/Images/DomesticViolence.png",
+          image: "assets/Images/DomesticViolence.png",
           heading: "National Domestic Violence Hotline",
           description:
             "Offers 24/7 confidential support and resources for individuals experiencing domestic violence, including crisis intervention, safety planning, and referrals to local services.",
@@ -73,7 +73,7 @@ export default function App() {
           src: "https://www.thehotline.org/",
         },
         {
-          image: "/public/Images/rainn.png",
+          image: "assets/Images/rainn.png",
           heading: "RAINN (Rape, Abuse & Incest National Network)",
           description:
             "Provides support for sexual assault survivors through a national hotline, online chat, and extensive resources on prevention, recovery, and legal options.",
@@ -88,7 +88,7 @@ export default function App() {
       icon: HealthIcon,
       content: [
         {
-          image: "/public/Images/womenhealth.png",
+          image: "assets/Images/womenhealth.png",
           heading: "Office on Women’s Health (OWH)",
           description:
             "Offers health resources and information specifically for women, focusing on physical, mental, and reproductive health to promote overall well-being.",
@@ -96,7 +96,7 @@ export default function App() {
           src: "https://www.womenshealth.gov/",
         },
         {
-          image: "/public/Images/plannedparenthood.png",
+          image: "assets/Images/plannedparenthood.png",
           heading: "Planned Parenthood",
           description:
             "Provides reproductive health care, education, and advocacy, offering services such as birth control, cancer screenings, and STD testing to support women’s health and rights.",

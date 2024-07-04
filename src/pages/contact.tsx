@@ -1,4 +1,3 @@
-
 import DefaultLayout from "@/layouts/default";
 import { title } from "@/components/primitives";
 import { Input, Textarea, Button } from "@nextui-org/react";
@@ -23,7 +22,7 @@ export default function ContactPage() {
           <div className="flex items-center justify-center">
             <h1 className={title()}>Contact Us</h1>
             <img
-              src="/public/Images/tech-support.gif"
+              src="assets/Images/tech-support.gif"
               alt="Resources Icon"
               className="ml-5 w-20 rounded-3xl"
             />
