@@ -1,50 +1,20 @@
-# Vite & NextUI Template
+# Aftab Women Welfare Society - Website
 
-This is a template for creating applications using Vite and NextUI (v2).
+This project is a website for Aftab Women Welfare Society, aimed at enhancing their online presence, allowing them to better connect with their community and further their mission of uplifting women, spreading legal awareness, and addressing all kinds of legal needs.
 
-[Try it on CodeSandbox](https://githubbox.com/nextui-org/vite-template)
+[Visit Website](https://aftabwomenwelfare.surge.sh/)
 
 ## Technologies Used
 
-- [Vite](https://vitejs.dev/guide/)
-- [NextUI](https://nextui.org)
-- [Tailwind CSS](https://tailwindcss.com)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org)
-- [Framer Motion](https://www.framer.com/motion)
+- Framework: React
+- Build Tool: Vite
+- Styling: Tailwind CSS, Emotion
+- UI Components: Material-UI, NextUI, Ant Design
+- State Management: React Hooks
+- Internationalization: i18next
+- Animation: Framer Motion
+- Others: FontAwesome Icons, etc.
 
-## How to Use
+## Credits
 
-To clone the project, run the following command:
-
-```bash
-git clone https://github.com/nextui-org/vite-template.git
-```
-
-### Install dependencies
-
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
-
-```bash
-npm install
-```
-
-### Run the development server
-
-```bash
-npm run dev
-```
-
-### Setup pnpm (optional)
-
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
-
-```bash
-public-hoist-pattern[]=*@nextui-org/*
-```
-
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
-
-## License
-
-Licensed under the [MIT license](https://github.com/nextui-org/vite-template/blob/main/LICENSE).
+- Gallery Accordion: https://codepen.io/stefcharle/pen/Gydvbx
