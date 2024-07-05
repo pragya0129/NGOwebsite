@@ -226,28 +226,40 @@ export const Navbar = () => {
                 {(onClose) => (
                   <>
                     <ModalHeader className="flex flex-col gap-1">
-                      Modal Title
+                      Donate Today and Make a Difference!
                     </ModalHeader>
                     <ModalBody>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nullam pulvinar risus non risus hendrerit venenatis.
-                        Pellentesque sit amet hendrerit risus, sed porttitor
-                        quam.
-                      </p>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nullam pulvinar risus non risus hendrerit venenatis.
-                        Pellentesque sit amet hendrerit risus, sed porttitor
-                        quam.
-                      </p>
+                      {/* QR Code Image */}
+                      <div className="text-center my-5">
+                        <img
+                          src="path-to-your-qr-code-image.png"
+                          alt="QR Code"
+                          className="w-36 h-36 mx-auto"
+                        />
+                        <p>Scan the QR code to donate</p>
+                      </div>
+                      {/* File Input for Screenshot */}
+                      <div className="mt-5">
+                        <label
+                          htmlFor="payment-screenshot"
+                          className="block mb-2"
+                        >
+                          Upload payment screenshot:
+                        </label>
+                        <input
+                          type="file"
+                          id="payment-screenshot"
+                          name="payment-screenshot"
+                          className="w-full p-2"
+                        />
+                      </div>
                     </ModalBody>
                     <ModalFooter>
                       <Button color="danger" variant="light" onPress={onClose}>
                         Close
                       </Button>
                       <Button color="primary" onPress={onClose}>
-                        Action
+                        Submit
                       </Button>
                     </ModalFooter>
                   </>

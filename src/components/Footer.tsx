@@ -15,6 +15,12 @@ const Footer = () => {
         <Grid container spacing={4}>
           <Grid item xs={12} sm={4}>
             <Typography variant="h6" gutterBottom>
+              Aftab Women Welfare Society
+            </Typography>
+            <Typography variant="body1">About</Typography>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Typography variant="h6" gutterBottom>
               Mail Us
               <IconButton color="inherit" aria-label="mail us">
                 <Email />
@@ -35,12 +41,6 @@ const Footer = () => {
           </Grid>
           <Grid item xs={12} sm={4}>
             <Typography variant="h6" gutterBottom>
-              Name
-            </Typography>
-            <Typography variant="body1">About</Typography>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <Typography variant="h6" gutterBottom>
               Follow Us
             </Typography>
             <IconButton color="inherit" aria-label="Facebook">
@@ -57,6 +57,23 @@ const Footer = () => {
             </IconButton>
           </Grid>
         </Grid>
+        <Box textAlign="center" mt={4}>
+          <Typography variant="body2" gutterBottom>
+            Aftab Women Welfare © 2024
+          </Typography>
+          <Box display="flex" justifyContent="center" alignItems="center">
+            <Typography variant="body2">
+              Website by - Pragya Gaur
+            </Typography>
+            <IconButton
+              color="inherit"
+              aria-label="LinkedIn"
+              href="https://www.linkedin.com/"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
+            </IconButton>
+          </Box>
+        </Box>
       </Container>
     </Box>
   );
