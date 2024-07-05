@@ -28,20 +28,11 @@ export default function AboutPage() {
             <section className="mb-10">
               <h2 className="text-3xl font-bold mb-5">Our Mission</h2>
               <p className="text-lg">
-                Our mission is to empower communities and individuals by
-                providing essential resources, education, and support. We strive
-                to make a lasting impact through our comprehensive programs and
-                initiatives.
-              </p>
-            </section>
-
-            <section className="mb-10">
-              <h2 className="text-3xl font-bold mb-5">Our Vision</h2>
-              <p className="text-lg">
-                We envision a world where every individual has the opportunity
-                to reach their full potential. We aim to create sustainable
-                solutions that address the root causes of poverty and
-                inequality.
+                The mission of our NGO is uplifting women, spreading legal
+                awareness, and addressing all kinds of legal needs. We empower
+                communities and individuals by providing essential resources,
+                education, and support. We strive to make a lasting impact
+                through our comprehensive programs and initiatives.
               </p>
             </section>
 
