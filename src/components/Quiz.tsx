@@ -77,7 +77,6 @@ const QuizComponent = () => {
     <Grid >
       <Grid item xs={12} sm={10} md={8} lg={6}>
         <Card
-          shadow
           className="p-4"
           style={{ maxWidth: "100%", width: "100%" }}
         >

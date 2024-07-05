@@ -71,8 +71,9 @@ export const Navbar = () => {
             color="foreground"
             href="/"
           >
-            <Logo />
-            <p className="font-bold text-inherit">NGO</p>
+            <p className="font-bold text-inherit">
+              <img src="assets/Images/ngoLogo Circle.png" alt="" width="36px" />
+            </p>
           </Link>
         </NavbarBrand>
         <div className="hidden lg:flex gap-4 justify-start ml-2">
@@ -186,9 +187,9 @@ export const Navbar = () => {
           onChange={handleChange}
         >
           {isEnglish ? (
-            <img src="/public/Images/figEngllish.png" alt="" width="40px" />
+            <img src="assets/Images/figEngllish.png" alt="" width="40px" />
           ) : (
-            <img src="/public/Images/figHindi.png" alt="" width="35px" />
+            <img src="assets/Images/figHindi.png" alt="" width="35px" />
           )}
         </Switch>
         {/* <ThemeSwitch /> */}

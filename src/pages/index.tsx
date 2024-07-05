@@ -137,7 +137,7 @@ export default function IndexPage() {
                           radius="full"
                           size="sm"
                         >
-                          Notify Me
+                          Learn More
                         </Button>
                       </CardFooter>
                     </Card>
@@ -158,14 +158,11 @@ export default function IndexPage() {
                         removeWrapper
                         alt="Card example background"
                         className="z-0 w-full h-full scale-125 -translate-y-6 object-fit"
-                        src="assets/Images/volunteeringposter.png"
+                        src="assets/Images/volunteer highlight.png"
                       />
                       <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                         <div>
-                          <p className="text-black text-tiny">
-                            If you are able to, please consider donating.
-                          </p>
-                          <p className="text-black text-tiny">&#x1F603;</p>
+                          <p className="text-black text-tiny">&nbsp;</p>
                         </div>
                         <Button
                           className="text-tiny"
@@ -173,7 +170,7 @@ export default function IndexPage() {
                           radius="full"
                           size="sm"
                         >
-                          Notify Me
+                          Learn More
                         </Button>
                       </CardFooter>
                     </Card>

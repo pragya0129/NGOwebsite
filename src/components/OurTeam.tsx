@@ -8,7 +8,7 @@ const TeamMember = ({ name, position, bio, avatar }) => {
         <Avatar
           src={avatar}
           alt={`${name}'s Avatar`}
-          size="large"
+          size="lg"
           className="mx-auto mb-4"
         />
         <h3 className="text-xl font-semibold mb-2 text-center">{name}</h3>

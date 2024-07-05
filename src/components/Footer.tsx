@@ -7,7 +7,6 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import RevolverMapsWidget from "./RevolverMapsWidget";
 
 const Footer = () => {
   return (
