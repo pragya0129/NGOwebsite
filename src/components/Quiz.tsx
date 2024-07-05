@@ -74,9 +74,13 @@ const QuizComponent = () => {
   };
 
   return (
-    <Grid container justifyContent="center" spacing={2}>
-      <Grid item xs={12} sm={8} md={6}>
-        <Card className="px-2 py-2">
+    <Grid >
+      <Grid item xs={12} sm={10} md={8} lg={6}>
+        <Card
+          shadow
+          className="p-4"
+          style={{ maxWidth: "100%", width: "100%" }}
+        >
           {showScore ? (
             <Result
               status="success"
@@ -89,48 +93,42 @@ const QuizComponent = () => {
             />
           ) : (
             <>
-              <Grid item xs={12}>
-                <Typography variant="h5" align="left" gutterBottom>
-                  Question {currentQuestion + 1}/{questions.length}
+              <Typography variant="h5" align="left" gutterBottom>
+                Question {currentQuestion + 1}/{questions.length}
+              </Typography>
+              <Typography variant="h6" align="left" gutterBottom>
+                {questions[currentQuestion].question}
+              </Typography>
+              <Divider />
+              <Box mt={2} mb={2}>
+                {questions[currentQuestion].answers.map((answer, index) => (
+                  <MuiButton
+                    key={index}
+                    fullWidth
+                    variant="contained"
+                    color={
+                      selectedAnswer === answer.text
+                        ? answer.correct
+                          ? "success"
+                          : "error"
+                        : "primary"
+                    }
+                    onClick={() =>
+                      handleAnswerOptionClick(answer.text, answer.correct)
+                    }
+                    disabled={!!selectedAnswer}
+                    sx={{ mt: 1 }}
+                  >
+                    {answer.text}
+                  </MuiButton>
+                ))}
+              </Box>
+              {loadingNextQuestion && <Spinner />}
+              {feedback && (
+                <Typography variant="h6" align="center">
+                  {feedback}
                 </Typography>
-                <Typography variant="h6" align="left">
-                  {questions[currentQuestion].question}
-                </Typography>
-              </Grid>
-              <Grid item xs={12}>
-                <Divider />
-              </Grid>
-              <Grid item xs={12}>
-                <Box p={2} bgcolor="background.default" borderRadius={4}>
-                  <Grid container direction="column" spacing={1}>
-                    {questions[currentQuestion].answers.map((answer, index) => (
-                      <Grid item key={index}>
-                        <MuiButton
-                          fullWidth
-                          variant="contained"
-                          color={
-                            selectedAnswer === answer.text
-                              ? answer.correct
-                                ? "success"
-                                : "error"
-                              : "primary"
-                          }
-                          onClick={() =>
-                            handleAnswerOptionClick(answer.text, answer.correct)
-                          }
-                          disabled={!!selectedAnswer}
-                        >
-                          {answer.text}
-                        </MuiButton>
-                      </Grid>
-                    ))}
-                  </Grid>
-                </Box>
-              </Grid>
-              <Grid item xs={12} style={{ textAlign: "center" }}>
-                {loadingNextQuestion && <Spinner />}
-                {feedback && <Typography variant="h6">{feedback}</Typography>}
-              </Grid>
+              )}
             </>
           )}
         </Card>
