@@ -7,6 +7,7 @@ import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code";
 import { Image } from "@nextui-org/react";
 import { User } from "@nextui-org/react";
+import { useNavigate } from "react-router-dom";
 import { HeartIcon } from "./HeartIcon.jsx";
 import { button as buttonStyles } from "@nextui-org/theme";
 import {
@@ -43,6 +44,24 @@ export default function IndexPage() {
     const newLanguage = isEnglish ? "hi" : "en";
     i18n.changeLanguage(newLanguage);
     setIsEnglish(!isEnglish);
+  };
+
+  const navigate = useNavigate();
+
+  const handleProgramBtn = () => {
+    navigate("/programs");
+  };
+
+  const handleGetInvolvedBtn = () => {
+    navigate("/getInvolved");
+  };
+
+  const handleResourcesBtn = () => {
+    navigate("/resources");
+  };
+
+  const handleAboutBtn = () => {
+    navigate("/about");
   };
 
   return (
@@ -214,6 +233,7 @@ export default function IndexPage() {
                         endContent={
                           <FontAwesomeIcon icon={faInfoCircle} size="2x" />
                         }
+                        onClick={handleProgramBtn}
                       >
                         Know More
                       </Button>
@@ -283,6 +303,7 @@ export default function IndexPage() {
                         endContent={
                           <FontAwesomeIcon icon={faInfoCircle} size="2x" />
                         }
+                        onClick={handleGetInvolvedBtn}
                       >
                         Know More
                       </Button>
@@ -345,6 +366,7 @@ export default function IndexPage() {
                         endContent={
                           <FontAwesomeIcon icon={faInfoCircle} size="2x" />
                         }
+                        onClick={handleResourcesBtn}
                       >
                         Know More
                       </Button>
@@ -414,6 +436,7 @@ export default function IndexPage() {
                         endContent={
                           <FontAwesomeIcon icon={faInfoCircle} size="2x" />
                         }
+                        onClick={handleAboutBtn}
                       >
                         Know More
                       </Button>
