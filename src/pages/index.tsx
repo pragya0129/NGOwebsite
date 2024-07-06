@@ -209,8 +209,11 @@ export default function IndexPage() {
                         color="primary"
                         radius="full"
                         size="md"
-                        variant="solid"
-                        className="mt-5"
+                        variant="ghost"
+                        className="mt-5 mb-5"
+                        endContent={
+                          <FontAwesomeIcon icon={faInfoCircle} size="2x" />
+                        }
                       >
                         Know More
                       </Button>
@@ -275,8 +278,11 @@ export default function IndexPage() {
                         color="primary"
                         radius="full"
                         size="md"
-                        variant="solid"
+                        variant="ghost"
                         className="mt-5 mb-5"
+                        endContent={
+                          <FontAwesomeIcon icon={faInfoCircle} size="2x" />
+                        }
                       >
                         Know More
                       </Button>
@@ -334,8 +340,11 @@ export default function IndexPage() {
                         color="primary"
                         radius="full"
                         size="md"
-                        variant="solid"
+                        variant="ghost"
                         className="mt-5 mb-5"
+                        endContent={
+                          <FontAwesomeIcon icon={faInfoCircle} size="2x" />
+                        }
                       >
                         Know More
                       </Button>
