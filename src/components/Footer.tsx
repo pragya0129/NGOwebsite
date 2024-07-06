@@ -64,7 +64,11 @@ const Footer = () => {
           </Grid>
           <Grid item xs={12} sm={3}>
             <Typography variant="h6" gutterBottom>
+              <LocationOn className="mb-1 mr-2" />
               Find Us
+              <Typography variant="body1">
+                26/20 Panni Grane Chowk, Khadim Mohalla, Ajmer (Rajasthan), 305001
+              </Typography>
             </Typography>
             <iframe
               title="abc"
