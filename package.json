@@ -36,6 +36,7 @@
     "@react-aria/visually-hidden": "^3.8.11",
     "antd": "^5.19.0",
     "clsx": "^2.0.0",
+    "emailjs-com": "^3.2.0",
     "express": "^4.19.2",
     "framer-motion": "~11.1.1",
     "i18next": "^23.11.5",

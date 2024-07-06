@@ -1,6 +1,5 @@
 import DefaultLayout from "@/layouts/default";
 import { title } from "@/components/primitives";
-import { Input, Textarea, Button } from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
@@ -8,8 +7,28 @@ import {
   faInstagram,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
+import { useState } from "react";
+import ContactForm from "@/components/ContactForm";
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  Button,
+  useDisclosure,
+} from "@nextui-org/react";
+import ReviewConfirmation from "@/components/ReviewConfirmation";
 
-export default function ContactPage() {
+export default function ContactPage({ onFormSubmit }) {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
+  const handleFormSubmit = () => {
+    setIsSubmitted(true);
+    onOpen();
+  };
+
   return (
     <DefaultLayout>
       <section className="flex flex-col md:flex-row items-center justify-center gap-4 py-8 md:py-10">
@@ -27,41 +46,7 @@ export default function ContactPage() {
               className="ml-5 w-20 rounded-3xl"
             />
           </div>
-          <form className="w-full mt-6 max-w-md mx-auto">
-            <div className="mb-4">
-              <Input fullWidth variant="bordered" label="Name" id="name" />
-            </div>
-            <div className="mb-4">
-              <Input
-                fullWidth
-                variant="bordered"
-                label="Email"
-                id="email"
-                type="email"
-              />
-            </div>
-            <div className="mb-4">
-              <Input
-                fullWidth
-                variant="bordered"
-                label="Phone Number"
-                type="tel"
-                id="number"
-              />
-            </div>
-            <div className="mb-4">
-              <Textarea
-                fullWidth
-                variant="bordered"
-                label="Message"
-                rows={6}
-                id="message"
-              />
-            </div>
-            <Button className="w-full bg-blue-500 text-white" type="submit">
-              Submit
-            </Button>
-          </form>
+          <ContactForm onFormSubmit={handleFormSubmit} />
           <div className="flex justify-center mt-6 space-x-4">
             <a
               href="https://facebook.com"
@@ -106,6 +91,23 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col gap-1">Success</ModalHeader>
+              <ModalBody className="flex flex-col items-center">
+                <ReviewConfirmation />
+              </ModalBody>
+              <ModalFooter>
+                <Button color="primary" onPress={onClose}>
+                  Close
+                </Button>
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
     </DefaultLayout>
   );
 }

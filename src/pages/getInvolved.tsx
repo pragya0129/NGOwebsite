@@ -41,7 +41,8 @@ export default function GetInvolved() {
     },
     {
       title: "Donate",
-      description: "Support our cause by making a donation.",
+      description:
+        "Help us continue our mission – donate now to make an impact.",
       image: "assets/Images/donateinvolvement.png",
       link: "/donate",
       form: (
@@ -54,7 +55,8 @@ export default function GetInvolved() {
     },
     {
       title: "Partner",
-      description: "Partner with us to achieve greater impact.",
+      description:
+        "Join forces with us to create a bigger impact – partner with us today.",
       image: "assets/Images/partner.png",
       link: "/partner",
       form: (
