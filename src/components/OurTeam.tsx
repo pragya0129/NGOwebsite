@@ -27,13 +27,13 @@ const OurTeam = () => {
       name: "S.D. Taj (Aftab Taj)",
       position: "President",
       bio: "Aftab Women Welfare Society",
-      avatar: "/public/assets/Images/profile-user.png",
+      avatar: "assets/Images/profile-user.png",
     },
     {
       name: "Syeda Taskeen Chishty",
       position: "Secretary",
       bio: "Aftab Women Welfare Society",
-      avatar: "/public/assets/Images/profile-user.png",
+      avatar: "assets/Images/profile-user.png",
     },
   ];
 

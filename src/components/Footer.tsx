@@ -83,13 +83,15 @@ const Footer = () => {
             <Typography variant="body2" mr={1}>
               Website by - Pragya Gaur
             </Typography>
-            <IconButton
-              color="inherit"
-              aria-label="LinkedIn"
-              href="www.linkedin.com/in/pragyagaur12"
+            <Link
+              isExternal
+              href="https://www.linkedin.com/in/pragyagaur12/"
+              className="text-white"
             >
-              <FontAwesomeIcon icon={faLinkedin} />
-            </IconButton>
+              <IconButton color="inherit" aria-label="LinkedIn">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </IconButton>
+            </Link>
           </Box>
         </Box>
       </Container>
