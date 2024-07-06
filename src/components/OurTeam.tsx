@@ -12,9 +12,10 @@ const TeamMember = ({ name, position, bio, avatar }) => {
           className="mx-auto mb-4"
         />
         <h3 className="text-xl font-semibold mb-2 text-center">{name}</h3>
-        <p className="text-sm text-gray-600 mb-4 text-center">{position}</p>
         <Divider className="mb-4" />
-        <p className="text-sm text-gray-800">{bio}</p>
+        <p className="text-sm text-gray-600 mb-4 text-center">{position}</p>
+
+        <p className="text-sm text-gray-800 text-center">{bio}</p>
       </CardBody>
     </Card>
   );
@@ -23,16 +24,16 @@ const TeamMember = ({ name, position, bio, avatar }) => {
 const OurTeam = () => {
   const team = [
     {
-      name: "John Doe",
-      position: "Founder & CEO",
-      bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      avatar: "/public/Images/avatar1.jpg",
+      name: "S.D. Taj (Aftab Taj)",
+      position: "President",
+      bio: "Aftab Women Welfare Society",
+      avatar: "/public/assets/Images/profile-user.png",
     },
     {
-      name: "Jane Smith",
-      position: "Director of Operations",
-      bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      avatar: "/public/Images/avatar2.jpg",
+      name: "Syeda Taskeen Chishty",
+      position: "Secretary",
+      bio: "Aftab Women Welfare Society",
+      avatar: "/public/assets/Images/profile-user.png",
     },
   ];
 
