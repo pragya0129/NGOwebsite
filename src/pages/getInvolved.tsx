@@ -11,14 +11,24 @@ import {
   ModalBody,
   ModalFooter,
   Input,
+  useDisclosure,
   Textarea,
 } from "@nextui-org/react";
 import { title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
+import VolunteerForm from "@/components/VolunteerForm";
+import ReviewConfirmation from "@/components/ReviewConfirmation";
 
 export default function GetInvolved() {
   const [visible, setVisible] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
+  const handleFormSubmit = () => {
+    setIsSubmitted(true);
+    onOpen();
+  };
 
   const involvementOptions = [
     {
@@ -27,17 +37,7 @@ export default function GetInvolved() {
         "Join us as a volunteer and make a difference in your community.",
       image: "assets/Images/help each other.png",
       link: "/volunteer",
-      form: (
-        <>
-          <Input fullWidth color="primary" size="lg" placeholder="Name" />
-          <Input fullWidth color="primary" size="lg" placeholder="Email" />
-          <Textarea
-            fullWidth
-            color="primary"
-            placeholder="Why do you want to volunteer?"
-          />
-        </>
-      ),
+      form: <VolunteerForm onFormSubmit={handleFormSubmit} />,
     },
     {
       title: "Donate",
@@ -140,15 +140,31 @@ export default function GetInvolved() {
                     <Button color="danger" variant="flat" onPress={onClose}>
                       Close
                     </Button>
-                    <Button color="primary" onPress={onClose}>
-                      Submit
-                    </Button>
                   </ModalFooter>
                 </>
               )}
             </ModalContent>
           </Modal>
         )}
+        <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+          <ModalContent>
+            {(onClose) => (
+              <>
+                <ModalHeader className="flex flex-col gap-1">
+                  Success
+                </ModalHeader>
+                <ModalBody className="flex flex-col items-center">
+                  <ReviewConfirmation />
+                </ModalBody>
+                <ModalFooter>
+                  <Button color="primary" onPress={onClose}>
+                    Close
+                  </Button>
+                </ModalFooter>
+              </>
+            )}
+          </ModalContent>
+        </Modal>
       </section>
     </DefaultLayout>
   );
