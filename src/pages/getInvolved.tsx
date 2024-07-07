@@ -46,11 +46,14 @@ export default function GetInvolved() {
       image: "assets/Images/donateinvolvement.png",
       link: "/donate",
       form: (
-        <>
-          <Input fullWidth color="primary" size="lg" placeholder="Name" />
-          <Input fullWidth color="primary" size="lg" placeholder="Email" />
-          <Input fullWidth color="primary" size="lg" placeholder="Amount" />
-        </>
+        <div className="text-center my-5">
+          <img
+            src="path-to-your-qr-code-image.png"
+            alt="QR Code"
+            className="w-36 h-36 mx-auto"
+          />
+          <p>Scan the QR code to donate</p>
+        </div>
       ),
     },
     {

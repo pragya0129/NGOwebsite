@@ -147,28 +147,10 @@ export const Navbar = () => {
                       />
                       <p>Scan the QR code to donate</p>
                     </div>
-                    {/* File Input for Screenshot */}
-                    <div className="mt-5">
-                      <label
-                        htmlFor="payment-screenshot"
-                        className="block mb-2"
-                      >
-                        Upload payment screenshot:
-                      </label>
-                      <input
-                        type="file"
-                        id="payment-screenshot"
-                        name="payment-screenshot"
-                        className="w-full p-2"
-                      />
-                    </div>
                   </ModalBody>
                   <ModalFooter>
                     <Button color="danger" variant="light" onPress={onClose}>
                       Close
-                    </Button>
-                    <Button color="primary" onPress={onClose}>
-                      Submit
                     </Button>
                   </ModalFooter>
                 </>
