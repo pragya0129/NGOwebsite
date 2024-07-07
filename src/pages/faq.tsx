@@ -19,11 +19,11 @@ export default function FAQ() {
         <div className="max-w-3xl w-full px-4">
           <div className="bg-white shadow-lg rounded-lg p-4">
             <h2 className="text-lg font-semibold mb-2">
-              What does your NGO do?
+              What does our NGO do?
             </h2>
             <p className="text-gray-700">
-              Our NGO focuses on providing education and healthcare services to
-              underprivileged communities.
+              Our NGO is dedicated to uplifting women, spreading legal
+              awareness, and addressing all kinds of legal needs.
             </p>
           </div>
           <div className="bg-white shadow-lg rounded-lg p-4 mt-4">
@@ -36,21 +36,10 @@ export default function FAQ() {
           <div className="bg-white shadow-lg rounded-lg p-4 mt-4">
             <h2 className="text-lg font-semibold mb-2">How can I donate?</h2>
             <p className="text-gray-700">
-              You can donate securely through our website or by contacting our
-              fundraising team directly.
+              You can donate securely through our QR code on this website or by
+              contacting our team directly.
             </p>
           </div>
-          <div className="bg-white shadow-lg rounded-lg p-4 mt-4">
-            <h2 className="text-lg font-semibold mb-2">
-              What impact has your NGO made?
-            </h2>
-            <p className="text-gray-700">
-              We have helped over 10,000 children access quality education and
-              provided healthcare services to 50,000 individuals in the past
-              year.
-            </p>
-          </div>
-          {/* Add more FAQ items as needed */}
         </div>
       </section>
     </DefaultLayout>
