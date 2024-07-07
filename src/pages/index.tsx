@@ -155,6 +155,7 @@ export default function IndexPage() {
                           color="primary"
                           radius="full"
                           size="sm"
+                          onClick={handleGetInvolvedBtn}
                         >
                           Learn More
                         </Button>
@@ -188,6 +189,7 @@ export default function IndexPage() {
                           color="primary"
                           radius="full"
                           size="sm"
+                          onClick={handleGetInvolvedBtn}
                         >
                           Learn More
                         </Button>
