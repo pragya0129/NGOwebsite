@@ -1,10 +1,33 @@
 {
-    "welcome": "Welcome to Our",
-    "ngo": "NGO",
-    "description": "We are dedicated to making the world a better place through our various programs and initiatives. Join us in our mission to bring positive change.",
-    "programs": {
-      "description": "At [Your Organization Name], we are dedicated to empowering individuals and communities through a diverse range of programs designed to foster growth, learning, and development. Our programs are tailored to meet the needs of various age groups and interests, ensuring that there is something for everyone. Explore our offerings below and find the perfect fit for you or your loved ones.",
-      "knowMore": "Know More"
-    }
-  }
-  
+  "ngoName": "Aftab Women Welfare Society",
+  "description": "We are dedicated to making the world a better place through our various programs and initiatives. Join us in our mission to bring positive change.",
+  "programs": {
+    "description": "At [Your Organization Name], we are dedicated to empowering individuals and communities through a diverse range of programs designed to foster growth, learning, and development. Our programs are tailored to meet the needs of various age groups and interests, ensuring that there is something for everyone. Explore our offerings below and find the perfect fit for you or your loved ones.",
+    "knowMore": "Know More"
+  },
+  "highlights": "Highlights",
+  "donationmsg": "If you are able to, please consider donating.",
+  "learnmore": "View",
+  "volunteer": "Volunteer",
+  "getInvolved": "Get Involved",
+  "getInvolvedDesc": "Join us in making a difference! Your support can help us empower communities, advocate for change, and provide essential resources to those in need. Whether through donations, volunteering, or spreading the word, every action counts. Get involved today and be a part of our mission to create a better world.",
+  "knowMore": "Know More",
+  "resources": "Resources",
+  "resourcesDesc": "Explore our Resources section for valuable information and tools to support our cause. Find research reports, educational materials, and guides on how you can help make a difference. Stay informed and get the resources you need to join our mission effectively.",
+  "about": "About Us",
+  "aboutDesc": "Learn more about our mission, vision, and the impact we strive to make every day. Discover how we address pressing social issues, empower communities, and drive sustainable change. Click to explore our journey, achievements, and the dedicated team behind our efforts. Join us in making a difference.",
+  "testimonials": "Testimonials",
+  "testimonial1": "Supporting Aftab Women Welfare Society has been a life-changing experience. Their dedication to uplifting women and spreading legal awareness is truly inspiring. I've seen firsthand the positive impact they have in addressing all kinds of legal needs.",
+  "testimonial1name": "Rajesh Sharma",
+  "testimonial2": "Supporting Aftab Women Welfare Society has been one of the best decisions I've made. The dedication and compassion of the staff are truly inspiring.",
+  "testimonial2name": "Priya Desai",
+  "home": "Home",
+  "contact": "Contact Us",
+  "faq": "FAQs",
+  "donor": "Donor",
+  "volunteerDesc": "Join us as a volunteer and make a difference in your community.",
+  "donate": "Donate",
+  "donateDesc": "Help us continue our mission – donate now to make an impact.",
+  "qrText" : "Scan the QR code to donate",
+  "partner": "Partner"
+}

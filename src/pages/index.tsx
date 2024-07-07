@@ -77,7 +77,7 @@ export default function IndexPage() {
               <div className="flex-1 md:mr-5 mb-5 md:mb-0 flex flex-col items-center md:items-start">
                 <h1 className="text-4xl font-bold mb-5 text-center md:text-left">
                   <h1 className="tracking-tight inline from-[#5EA2EF] to-[#0072F5] text-4xl lg:text-5xl bg-clip-text text-transparent bg-gradient-to-b">
-                    Aftab Women Welfare Society
+                    {t("ngoName")}
                   </h1>
                 </h1>
                 <p className="text-lg text-center md:text-left">
@@ -118,7 +118,7 @@ export default function IndexPage() {
                       />
                       <div className="flex flex-col gap-1 items-start justify-center">
                         <h1 className="text-2xl font-bold leading-none text-default-600">
-                          Highlights
+                          {t("highlights")}
                         </h1>
                       </div>
                     </div>
@@ -138,7 +138,7 @@ export default function IndexPage() {
                       <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                         <div>
                           <p className="text-white text-tiny">
-                            If you are able to, please consider donating.
+                            {t("donationmsg")}
                           </p>
                           <p className="text-black text-tiny">&#10084;</p>
                         </div>
@@ -149,7 +149,7 @@ export default function IndexPage() {
                           size="sm"
                           onClick={handleGetInvolvedBtn}
                         >
-                          Learn More
+                          {t("learnmore")}
                         </Button>
                       </CardFooter>
                     </Card>
@@ -159,9 +159,8 @@ export default function IndexPage() {
                       className="w-[300px] md:w-2/3 h-[300px] col-span-12 sm:col-span-5 mb-5 mr-2"
                     >
                       <CardHeader className="absolute z-10 top-1 flex-col items-start">
-                        
                         <h4 className="text-white font-medium text-2xl">
-                          Volunteer
+                          {t("volunteer")}
                         </h4>
                       </CardHeader>
                       <Image
@@ -181,7 +180,7 @@ export default function IndexPage() {
                           size="sm"
                           onClick={handleGetInvolvedBtn}
                         >
-                          Learn More
+                          {t("learnmore")}
                         </Button>
                       </CardFooter>
                     </Card>
@@ -262,7 +261,7 @@ export default function IndexPage() {
                       />
                       <div className="flex flex-col gap-1 items-start justify-center">
                         <h1 className="text-2xl font-bold leading-none text-default-600">
-                          Get Involved
+                          {t("getInvolved")}
                         </h1>
                       </div>
                     </div>
@@ -278,14 +277,7 @@ export default function IndexPage() {
                       />
                     </div>
                     <div className="md:w-1/2 text-left text-large text-default-400 lg:ml-10">
-                      <p>
-                        Join us in making a difference! Your support can help us
-                        empower communities, advocate for change, and provide
-                        essential resources to those in need. Whether through
-                        donations, volunteering, or spreading the word, every
-                        action counts. Get involved today and be a part of our
-                        mission to create a better world.
-                      </p>
+                      <p>{t("getInvolvedDesc")}</p>
                       <Button
                         color="primary"
                         radius="full"
@@ -297,7 +289,7 @@ export default function IndexPage() {
                         }
                         onClick={handleGetInvolvedBtn}
                       >
-                        Know More
+                        {t("knowMore")}
                       </Button>
                     </div>
                   </CardBody>
@@ -335,20 +327,14 @@ export default function IndexPage() {
                       />
                       <div className="flex flex-col gap-1 items-start justify-center">
                         <h1 className="text-2xl font-bold leading-none text-default-600">
-                          Resources
+                          {t("resources")}
                         </h1>
                       </div>
                     </div>
                   </CardHeader>
                   <CardBody className="px-3 py-0 flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 text-left text-large text-default-400 lg:ml-10">
-                      <p>
-                        Explore our Resources section for valuable information
-                        and tools to support our cause. Find research reports,
-                        educational materials, and guides on how you can help
-                        make a difference. Stay informed and get the resources
-                        you need to join our mission effectively.
-                      </p>
+                      <p>{t("resourcesDesc")}</p>
                       <Button
                         color="primary"
                         radius="full"
@@ -360,7 +346,7 @@ export default function IndexPage() {
                         }
                         onClick={handleResourcesBtn}
                       >
-                        Know More
+                        {t("knowMore")}
                       </Button>
                     </div>
                     <div className="md:w-1/2 flex justify-center mt-4 md:mt-0">
@@ -395,7 +381,7 @@ export default function IndexPage() {
                       />
                       <div className="flex flex-col gap-1 items-start justify-center">
                         <h1 className="text-2xl font-bold leading-none text-default-600">
-                          About Us
+                          {t("about")}
                         </h1>
                       </div>
                     </div>
@@ -411,14 +397,7 @@ export default function IndexPage() {
                       />
                     </div>
                     <div className="md:w-1/2 text-left text-large text-default-400 lg:ml-10">
-                      <p>
-                        Learn more about our mission, vision, and the impact we
-                        strive to make every day. Discover how we address
-                        pressing social issues, empower communities, and drive
-                        sustainable change. Click to explore our journey,
-                        achievements, and the dedicated team behind our efforts.
-                        Join us in making a difference.
-                      </p>
+                      <p>{t("aboutDesc")}</p>
                       <Button
                         color="primary"
                         radius="full"
@@ -430,7 +409,7 @@ export default function IndexPage() {
                         }
                         onClick={handleAboutBtn}
                       >
-                        Know More
+                        {t("knowMore")}
                       </Button>
                     </div>
                   </CardBody>
@@ -444,7 +423,7 @@ export default function IndexPage() {
             id="testimonials"
             setVisitedSections={setVisitedSections}
           >
-            <h2 className="text-2xl font-bold mb-5">Testimonials</h2>
+            <h2 className="text-2xl font-bold mb-5">{t("testimonials")}</h2>
             <div className="mb-5">
               <div className="flex items-center mb-2">
                 <FontAwesomeIcon
@@ -454,21 +433,14 @@ export default function IndexPage() {
                 />
                 <Card>
                   <CardBody>
-                    <p>
-                      Volunteering at [NGO Name] has been an incredibly
-                      rewarding experience. Seeing the smiles on the faces of
-                      the elderly residents and knowing we are making a real
-                      difference in their lives fills my heart with joy. The
-                      medical assistance we provide ensures they live
-                      comfortably and with dignity.
-                    </p>
+                    <p>{t("testimonial1")}</p>
                   </CardBody>
                 </Card>
               </div>
               <p className="text-right">
                 <User
-                  name="Rajesh Sharma"
-                  description="Volunteer"
+                  name={t("testimonial1name")}
+                  description={t("volunteer")}
                   avatarProps={{
                     src: "assets/Images/user.gif",
                   }}
@@ -484,20 +456,14 @@ export default function IndexPage() {
                 />
                 <Card>
                   <CardBody>
-                    <p>
-                      Supporting [NGO Name] has been one of the best decisions
-                      I've made. Knowing that my contributions help provide
-                      essential medical care and a loving home for the elderly
-                      is truly fulfilling. The dedication and compassion of the
-                      staff are truly inspiring.
-                    </p>
+                    <p>{t("testimonial2")}</p>
                   </CardBody>
                 </Card>
               </div>
               <p className="text-right">
                 <User
-                  name="Priya Desai"
-                  description="Donor"
+                  name={t("testimonial2name")}
+                  description={t("donor")}
                   avatarProps={{
                     src: "assets/Images/user.gif",
                   }}

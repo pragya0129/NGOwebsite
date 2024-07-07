@@ -20,7 +20,7 @@ import {
 } from "@nextui-org/react";
 import ReviewConfirmation from "@/components/ReviewConfirmation";
 
-export default function ContactPage({ onFormSubmit }) {
+export default function ContactPage() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
@@ -56,36 +56,6 @@ export default function ContactPage({ onFormSubmit }) {
               <FontAwesomeIcon
                 icon={faFacebookF}
                 className="text-blue-600 text-2xl"
-              />
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon
-                icon={faTwitter}
-                className="text-blue-400 text-2xl"
-              />
-            </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon
-                icon={faInstagram}
-                className="text-pink-500 text-2xl"
-              />
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon
-                icon={faLinkedinIn}
-                className="text-blue-700 text-2xl"
               />
             </a>
           </div>

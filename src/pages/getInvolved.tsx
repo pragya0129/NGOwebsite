@@ -19,12 +19,22 @@ import DefaultLayout from "@/layouts/default";
 import VolunteerForm from "@/components/VolunteerForm";
 import ReviewConfirmation from "@/components/ReviewConfirmation";
 import PartnerForm from "@/components/PartnerForm";
+import { useTranslation } from "react-i18next";
 
 export default function GetInvolved() {
   const [visible, setVisible] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const { i18n } = useTranslation();
+  const [isEnglish, setIsEnglish] = React.useState(i18n.language === "en");
+  const { t } = useTranslation();
+
+  const handleChange = () => {
+    const newLanguage = isEnglish ? "hi" : "en";
+    i18n.changeLanguage(newLanguage);
+    setIsEnglish(!isEnglish);
+  };
 
   const handleFormSubmit = () => {
     setIsSubmitted(true);
@@ -33,17 +43,15 @@ export default function GetInvolved() {
 
   const involvementOptions = [
     {
-      title: "Volunteer",
-      description:
-        "Join us as a volunteer and make a difference in your community.",
+      title: t("volunteer"),
+      description: t("volunteerDesc"),
       image: "assets/Images/help each other.png",
       link: "/volunteer",
       form: <VolunteerForm onFormSubmit={handleFormSubmit} />,
     },
     {
-      title: "Donate",
-      description:
-        "Help us continue our mission – donate now to make an impact.",
+      title: t("donate"),
+      description: t("donateDesc"),
       image: "assets/Images/donateinvolvement.png",
       link: "/donate",
       form: (
@@ -53,12 +61,12 @@ export default function GetInvolved() {
             alt="QR Code"
             className="w-36 h-36 mx-auto"
           />
-          <p>Scan the QR code to donate</p>
+          <p>{t("qrText")}</p>
         </div>
       ),
     },
     {
-      title: "Partner",
+      title: t("partner"),
       description:
         "Join forces with us to create a bigger impact – partner with us today.",
       image: "assets/Images/partner.png",
