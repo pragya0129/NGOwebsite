@@ -199,7 +199,7 @@ export default function IndexPage() {
             </div>
           </AnimatedSection>
 
-          {/* programs section */}
+          {/* programs section
           <AnimatedSection
             id="programs"
             setVisitedSections={setVisitedSections}
@@ -251,7 +251,7 @@ export default function IndexPage() {
                 </Card>
               </div>
             </div>
-          </AnimatedSection>
+          </AnimatedSection> */}
 
           {/* getInvolved section */}
           <AnimatedSection
