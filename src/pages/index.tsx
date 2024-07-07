@@ -129,26 +129,18 @@ export default function IndexPage() {
                       isFooterBlurred
                       className="w-[300px] h-[300px] col-span-12 sm:col-span-5 mb-5 mr-2"
                     >
-                      <CardHeader className="absolute z-10 top-1 flex-col items-start">
-                        <p className="text-sm text-white/60 uppercase font-bold">
-                          &nbsp;$
-                        </p>
-                        <h4 className="text-black font-medium text-2xl">
-                          Donate
-                        </h4>
-                      </CardHeader>
                       <Image
                         removeWrapper
                         alt="Card example background"
                         className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-                        src="assets/Images/donation.jpg"
+                        src="assets/Images/donationhighlight.gif"
                       />
                       <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                         <div>
-                          <p className="text-black text-tiny">
+                          <p className="text-white text-tiny">
                             If you are able to, please consider donating.
                           </p>
-                          <p className="text-black text-tiny">&#x1F603;</p>
+                          <p className="text-black text-tiny">&#10084;</p>
                         </div>
                         <Button
                           className="text-tiny"
@@ -167,10 +159,8 @@ export default function IndexPage() {
                       className="w-[300px] md:w-2/3 h-[300px] col-span-12 sm:col-span-5 mb-5 mr-2"
                     >
                       <CardHeader className="absolute z-10 top-1 flex-col items-start">
-                        <p className="text-sm text-white/60 uppercase font-bold">
-                          &nbsp;
-                        </p>
-                        <h4 className="text-black font-medium text-2xl">
+                        
+                        <h4 className="text-white font-medium text-2xl">
                           Volunteer
                         </h4>
                       </CardHeader>
@@ -178,7 +168,7 @@ export default function IndexPage() {
                         removeWrapper
                         alt="Card example background"
                         className="z-0 w-full h-full scale-125 -translate-y-6 object-fit"
-                        src="assets/Images/volunteer highlight.png"
+                        src="assets/Images/highlightvolunteer.png"
                       />
                       <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                         <div>
