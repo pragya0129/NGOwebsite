@@ -7,6 +7,7 @@ const VolunteerForm = ({ onFormSubmit }) => {
     name: "",
     email: "",
     reason: "",
+    application: "Volunteer",
   });
 
   const handleChange = (e) => {
@@ -23,6 +24,7 @@ const VolunteerForm = ({ onFormSubmit }) => {
           name: "",
           email: "",
           reason: "",
+          application: "Volunteer",
         });
         onFormSubmit();
       })

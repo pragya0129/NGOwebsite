@@ -18,6 +18,7 @@ import { title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
 import VolunteerForm from "@/components/VolunteerForm";
 import ReviewConfirmation from "@/components/ReviewConfirmation";
+import PartnerForm from "@/components/PartnerForm";
 
 export default function GetInvolved() {
   const [visible, setVisible] = useState(false);
@@ -62,17 +63,7 @@ export default function GetInvolved() {
         "Join forces with us to create a bigger impact – partner with us today.",
       image: "assets/Images/partner.png",
       link: "/partner",
-      form: (
-        <>
-          <Input fullWidth color="primary" size="lg" placeholder="Name" />
-          <Input fullWidth color="primary" size="lg" placeholder="Email" />
-          <Textarea
-            fullWidth
-            color="primary"
-            placeholder="How can we collaborate?"
-          />
-        </>
-      ),
+      form: <PartnerForm onFormSubmit={handleFormSubmit} />,
     },
   ];
 
