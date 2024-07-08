@@ -8,6 +8,7 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import ContactForm from "@/components/ContactForm";
 import {
   Modal,
@@ -29,17 +30,28 @@ export default function ContactPage() {
     onOpen();
   };
 
+  const { i18n } = useTranslation();
+  const [isEnglish, setIsEnglish] = useState(i18n.language === "en");
+  const { t } = useTranslation();
+
+  const handleChange = () => {
+    const newLanguage = isEnglish ? "hi" : "en";
+
+    i18n.changeLanguage(newLanguage);
+    setIsEnglish(!isEnglish);
+  };
+
   return (
     <DefaultLayout>
       <section className="flex flex-col md:flex-row items-center justify-center gap-4 py-8 md:py-10">
         <div className="w-full md:w-1/2 text-center md:text-left px-4 mb-6 md:mb-0">
           <h2 className="text-2xl md:text-3xl font-semibold">
-            Got a query? Connect with us...
+            {t("contactwithus")}
           </h2>
         </div>
         <div className="w-full md:w-1/2 inline-block max-w-lg w-full px-4 text-center">
           <div className="flex items-center justify-center">
-            <h1 className={title()}>Contact Us</h1>
+            <h1 className={title()}>{t("contact")}</h1>
             <img
               src="assets/Images/tech-support.gif"
               alt="Resources Icon"
@@ -47,31 +59,21 @@ export default function ContactPage() {
             />
           </div>
           <ContactForm onFormSubmit={handleFormSubmit} />
-          <div className="flex justify-center mt-6 space-x-4">
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon
-                icon={faFacebookF}
-                className="text-blue-600 text-2xl"
-              />
-            </a>
-          </div>
         </div>
       </section>
       <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">Success</ModalHeader>
+              <ModalHeader className="flex flex-col gap-1">
+                {t("success")}
+              </ModalHeader>
               <ModalBody className="flex flex-col items-center">
                 <ReviewConfirmation />
               </ModalBody>
               <ModalFooter>
                 <Button color="primary" onPress={onClose}>
-                  Close
+                  {t("close")}
                 </Button>
               </ModalFooter>
             </>

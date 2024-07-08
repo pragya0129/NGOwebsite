@@ -8,19 +8,30 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { i18n } = useTranslation();
+  const [isEnglish, setIsEnglish] = useState(i18n.language === "en");
+  const { t } = useTranslation();
+
+  const handleChange = () => {
+    const newLanguage = isEnglish ? "hi" : "en";
+
+    i18n.changeLanguage(newLanguage);
+    setIsEnglish(!isEnglish);
+  };
+
   return (
     <Box sx={{ bgcolor: "primary.main", color: "white", p: 4 }}>
       <Container maxWidth="lg">
         <Grid container spacing={4}>
           <Grid item xs={12} sm={3}>
             <Typography variant="h6" gutterBottom>
-              Aftab Women Welfare Society
+              {t("ngoName")}
             </Typography>
-            <Typography variant="body1">
-              Empowering women through legal support and awareness.
-            </Typography>
+            <Typography variant="body1">{t("footerdesc")}</Typography>
           </Grid>
           <Grid item xs={12} sm={3}>
             <Link className="text-white" href="mailto:aftabwws@gmail.com">
@@ -58,17 +69,15 @@ const Footer = () => {
                 <IconButton color="inherit" aria-label="Facebook">
                   <FontAwesomeIcon icon={faFacebook} className="mb-1" />
                 </IconButton>
-                Follow Us
+                {t("follow")}
               </Typography>
             </Link>
           </Grid>
           <Grid item xs={12} sm={3}>
             <Typography variant="h6" gutterBottom>
               <LocationOn className="mb-1 mr-2" />
-              Find Us
-              <Typography variant="body1">
-                26/20 Panni Grane Chowk, Khadim Mohalla, Ajmer (Rajasthan), 305001
-              </Typography>
+              {t("find")}
+              <Typography variant="body1">{t("address")}</Typography>
             </Typography>
             <iframe
               title="abc"
@@ -79,24 +88,10 @@ const Footer = () => {
             />
           </Grid>
         </Grid>
-        <Box textAlign="center" mt={7}>
+        <Box textAlign="center" mt={15}>
           <Typography variant="body2" gutterBottom>
-            Aftab Women Welfare Society © 2024
+            {t("ngoName")} © 2024
           </Typography>
-          <Box display="flex" justifyContent="center" alignItems="center">
-            <Typography variant="body2" mr={1}>
-              Website by - Pragya Gaur
-            </Typography>
-            <Link
-              isExternal
-              href="https://www.linkedin.com/in/pragyagaur12/"
-              className="text-white"
-            >
-              <IconButton color="inherit" aria-label="LinkedIn">
-                <FontAwesomeIcon icon={faLinkedin} />
-              </IconButton>
-            </Link>
-          </Box>
         </Box>
       </Container>
     </Box>

@@ -88,5 +88,25 @@
     "name": "Syeda Taskeen Chishty",
     "position": "Secretary",
     "bio": "Aftab Women Welfare Society"
-  }
+  },
+  "contactwithus": "Got a query? Connect with us...",
+  "submit": "Submit",
+  "faqhead": "Frequently Asked Questions",
+  "q1": {
+    "q": "What does our NGO do?",
+    "a": "Our NGO is dedicated to uplifting women, spreading legal awareness, and addressing all kinds of legal needs."
+  },
+  "q2": {
+    "q": "How can I volunteer?",
+    "a": "You can apply to volunteer by filling out our online application form on our website."
+  },
+  "q3": {
+    "q": "How can I donate?",
+    "a": "You can donate securely through our QR code on this website or by contacting our team directly."
+  },
+  "footerdesc": "Empowering women through legal support and awareness.",
+  "follow": "Follow Us",
+  "find": "Find Us",
+  "address": "26/20 Panni Grane Chowk, Khadim Mohalla, Ajmer (Rajasthan), 305001",
+  "confirmation": ""
 }

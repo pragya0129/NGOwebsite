@@ -1,6 +1,7 @@
 import { Input, Textarea, Button } from "@nextui-org/react";
 import { useState } from "react";
 import sendEmail from "@/pages/Email/email-contact";
+import { useTranslation } from "react-i18next";
 
 const ContactForm = ({ onFormSubmit }) => {
   const [formValues, setFormValues] = useState({
@@ -9,6 +10,10 @@ const ContactForm = ({ onFormSubmit }) => {
     phone: "",
     message: "",
   });
+
+  const { i18n } = useTranslation();
+  const [isEnglish, setIsEnglish] = useState(i18n.language === "en");
+  const { t } = useTranslation();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -85,7 +90,7 @@ const ContactForm = ({ onFormSubmit }) => {
         />
       </div>
       <Button className="w-full bg-blue-500 text-white" type="submit">
-        Submit
+        {t("submit")}
       </Button>
     </form>
   );
