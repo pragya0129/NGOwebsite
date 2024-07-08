@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, CardBody, Avatar, Divider } from "@nextui-org/react";
+import { useTranslation } from "react-i18next";
 
 const TeamMember = ({ name, position, bio, avatar }) => {
   return (
@@ -22,17 +23,26 @@ const TeamMember = ({ name, position, bio, avatar }) => {
 };
 
 const OurTeam = () => {
+  const { i18n } = useTranslation();
+  const [isEnglish, setIsEnglish] = useState(i18n.language === "en");
+  const { t } = useTranslation();
+
+  const handleChange = () => {
+    const newLanguage = isEnglish ? "hi" : "en";
+    i18n.changeLanguage(newLanguage);
+    setIsEnglish(!isEnglish);
+  };
   const team = [
     {
-      name: "S.D. Taj (Aftab Taj)",
-      position: "President",
-      bio: "Aftab Women Welfare Society",
+      name: t("team1.name"),
+      position: t("team1.position"),
+      bio: t("team1.bio"),
       avatar: "assets/Images/profile-user.png",
     },
     {
-      name: "Syeda Taskeen Chishty",
-      position: "Secretary",
-      bio: "Aftab Women Welfare Society",
+      name: t("team2.name"),
+      position: t("team2.position"),
+      bio: t("team2.bio"),
       avatar: "assets/Images/profile-user.png",
     },
   ];

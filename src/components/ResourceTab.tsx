@@ -6,101 +6,104 @@ import Voilence from "./VoilenceSupport";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import HealthIcon from "./HealthIcon";
+import { useTranslation } from "react-i18next";
 
 type IconComponent = React.FC<React.SVGProps<SVGSVGElement>>;
 
 export default function App() {
   const [selectedTab, setSelectedTab] = useState<string | null>(null);
 
+  const { i18n } = useTranslation();
+  const [isEnglish, setIsEnglish] = useState(i18n.language === "en");
+  const { t } = useTranslation();
+
+  const handleChange = () => {
+    const newLanguage = isEnglish ? "hi" : "en";
+    i18n.changeLanguage(newLanguage);
+    setIsEnglish(!isEnglish);
+  };
+
   let tabs = [
     {
       id: "legal",
-      label: "Legal",
+      label: t("legal"),
       icon: Law,
       content: [
         {
           image: "assets/Images/legal.png",
-          heading: "Legal Information Institute (LII)",
-          description:
-            "Provides free access to comprehensive legal information, including federal and state statutes, case law, and regulations, to help users better understand their legal rights and responsibilities.",
-          buttonLabel: "View More",
+          heading: t("legal1.heading"),
+          description: t("legal1.desc"),
+          buttonLabel: t("viewMore"),
           src: "https://www.law.cornell.edu/",
         },
         {
           image: "assets/Images/womens law.png",
-          heading: "Women’s Law",
-          description:
-            "Offers legal information, resources, and support specifically for women dealing with domestic violence and other legal issues, empowering them to take action and protect their rights.",
-          buttonLabel: "View More",
+          heading: t("legal2.heading"),
+          description: t("legal2.desc"),
+          buttonLabel: t("viewMore"),
           src: "https://www.womenslaw.org/",
         },
       ],
     },
     {
       id: "womensrights",
-      label: "Women’s Rights",
+      label: t("womenrights"),
       icon: Women,
       content: [
         {
           image: "assets/Images/womenrights.png",
-          heading: "National Organization for Women (NOW)",
-          description:
-            "Advocates for women’s rights and equality through grassroots activism, legal reform, and public education, focusing on issues such as reproductive rights, violence against women, and economic justice.",
-          buttonLabel: "View More",
+          heading: t("women1.heading"),
+          description: t("women1.desc"),
+          buttonLabel: t("viewMore"),
           src: "https://now.org/",
         },
         {
           image: "assets/Images/leanin.png",
-          heading: "Lean In",
-          description:
-            "Supports women’s leadership and empowerment through a global community, offering resources, mentorship, and networking opportunities to help women achieve their professional and personal goals.",
-          buttonLabel: "View More",
+          heading: t("women2.heading"),
+          description: t("women2.desc"),
+          buttonLabel: t("viewMore"),
           src: "https://leanin.org/",
         },
       ],
     },
     {
       id: "domestic",
-      label: "Violence Support",
+      label: t("domestic"),
       icon: Voilence,
       content: [
         {
           image: "assets/Images/DomesticViolence.png",
-          heading: "National Domestic Violence Hotline",
-          description:
-            "Offers 24/7 confidential support and resources for individuals experiencing domestic violence, including crisis intervention, safety planning, and referrals to local services.",
-          buttonLabel: "View More",
+          heading: t("domestic1.heading"),
+          description: t("domestic1.desc"),
+          buttonLabel: t("viewMore"),
           src: "https://www.thehotline.org/",
         },
         {
           image: "assets/Images/rainn.png",
-          heading: "RAINN (Rape, Abuse & Incest National Network)",
-          description:
-            "Provides support for sexual assault survivors through a national hotline, online chat, and extensive resources on prevention, recovery, and legal options.",
-          buttonLabel: "View More",
+          heading: t("domestic2.heading"),
+          description: t("domestic2.desc"),
+          buttonLabel: t("viewMore"),
           src: "https://www.rainn.org/",
         },
       ],
     },
     {
       id: "health",
-      label: "Health",
+      label: t("health"),
       icon: HealthIcon,
       content: [
         {
           image: "assets/Images/womenhealth.png",
-          heading: "Office on Women’s Health (OWH)",
-          description:
-            "Offers health resources and information specifically for women, focusing on physical, mental, and reproductive health to promote overall well-being.",
-          buttonLabel: "View More",
+          heading: t("health1.heading"),
+          description: t("health1.desc"),
+          buttonLabel: t("viewMore"),
           src: "https://www.womenshealth.gov/",
         },
         {
           image: "assets/Images/plannedparenthood.png",
-          heading: "Planned Parenthood",
-          description:
-            "Provides reproductive health care, education, and advocacy, offering services such as birth control, cancer screenings, and STD testing to support women’s health and rights.",
-          buttonLabel: "View More",
+          heading: t("health2.heading"),
+          description: t("health2.desc"),
+          buttonLabel: t("viewMore"),
           src: "https://www.plannedparenthood.org/",
         },
       ],
@@ -120,7 +123,7 @@ export default function App() {
           value={selectedTab || ""}
           onChange={handleTabSelect}
         >
-          <option value="">Select an option...</option>
+          <option value="">{t("select")}</option>
           {tabs.map((item) => (
             <option key={item.id} value={item.id}>
               {item.label}

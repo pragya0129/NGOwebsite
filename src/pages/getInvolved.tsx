@@ -67,8 +67,7 @@ export default function GetInvolved() {
     },
     {
       title: t("partner"),
-      description:
-        "Join forces with us to create a bigger impact – partner with us today.",
+      description: t("partnerDesc"),
       image: "assets/Images/partner.png",
       link: "/partner",
       form: <PartnerForm onFormSubmit={handleFormSubmit} />,
@@ -90,7 +89,7 @@ export default function GetInvolved() {
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="inline-block max-w-lg text-center justify-center">
           <div className="flex items-center justify-center">
-            <h1 className={title()}>Get Involved</h1>
+            <h1 className={title()}>{t("getInvolved")}</h1>
             <img
               src="assets/Images/volunteering.gif"
               alt="Resources Icon"
@@ -118,7 +117,7 @@ export default function GetInvolved() {
                   className="w-full bg-blue-500 text-white"
                   onClick={() => openModal(option)}
                 >
-                  Learn More
+                  {t("learnMore")}
                 </Button>
               </CardBody>
             </Card>
@@ -140,7 +139,7 @@ export default function GetInvolved() {
                   <ModalBody>{selectedOption.form}</ModalBody>
                   <ModalFooter>
                     <Button color="danger" variant="flat" onPress={onClose}>
-                      Close
+                      {t("close")}
                     </Button>
                   </ModalFooter>
                 </>
@@ -153,14 +152,14 @@ export default function GetInvolved() {
             {(onClose) => (
               <>
                 <ModalHeader className="flex flex-col gap-1">
-                  Success
+                  {t("success")}
                 </ModalHeader>
                 <ModalBody className="flex flex-col items-center">
                   <ReviewConfirmation />
                 </ModalBody>
                 <ModalFooter>
                   <Button color="primary" onPress={onClose}>
-                    Close
+                    {t("close")}
                   </Button>
                 </ModalFooter>
               </>

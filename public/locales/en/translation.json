@@ -15,7 +15,7 @@
   "resources": "Resources",
   "resourcesDesc": "Explore our Resources section for valuable information and tools to support our cause. Find research reports, educational materials, and guides on how you can help make a difference. Stay informed and get the resources you need to join our mission effectively.",
   "about": "About Us",
-  "aboutDesc": "Learn more about our mission, vision, and the impact we strive to make every day. Discover how we address pressing social issues, empower communities, and drive sustainable change. Click to explore our journey, achievements, and the dedicated team behind our efforts. Join us in making a difference.",
+  "aboutDesc": "Learn more about our mission and the impact we strive to make every day. Discover how we address pressing social issues, empower communities, and drive sustainable change. Click to explore the dedicated team behind our efforts. Join us in making a difference.",
   "testimonials": "Testimonials",
   "testimonial1": "Supporting Aftab Women Welfare Society has been a life-changing experience. Their dedication to uplifting women and spreading legal awareness is truly inspiring. I've seen firsthand the positive impact they have in addressing all kinds of legal needs.",
   "testimonial1name": "Rajesh Sharma",
@@ -28,6 +28,65 @@
   "volunteerDesc": "Join us as a volunteer and make a difference in your community.",
   "donate": "Donate",
   "donateDesc": "Help us continue our mission – donate now to make an impact.",
-  "qrText" : "Scan the QR code to donate",
-  "partner": "Partner"
+  "qrText": "Scan the QR code to donate",
+  "partner": "Partner",
+  "partnerDesc": "Join forces with us to create a bigger impact – partner with us today.",
+  "learnMore": "Learn More",
+  "close": "Close",
+  "success": "Success",
+  "legal": "Legal",
+  "legal1": {
+    "heading": "Legal Information Institute (LII)",
+    "desc": "Provides free access to comprehensive legal information, including federal and state statutes, case law, and regulations, to help users better understand their legal rights and responsibilities."
+  },
+  "viewMore": "View More",
+  "legal2": {
+    "heading": "Women’s Law",
+    "desc": "Offers legal information, resources, and support specifically for women dealing with domestic violence and other legal issues, empowering them to take action and protect their rights."
+  },
+  "womenrights": "Women’s Rights",
+  "women1": {
+    "heading": "National Organization for Women (NOW)",
+    "desc": "Advocates for women’s rights and equality through grassroots activism, legal reform, and public education, focusing on issues such as reproductive rights, violence against women, and economic justice."
+  },
+  "women2": {
+    "heading": "Lean In",
+    "desc": "Supports women’s leadership and empowerment through a global community, offering resources, mentorship, and networking opportunities to help women achieve their professional and personal goals."
+  },
+  "domestic": "Violence Support",
+  "domestic1": {
+    "heading": "National Domestic Violence Hotline",
+    "desc": "Offers 24/7 confidential support and resources for individuals experiencing domestic violence, including crisis intervention, safety planning, and referrals to local services."
+  },
+  "domestic2": {
+    "heading": "RAINN (Rape, Abuse & Incest National Network)",
+    "desc": "Provides support for sexual assault survivors through a national hotline, online chat, and extensive resources on prevention, recovery, and legal options."
+  },
+  "health": "Health",
+  "health1": {
+    "heading": "Office on Women’s Health (OWH)",
+    "desc": "Offers health resources and information specifically for women, focusing on physical, mental, and reproductive health to promote overall well-being."
+  },
+  "health2": {
+    "heading": "Planned Parenthood",
+    "desc": "Provides reproductive health care, education, and advocacy, offering services such as birth control, cancer screenings, and STD testing to support women’s health and rights."
+  },
+  "select": "Select an option...",
+  "gallery": "Gallery",
+  "hoverimg": "Hover image to zoom",
+  "clickimg": "Click image to zoom",
+  "abouttext": "Our NGO is dedicated to improving lives and making the world a better place through various programs and initiatives. Our team works tirelessly to create positive change and provide support to those in need.",
+  "mission": "Our Mission",
+  "missiontext": "The mission of our NGO is uplifting women, spreading legal awareness, and addressing all kinds of legal needs. We empower communities and individuals by providing essential resources, education, and support. We strive to make a lasting impact through our comprehensive programs and initiatives.",
+  "team": "Our Team",
+  "team1": {
+    "name": "S.D. Taj (Aftab Taj)",
+    "position": "President",
+    "bio": "Aftab Women Welfare Society"
+  },
+  "team2": {
+    "name": "Syeda Taskeen Chishty",
+    "position": "Secretary",
+    "bio": "Aftab Women Welfare Society"
+  }
 }
