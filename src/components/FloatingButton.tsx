@@ -33,7 +33,7 @@ const FloatingButtons = () => {
         <Tooltip color="primary" showArrow content="Take Quiz">
           <Button
             color="primary"
-            variant="shadow"
+            variant="faded"
             isIconOnly
             className="m-2"
             onClick={handleButton2Click}
