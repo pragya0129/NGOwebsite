@@ -1,64 +1,76 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "NGO",
-  description: "Make beautiful websites regardless of your design experience.",
   navItems: [
     {
+      key: "home",
       label: "Home",
       href: "/",
     },
     {
+      key: "getInvolved",
       label: "Get Involved",
       href: "/getInvolved",
     },
     {
+      key: "resources",
       label: "Resources",
       href: "/resources",
     },
     {
+      key: "gallery",
       label: "Gallery",
       href: "/gallery",
     },
     {
+      key: "about",
       label: "About",
       href: "/about",
     },
     {
+      key: "contactUs",
       label: "Contact US",
       href: "/contact",
     },
     {
+      key: "faqs",
       label: "FAQs",
       href: "/faq",
     },
   ],
   navMenuItems: [
     {
+      key: "home",
       label: "Home",
       href: "/",
     },
     {
+      key: "getInvolved",
       label: "Get Involved",
       href: "/getInvolved",
     },
     {
+      key: "resources",
       label: "Resources",
       href: "/resources",
     },
     {
+      key: "gallery",
       label: "Gallery",
       href: "/gallery",
     },
     {
+      key: "about",
       label: "About",
       href: "/about",
     },
     {
+      key: "contactUs",
       label: "Contact US",
       href: "/contact",
     },
     {
+      key: "faqs",
       label: "FAQs",
       href: "/faq",
     },

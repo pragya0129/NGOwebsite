@@ -114,5 +114,16 @@
   "phone": "Phone Number",
   "message": "Message",
   "howcanwecollab": "How can we collaborate?",
-  "whyvolunteer": "Why do you want to volunteer?"
+  "whyvolunteer": "Why do you want to volunteer?",
+  "support": "Support Us",
+  "donateModalTitle": "Donate Today and Make a Difference!",
+  "navigation": {
+    "home": "Home",
+    "getInvolved": "Get Involved",
+    "resources": "Resources",
+    "gallery": "Gallery",
+    "about": "About",
+    "contactUs": "Contact Us",
+    "faqs": "FAQs"
+  }
 }

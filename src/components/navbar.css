@@ -4,5 +4,12 @@
 
 .linkrouter:hover {
   color: rgb(47, 0, 255);
-  border-bottom: 2px solid blue;
+}
+
+.linkrouter {
+  padding-left: 18px;
+}
+
+.linkrouter.border-left {
+  border-left: 1px solid #cccccc;
 }

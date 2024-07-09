@@ -65,25 +65,14 @@ export const Navbar = () => {
   return (
     <NextUINavbar isBordered maxWidth="xl" className="abc">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
-        <NavbarBrand className="gap-3 max-w-fit">
-          <Link
-            className="flex justify-start items-center gap-1"
-            color="foreground"
-            href="/"
-          >
-            <p className="font-bold text-inherit">
-              <img src="assets/Images/ngoLogo Circle.png" alt="" width="36px" />
-            </p>
-          </Link>
-        </NavbarBrand>
         <div className="hidden lg:flex gap-4 justify-start ml-2">
-          {siteConfig.navItems.map((item) => (
+          {siteConfig.navItems.map((item, index) => (
             <NavbarItem key={item.href}>
               <RouterLink
-                className="linkrouter data-[active=true]:text-primary data-[active=true]:font-medium"
+                className={`linkrouter data-[active=true]:text-primary data-[active=true]:font-medium ${index !== 0 ? "border-left" : ""}`}
                 to={item.href}
               >
-                {item.label}
+                {t(`navigation.${item.key}`)}
               </RouterLink>
             </NavbarItem>
           ))}
@@ -123,7 +112,7 @@ export const Navbar = () => {
               />
             }
           >
-            Support Us
+            {t("support")}
           </Button>
           <Modal
             isOpen={isOpen}
@@ -135,7 +124,7 @@ export const Navbar = () => {
               {(onClose) => (
                 <>
                   <ModalHeader className="flex flex-col gap-1">
-                    Donate Today and Make a Difference!
+                    {t("donateModalTitle")}
                   </ModalHeader>
                   <ModalBody>
                     {/* QR Code Image */}
@@ -145,12 +134,12 @@ export const Navbar = () => {
                         alt="QR Code"
                         className="w-36 h-36 mx-auto"
                       />
-                      <p>Scan the QR code to donate</p>
+                      <p>{t("qrText")}</p>
                     </div>
                   </ModalBody>
                   <ModalFooter>
                     <Button color="danger" variant="light" onPress={onClose}>
-                      Close
+                      {t("close")}
                     </Button>
                   </ModalFooter>
                 </>
@@ -186,7 +175,7 @@ export const Navbar = () => {
                 className="data-[active=true]:text-primary data-[active=true]:font-medium"
                 to={item.href}
               >
-                {item.label}
+                {t(`navigation.${item.key}`)}
               </RouterLink>
             </NavbarItem>
           ))}
@@ -197,7 +186,7 @@ export const Navbar = () => {
               variant="shadow"
               color="danger"
             >
-              Support Us
+              {t("support")}
             </Button>
             <Modal
               isOpen={isOpen}
@@ -209,7 +198,7 @@ export const Navbar = () => {
                 {(onClose) => (
                   <>
                     <ModalHeader className="flex flex-col gap-1">
-                      Donate Today and Make a Difference!
+                      {t("donateModalTitle")}
                     </ModalHeader>
                     <ModalBody>
                       {/* QR Code Image */}
@@ -219,30 +208,12 @@ export const Navbar = () => {
                           alt="QR Code"
                           className="w-36 h-36 mx-auto"
                         />
-                        <p>Scan the QR code to donate</p>
-                      </div>
-                      {/* File Input for Screenshot */}
-                      <div className="mt-5">
-                        <label
-                          htmlFor="payment-screenshot"
-                          className="block mb-2"
-                        >
-                          Upload payment screenshot:
-                        </label>
-                        <input
-                          type="file"
-                          id="payment-screenshot"
-                          name="payment-screenshot"
-                          className="w-full p-2"
-                        />
+                        <p>{t("qrText")}</p>
                       </div>
                     </ModalBody>
                     <ModalFooter>
                       <Button color="danger" variant="light" onPress={onClose}>
-                        Close
-                      </Button>
-                      <Button color="primary" onPress={onClose}>
-                        Submit
+                        {t("close")}
                       </Button>
                     </ModalFooter>
                   </>
