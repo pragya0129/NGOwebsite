@@ -44,7 +44,7 @@ const ContactForm = ({ onFormSubmit }) => {
         <Input
           fullWidth
           variant="bordered"
-          label="Name"
+          label={t("name")}
           id="name"
           name="name"
           value={formValues.name}
@@ -56,7 +56,7 @@ const ContactForm = ({ onFormSubmit }) => {
         <Input
           fullWidth
           variant="bordered"
-          label="Email"
+          label={t("email")}
           id="email"
           type="email"
           name="email"
@@ -69,7 +69,7 @@ const ContactForm = ({ onFormSubmit }) => {
         <Input
           fullWidth
           variant="bordered"
-          label="Phone Number"
+          label={t("phone")}
           type="tel"
           id="number"
           name="phone"
@@ -81,7 +81,7 @@ const ContactForm = ({ onFormSubmit }) => {
         <Textarea
           fullWidth
           variant="bordered"
-          label="Message"
+          label={t("message")}
           rows={6}
           id="message"
           name="message"

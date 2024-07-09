@@ -108,5 +108,11 @@
   "follow": "Follow Us",
   "find": "Find Us",
   "address": "26/20 Panni Grane Chowk, Khadim Mohalla, Ajmer (Rajasthan), 305001",
-  "confirmation": ""
+  "confirmation": " Your query has been submitted. We will get back to you soon. Thank you!",
+  "name": "Name",
+  "email": "Email",
+  "phone": "Phone Number",
+  "message": "Message",
+  "howcanwecollab": "How can we collaborate?",
+  "whyvolunteer": "Why do you want to volunteer?"
 }

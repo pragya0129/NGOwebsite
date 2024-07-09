@@ -1,6 +1,7 @@
 import { Input, Textarea, Button } from "@nextui-org/react";
 import { useState } from "react";
 import sendEmailP from "@/pages/Email/email-partner";
+import { useTranslation } from "react-i18next";
 
 const PartnerForm = ({ onFormSubmit }) => {
   const [formValues, setFormValues] = useState({
@@ -9,6 +10,10 @@ const PartnerForm = ({ onFormSubmit }) => {
     reason: "",
     application: "Partner",
   });
+
+  const { i18n } = useTranslation();
+  const [isEnglish, setIsEnglish] = useState(i18n.language === "en");
+  const { t } = useTranslation();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -39,7 +44,7 @@ const PartnerForm = ({ onFormSubmit }) => {
         fullWidth
         color="primary"
         size="lg"
-        placeholder="Name"
+        placeholder={t("name")}
         name="name"
         className="mb-2"
         value={formValues.name}
@@ -49,7 +54,7 @@ const PartnerForm = ({ onFormSubmit }) => {
         fullWidth
         color="primary"
         size="lg"
-        placeholder="Email"
+        placeholder={t("email")}
         name="email"
         className="mb-2"
         value={formValues.email}
@@ -58,14 +63,14 @@ const PartnerForm = ({ onFormSubmit }) => {
       <Textarea
         fullWidth
         color="primary"
-        placeholder="How can we collaborate?"
+        placeholder={t("howcanwecollab")}
         name="reason"
         className="mb-2"
         value={formValues.reason}
         onChange={handleChange}
       />
       <Button className="w-full bg-blue-500 text-white" type="submit">
-        Submit
+        {t("submit")}
       </Button>
     </form>
   );

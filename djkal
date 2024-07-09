@@ -1,0 +1,413 @@
+[33mcommit e1e2a347c75f3e3056426bf700686eb4061db178[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Mon Jul 8 14:17:32 2024 +0530
+
+    modified translation.json for hindi language
+
+[33mcommit 56248efe3468f3732734caac2dcbe14c6db1b2b3[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Mon Jul 8 13:29:45 2024 +0530
+
+    modified translation.json for english language
+
+[33mcommit 7300e1cfbcf112bcc59bd4957a2391b500487b38[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sun Jul 7 21:18:00 2024 +0530
+
+    added homepage text to translation file
+
+[33mcommit 533f9a91ce9409643a79752e08cfaa09e12e8b3d[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sun Jul 7 13:15:27 2024 +0530
+
+    modified quiz component
+
+[33mcommit 0bdd9e3963cdfb2c228bb9a5e9a28252c99babf9[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sun Jul 7 12:45:20 2024 +0530
+
+    linked highlights section buttons
+
+[33mcommit 8a1493c38215cde53e517d37edba2e54788a4372[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sun Jul 7 12:39:53 2024 +0530
+
+    removed programs page
+
+[33mcommit c9700fbfe5ff8325e2b91dac2c4365331cfb10a4[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sun Jul 7 12:36:18 2024 +0530
+
+    modified faq page
+
+[33mcommit 1d2aa2583cad0113ac32ce8af07c7a9e730b4bdf[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sun Jul 7 12:31:57 2024 +0530
+
+    linked partner form with gmail
+
+[33mcommit 89bac583928379f10af3482a1d46e02e89ac6aea[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sun Jul 7 12:19:34 2024 +0530
+
+    linked donate button to modal in getInvolved page
+
+[33mcommit 7effdf0f9752621e6a9d4a0f3ff85c5d7f010563[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sun Jul 7 12:15:40 2024 +0530
+
+    connected Volunteer Form with gmail
+
+[33mcommit 5923c8a266bcbd7570c5b8dde6d3f46575a3d65f[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sat Jul 6 23:22:38 2024 +0530
+
+    fixed contact page and made it functional
+
+[33mcommit eab0be99ba32f538e8851b42d46c870c776b1506[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sat Jul 6 23:02:31 2024 +0530
+
+    setup contactForm and gmail integration
+
+[33mcommit 1ad61d1da40c8842bdc1f29b1ad0c8a3c878fcee[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sat Jul 6 22:53:46 2024 +0530
+
+    created separate contactForm component
+
+[33mcommit 60299bfe0ecf038c2644fe17f39f06697a410c46[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sat Jul 6 16:01:45 2024 +0530
+
+    added location in footer
+
+[33mcommit 1346590503242db277b3d4458ad9e9127f9cdcc7[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sat Jul 6 15:56:01 2024 +0530
+
+    fixed links in footer
+
+[33mcommit 248fb9243867d13000aa4af90309d836e013f7cc[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sat Jul 6 15:45:57 2024 +0530
+
+    added map and contact details to footer
+
+[33mcommit 267911d931ba72a45d320679dd13f2b50542160f[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sat Jul 6 15:23:16 2024 +0530
+
+    linked section buttons to tabs
+
+[33mcommit 2e5d9a4404be7911b9619e4c8afa5a728bce36e9[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sat Jul 6 15:10:39 2024 +0530
+
+    modified buttons on homepage
+
+[33mcommit aba9bfaca452e237d6c02cb670c8c855bdfb502f[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sat Jul 6 15:08:14 2024 +0530
+
+    modified about us
+
+[33mcommit f0ff6ceee4b1ba30e19f8ef2def65fcf87d30f8e[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Fri Jul 5 15:45:02 2024 +0530
+
+    updated favicon and title
+
+[33mcommit 9ea16a1d3107247b0256f5f15f96955b8b97d19d[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Fri Jul 5 15:40:08 2024 +0530
+
+    updated readme file
+
+[33mcommit 1b2f279e652d68984fe3d2a96ba2fff3f4fadd26[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Fri Jul 5 15:29:55 2024 +0530
+
+    fixed navbar logo
+
+[33mcommit e3a1fcfa54e6e65a8aa66b4ffd18383daf289a67[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Fri Jul 5 15:12:03 2024 +0530
+
+    merged quiz component with floating button
+
+[33mcommit 6b4bf5ea75252fe8bc29594126b18c8828831d6e[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Fri Jul 5 14:01:51 2024 +0530
+
+    modified the about page
+
+[33mcommit 2398558b8827a54d57d6f3947628d9273706d82e[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Fri Jul 5 13:51:22 2024 +0530
+
+    fixed footer section
+
+[33mcommit 1a97c9874888d8c48021f1f45bf4414c66a5934d[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Fri Jul 5 13:30:10 2024 +0530
+
+    modified footer
+
+[33mcommit 00ee248e72c503a9c4e845fdc92676a62211b1c6[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Fri Jul 5 13:16:04 2024 +0530
+
+    modified support button
+
+[33mcommit 00ff4a2a79e4895ed702ae298f906d61de11af00[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Fri Jul 5 12:55:21 2024 +0530
+
+    added ourTeam component
+
+[33mcommit 05f1e11e6c097a118dea468bcda095b7ea0ecd4d[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Thu Jul 4 12:51:24 2024 +0530
+
+    fixed source paths for deployment
+
+[33mcommit dc5ba81e53441faa8a03512b090df3940e5244ce[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Thu Jul 4 12:18:27 2024 +0530
+
+    moved images to assets folder
+
+[33mcommit b544a4ba9a57602ec59ae7f0523d90421f39ea2b[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Wed Jul 3 15:40:18 2024 +0530
+
+    fixed errors for deployment
+
+[33mcommit 67ad1132701dda73424db8205f0f177623e097d4[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Wed Jul 3 13:33:22 2024 +0530
+
+    added images in gallery
+
+[33mcommit 0a4309ee3490b2e4bfb677c71a265841e749c881[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Wed Jul 3 13:21:14 2024 +0530
+
+    created forms for get involved page
+
+[33mcommit e688044c736f2584bd5db4cc52302dae51ebb249[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Tue Jul 2 20:58:53 2024 +0530
+
+    added floating button component
+
+[33mcommit c98da628d848059af6a390df98d72401eb2c2f35[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Tue Jul 2 20:40:27 2024 +0530
+
+    modified quiz component
+
+[33mcommit e7ab82eb39e4017eb4e35861112a83f3c9ba3832[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Mon Jul 1 15:15:48 2024 +0530
+
+    fixed contact page
+
+[33mcommit 51c7db8eedd2c872d8f605e166fe3f4c126c0c01[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Mon Jul 1 13:47:43 2024 +0530
+
+    added correct/incorrect label in quiz
+
+[33mcommit d543a9661f658572203005e992924877793bf191[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Mon Jul 1 13:11:05 2024 +0530
+
+    added quiz component
+
+[33mcommit adaecfcc3dbbd4e0729747a75a5fc5102f075e58[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sun Jun 30 21:40:26 2024 +0530
+
+    fixed gallery section for small screens
+
+[33mcommit 29e718b8368258722eaa4d2c6216af49daf6d6ad[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sun Jun 30 14:51:28 2024 +0530
+
+    added resources in resource page
+
+[33mcommit ad70ee5f260082b80521894c0ccbf55c4455a5a0[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sat Jun 29 14:13:15 2024 +0530
+
+    updated get involved page
+
+[33mcommit 3d9ec67a4236c624875bc228dbe8ccd78edcf925[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sat Jun 29 13:44:08 2024 +0530
+
+    added imagelist in gallery
+
+[33mcommit dd97872d851e739aee9992e3fbe92ebbc1eab8fd[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Fri Jun 28 20:48:13 2024 +0530
+
+    modified footer
+
+[33mcommit 94877b5d23fdc4bcd5856db97f8770efbef979cc[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Fri Jun 28 16:02:07 2024 +0530
+
+    modified homepage
+
+[33mcommit 7d2ffda16949496fb7fc821820874cca1621fd93[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Wed Jun 26 22:23:21 2024 +0530
+
+    updated gallery page
+
+[33mcommit 3351ebbd2a278b9fc2b7d69ddf4175279e7b99e5[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Tue Jun 25 17:36:58 2024 +0530
+
+    updated highlights section
+
+[33mcommit 661b4ad3487cba385c5688f827e8feabe041fb24[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Tue Jun 25 15:09:16 2024 +0530
+
+    modified resource page
+
+[33mcommit d111ef871e13dec3b19f2a3567846c05f614ac9c[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Tue Jun 25 12:38:27 2024 +0530
+
+    added Voiolence Support svg
+
+[33mcommit ed39a9170e88e726ac705c32624c1c0a2e38449b[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Tue Jun 25 12:11:28 2024 +0530
+
+    created Law icon svg
+
+[33mcommit bb1d91f62374b06edcf3ed10e4b86ba2370c84e3[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Tue Jun 25 10:21:34 2024 +0530
+
+    modified navbar items
+
+[33mcommit bf19c83a4f5eff96b9f22a151ff0aa69ca2b8951[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Mon Jun 24 18:45:43 2024 +0530
+
+    some UI changes
+
+[33mcommit cb564f005746426ab7618c09daa3eb2e1bb5cf99[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Mon Jun 24 15:09:49 2024 +0530
+
+    modified resources page
+
+[33mcommit 3984b1883ef30ec19293214b3cce26157bc12057[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Mon Jun 24 12:18:17 2024 +0530
+
+    added resources page
+
+[33mcommit 84cc875b90ca034e459b4973334c46e27ff70d0f[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sat Jun 22 00:36:17 2024 +0530
+
+    added gallery page
+
+[33mcommit a6bd8af1c546d3db8cc191c22dab922dddfe16e1[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Fri Jun 21 18:34:50 2024 +0530
+
+    updated testimonials information
+
+[33mcommit e0662c3ab6b651d3888439cb38ab677df7e4daf2[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Tue Jun 18 23:06:39 2024 +0530
+
+    added FAQs page
+
+[33mcommit 7d4f4ab0536cb65fd36cdf8002cc949489255a83[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sat Jun 15 23:18:21 2024 +0530
+
+    added support for hindi language
+
+[33mcommit 59fa85727d8801e4f6671642c1305ff8753c550b[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Fri Jun 14 13:16:01 2024 +0530
+
+    customized scroll bar
+
+[33mcommit 0f267494423680df316cc47a82087677fe94876e[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Wed Jun 12 15:16:50 2024 +0530
+
+    AnimatedSection Component
+
+[33mcommit 255dc10727c5a68bc0ec91cb5e86ca82577de0db[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Wed Jun 12 14:32:42 2024 +0530
+
+    Created MarqueeComponent for revolving images
+
+[33mcommit 8375d981e5a62253f614599e79634d228c80811f[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Tue Jun 11 15:33:50 2024 +0530
+
+    modified home page
+
+[33mcommit 5fddd0ff0c80dafecd00437da52662025fb2e08f[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Tue Jun 11 14:45:32 2024 +0530
+
+    added programs section in home page
+
+[33mcommit 366db341eeb16df120ad922d7d9e9a27a72086a2[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Mon Jun 10 16:09:29 2024 +0530
+
+    Added Get Involved Page
+
+[33mcommit 0486f73b2f17b1c0f31a361dfe6abdadd41af814[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sun Jun 9 14:51:48 2024 +0530
+
+    some changes
+
+[33mcommit 077547f26a79bec30c6b79366c561a2539f81f59[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sat Jun 8 20:52:03 2024 +0530
+
+    added programs page
+
+[33mcommit fd5765ef55dbc270865e4e458fd55a34d3e7a76c[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Sat Jun 8 15:39:06 2024 +0530
+
+    added modal for support button
+
+[33mcommit 3b900e4119f9a8ae5441844811057ec21ca97eb1[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Fri Jun 7 22:49:06 2024 +0530
+
+    Designed the Contact Page
+
+[33mcommit 4a8f395d9c755b87b4176d1190f7c40bb7fd2fe0[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Thu Jun 6 21:42:12 2024 +0530
+
+    designed home page
+
+[33mcommit 5ce11c0893d343dec633577dbe3ec5d08bfeb39c[m
+Author: Pragya Gaur <gaur273pragya@gmail.com>
+Date:   Thu Jun 6 15:59:00 2024 +0530
+
+    initial commit
