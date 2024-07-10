@@ -125,5 +125,229 @@
     "about": "About",
     "contactUs": "Contact Us",
     "faqs": "FAQs"
-  }
+  },
+  "quiz": {
+    "questions": [
+      {
+        "question": "What rights are women entitled to under the law?",
+        "answers": [
+          { "text": "Right to education", "correct": false },
+          { "text": "Right to work", "correct": false },
+          { "text": "Right to equal pay", "correct": false },
+          { "text": "All of the above", "correct": true }
+        ]
+      },
+      {
+        "question": "Which organization provides free legal aid in India?",
+        "answers": [
+          {
+            "text": "National Legal Services Authority (NALSA)",
+            "correct": true
+          },
+          { "text": "Central Bureau of Investigation (CBI)", "correct": false },
+          { "text": "Reserve Bank of India (RBI)", "correct": false },
+          {
+            "text": "Indian Space Research Organisation (ISRO)",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is legal awareness?",
+        "answers": [
+          { "text": "Knowledge of laws and legal rights", "correct": true },
+          { "text": "Awareness about sports", "correct": false },
+          { "text": "Knowledge of health practices", "correct": false },
+          { "text": "Awareness about environmental issues", "correct": false }
+        ]
+      },
+      {
+        "question": "Why is legal awareness important?",
+        "answers": [
+          { "text": "Empowers individuals to seek justice", "correct": true },
+          { "text": "Improves healthcare", "correct": false },
+          { "text": "Promotes environmental sustainability", "correct": false },
+          { "text": "Supports financial literacy", "correct": false }
+        ]
+      },
+      {
+        "question": "What does 'uplifting women' entail?",
+        "answers": [
+          {
+            "text": "Improving women's education and employment opportunities",
+            "correct": true
+          },
+          { "text": "Providing financial aid", "correct": false },
+          { "text": "Supporting environmental causes", "correct": false },
+          { "text": "Promoting sports activities", "correct": false }
+        ]
+      },
+      {
+        "question": "Which of the following is a legal right for women in India?",
+        "answers": [
+          { "text": "Right to inheritance", "correct": false },
+          { "text": "Right to vote", "correct": false },
+          { "text": "Right to equal pay", "correct": false },
+          { "text": "All of the above", "correct": true }
+        ]
+      },
+      {
+        "question": "What is the Protection of Women from Domestic Violence Act?",
+        "answers": [
+          {
+            "text": "A law to protect women from domestic abuse",
+            "correct": true
+          },
+          { "text": "A law to protect wildlife", "correct": false },
+          { "text": "A law to regulate internet usage", "correct": false },
+          { "text": "A law to promote sports", "correct": false }
+        ]
+      },
+      {
+        "question": "Which international day is dedicated to women's rights and peace?",
+        "answers": [
+          { "text": "International Women's Day", "correct": true },
+          { "text": "World Health Day", "correct": false },
+          { "text": "Earth Day", "correct": false },
+          { "text": "World Water Day", "correct": false }
+        ]
+      },
+      {
+        "question": "Which of the following is a key benefit of legal education?",
+        "answers": [
+          {
+            "text": "Empowers individuals with knowledge of their rights",
+            "correct": true
+          },
+          { "text": "Improves physical fitness", "correct": false },
+          { "text": "Enhances artistic skills", "correct": false },
+          { "text": "Promotes environmental sustainability", "correct": false }
+        ]
+      },
+      {
+        "question": "What is the Dowry Prohibition Act?",
+        "answers": [
+          {
+            "text": "A law prohibiting the giving or taking of dowry",
+            "correct": true
+          },
+          { "text": "A law promoting women's sports", "correct": false },
+          {
+            "text": "A law protecting intellectual property",
+            "correct": false
+          },
+          { "text": "A law regulating internet usage", "correct": false }
+        ]
+      },
+      {
+        "question": "Which organization works towards women's empowerment globally?",
+        "answers": [
+          { "text": "UN Women", "correct": true },
+          { "text": "World Health Organization", "correct": false },
+          { "text": "Greenpeace", "correct": false },
+          { "text": "NASA", "correct": false }
+        ]
+      },
+      {
+        "question": "What is the role of an NGO in legal awareness?",
+        "answers": [
+          {
+            "text": "Educating the public about their legal rights and responsibilities",
+            "correct": true
+          },
+          { "text": "Building roads and infrastructure", "correct": false },
+          { "text": "Promoting tourism", "correct": false },
+          { "text": "Regulating financial markets", "correct": false }
+        ]
+      },
+      {
+        "question": "What is the significance of the Beti Bachao Beti Padhao scheme?",
+        "answers": [
+          {
+            "text": "Promotes survival, protection, and education of the girl child",
+            "correct": true
+          },
+          { "text": "Supports agricultural development", "correct": false },
+          { "text": "Promotes space research", "correct": false },
+          { "text": "Encourages tourism", "correct": false }
+        ]
+      },
+      {
+        "question": "What is the role of the Mahila Police Volunteers?",
+        "answers": [
+          {
+            "text": "To act as a link between police and community for women's safety",
+            "correct": true
+          },
+          { "text": "To promote sports among women", "correct": false },
+          { "text": "To conduct financial audits", "correct": false },
+          { "text": "To manage wildlife reserves", "correct": false }
+        ]
+      },
+      {
+        "question": "What is the significance of legal aid clinics?",
+        "answers": [
+          {
+            "text": "Provide free legal assistance to those in need",
+            "correct": true
+          },
+          { "text": "Offer medical services", "correct": false },
+          { "text": "Promote artistic talents", "correct": false },
+          { "text": "Manage environmental projects", "correct": false }
+        ]
+      },
+      {
+        "question": "What is the focus of the Women Helpline Scheme?",
+        "answers": [
+          {
+            "text": "Provides 24/7 emergency response to women in distress",
+            "correct": true
+          },
+          { "text": "Offers educational scholarships", "correct": false },
+          { "text": "Supports environmental conservation", "correct": false },
+          { "text": "Promotes tourism", "correct": false }
+        ]
+      },
+      {
+        "question": "What does the term 'legal literacy' mean?",
+        "answers": [
+          {
+            "text": "Awareness about legal rights and processes",
+            "correct": true
+          },
+          { "text": "Ability to read and write", "correct": false },
+          { "text": "Knowledge of health practices", "correct": false },
+          { "text": "Awareness about environmental issues", "correct": false }
+        ]
+      },
+      {
+        "question": "What is the main objective of the Right to Education Act?",
+        "answers": [
+          {
+            "text": "To provide free and compulsory education to children",
+            "correct": true
+          },
+          { "text": "To regulate internet usage", "correct": false },
+          { "text": "To promote sports", "correct": false },
+          { "text": "To protect wildlife", "correct": false }
+        ]
+      },
+      {
+        "question": "Which law ensures equal pay for equal work?",
+        "answers": [
+          { "text": "Equal Remuneration Act", "correct": true },
+          { "text": "Right to Information Act", "correct": false },
+          { "text": "Consumer Protection Act", "correct": false },
+          { "text": "Wildlife Protection Act", "correct": false }
+        ]
+      }
+    ]
+  },
+  "StartQuiz": "Start Quiz",
+  "You scored": "You scored",
+  "out of": "out of",
+  "Retry Quiz": "Retry Quiz",
+  "Question": "Question",
+  "takequiz": "Take Quiz",
+  "quizHead": "Test Your Knowledge Here"
 }

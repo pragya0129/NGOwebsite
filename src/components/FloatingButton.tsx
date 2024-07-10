@@ -12,6 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
 import { Tooltip } from "@nextui-org/react";
 import QuizComponent from "./Quiz";
+import { useTranslation } from "react-i18next";
 
 const FloatingButtons = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -19,6 +20,9 @@ const FloatingButtons = () => {
   const handleButton2Click = () => {
     onOpen();
   };
+
+  const { i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -30,7 +34,7 @@ const FloatingButtons = () => {
           zIndex: "1000",
         }}
       >
-        <Tooltip color="primary" showArrow content="Take Quiz">
+        <Tooltip color="primary" showArrow content={t("takequiz")}>
           <Button
             color="primary"
             variant="faded"
@@ -45,13 +49,15 @@ const FloatingButtons = () => {
 
       <Modal isOpen={isOpen} onClose={onClose} placement="bottom-center">
         <ModalContent>
-          <ModalHeader className="flex flex-col gap-1">Quiz</ModalHeader>
+          <ModalHeader className="flex flex-col gap-1">
+            {t("quizHead")}
+          </ModalHeader>
           <ModalBody>
             <QuizComponent />
           </ModalBody>
           <ModalFooter>
             <Button color="danger" variant="light" onClick={onClose}>
-              Close
+              {t("close")}
             </Button>
           </ModalFooter>
         </ModalContent>
