@@ -133,9 +133,9 @@ export default function IndexPage() {
                         removeWrapper
                         alt="Card example background"
                         className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-                        src="assets/Images/donationhighlight.gif"
+                        src="assets/Images/donatehigh.png"
                       />
-                      <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+                      <CardFooter className="absolute bg-black/40 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                         <div>
                           <p className="text-white text-tiny">
                             {t("donationmsg")}
@@ -144,7 +144,8 @@ export default function IndexPage() {
                         </div>
                         <Button
                           className="text-tiny"
-                          color="primary"
+                          color="default"
+                          variant="shadow"
                           radius="full"
                           size="sm"
                           onClick={handleGetInvolvedBtn}
@@ -159,7 +160,7 @@ export default function IndexPage() {
                       className="w-[300px] md:w-2/3 h-[300px] col-span-12 sm:col-span-5 mb-5 mr-2"
                     >
                       <CardHeader className="absolute z-10 top-1 flex-col items-start">
-                        <h4 className="text-white font-medium text-2xl">
+                        <h4 className="text-black font-medium text-2xl">
                           {t("volunteer")}
                         </h4>
                       </CardHeader>
@@ -167,15 +168,16 @@ export default function IndexPage() {
                         removeWrapper
                         alt="Card example background"
                         className="z-0 w-full h-full scale-125 -translate-y-6 object-fit"
-                        src="assets/Images/highlightvolunteer.png"
+                        src="/public/assets/Images/test1.png"
                       />
-                      <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+                      <CardFooter className="absolute bg-black/40 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                         <div>
                           <p className="text-black text-tiny">&nbsp;</p>
                         </div>
                         <Button
                           className="text-tiny"
-                          color="primary"
+                          color="default"
+                          variant="shadow"
                           radius="full"
                           size="sm"
                           onClick={handleGetInvolvedBtn}
