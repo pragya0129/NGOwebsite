@@ -161,7 +161,7 @@ export default function IndexPage() {
                     >
                       <CardHeader className="absolute z-10 top-1 flex-col items-start">
                         <h4 className="text-black font-medium text-2xl">
-                          {t("volunteer")}
+                          &nbsp;
                         </h4>
                       </CardHeader>
                       <Image
@@ -172,7 +172,9 @@ export default function IndexPage() {
                       />
                       <CardFooter className="absolute bg-black/40 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                         <div>
-                          <p className="text-black text-tiny">&nbsp;</p>
+                          <p className="text-white text-tiny">
+                            {t("volunteertext")}
+                          </p>
                         </div>
                         <Button
                           className="text-tiny"

@@ -57,9 +57,9 @@ export default function GetInvolved() {
       form: (
         <div className="text-center my-5">
           <img
-            src="path-to-your-qr-code-image.png"
+            src="assets/Images/qr.jpeg"
             alt="QR Code"
-            className="w-36 h-36 mx-auto"
+            className="w-36 h-36 mx-auto mb-4"
           />
           <p>{t("qrText")}</p>
         </div>
