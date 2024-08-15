@@ -161,14 +161,14 @@ export default function IndexPage() {
                     >
                       <CardHeader className="absolute z-10 top-1 flex-col items-start">
                         <h4 className="text-black font-medium text-2xl">
-                          &nbsp;
+                          {t("volunteer")}
                         </h4>
                       </CardHeader>
                       <Image
                         removeWrapper
                         alt="Card example background"
                         className="z-0 w-full h-full scale-125 -translate-y-6 object-fit"
-                        src="/public/assets/Images/test1.png"
+                        src="assets/Images/test1.png"
                       />
                       <CardFooter className="absolute bg-black/40 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                         <div>
@@ -222,7 +222,7 @@ export default function IndexPage() {
                       <Button
                         color="primary"
                         radius="full"
-                        size="md"
+                        size="ld"
                         variant="ghost"
                         className="mt-5 mb-5"
                         endContent={
